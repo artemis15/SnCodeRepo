@@ -1,7 +1,8 @@
 Final Document:
 Folder Name:
-  - ./Styles/Add attachment icon-list view 
- 	 - The above two files scripts are useful to put styles on your field in list view. Below are the steps to achieve this:
+
+  - ./Styles/Add attachment icon-list view
+    - The above two files scripts are useful to put styles on your field in list view. Below are the steps to achieve this:
 1. Open a record. Right click on any field label and select configure style.
 2. A list will open with all the styles applied on that field.
 3. Click on New button to create your custom style.
@@ -10,21 +11,24 @@ Folder Name:
 6. Done. Voila.. You can now have an attachment icon present on the <chosen> field in list view if there is any attachement present in that record.
 7. You can use this code on any field in any table.
 Folder Name:
-  - ./GlideTableDescriptor/getFirstTableName() 
- 	 - ## GlideTableDescriptor
+
+  - ./GlideTableDescriptor/getFirstTableName()
+    - ## GlideTableDescriptor
 
 When a table is extended, that it creates all new sys_dictionary records for all the fields on the base table instead with just one single sys_dictionary entry. These entries are referred to as “cloned descendant elements” and you need to edit the “first element” in order to modify them. 
 You can also programatically interact with them using a “glideElementDescriptor() method on the related “GlideTableDescriptor” object. Here we using “getFirstTableName()” to find out where it was descended from.  
 Folder Name:
-  - ./Background Scripts/Approval Reminders 
- 	 - Use Case: Approval are pending due approver unavailability
+
+  - ./Background Scripts/Approval Reminders
+    - Use Case: Approval are pending due approver unavailability
 
 Solution : Assign delgates to the approver and send reminder email notification using the Approval reminder code.It will send email to delgates and they will get notified with the approval request to approve/reject per limited period.
 
 Steps: Register an event and create a notification to send  email to manager when the event fired/triggered.
 Folder Name:
-  - ./Background Scripts/Deactivate groups with no members and inactive manager 
- 	 - 
+
+  - ./Background Scripts/Deactivate groups with no members and inactive manager
+    - 
 # Deactivate groups with no members and inactive manager
 
 **Use case** : Background script that will deactivate all the groups in which there are 0 members and group manager is inactive
@@ -33,8 +37,9 @@ Folder Name:
 
 **Solution** : Open `Scripts - Background` from the application navigator and run the script present in [script.js](https://github.com/ServiceNowDevProgram/code-snippets/blob/main/Business%20Rules/Prevent%20adding%20user%20to%20group%20if%20manager%20is%20inactive/Script.js](https://github.com/ServiceNowDevProgram/code-snippets/blob/Copy-of-Main/Background%20Scripts/Deactivate%20groups%20with%20no%20members%20and%20inactive%20manager/script.js))
 Folder Name:
-  - ./Background Scripts/QuickCurrent 
- 	 - # QuickCurrent
+
+  - ./Background Scripts/QuickCurrent
+    - # QuickCurrent
 
 I use this all the time to test out workflow or business rule script logic without having to go through end-to-end testing of a catalog item workflow or fill out mandatory fields or approvals multiple times just to make sure a complex script has the desired output.
 
@@ -47,19 +52,23 @@ By having a quick snippet to create a "current" variable, there is no need to mo
 3. Copy and paste the sys_id from the test record into the **sid** variable
 4. Paste script below the comment and run to see if it works as expected
 Folder Name:
-  - ./Background Scripts/Limit String and Add Elipses 
- 	 - This function can be used to show the string with  limited number of characters and add the ellipses to it. This is mostly used on the portal side.
+
+  - ./Background Scripts/Limit String and Add Elipses
+    - This function can be used to show the string with  limited number of characters and add the ellipses to it. This is mostly used on the portal side.
 Folder Name:
-  - ./Background Scripts/List Stories and Tasks by User and Date Range 
- 	 - 
+
+  - ./Background Scripts/List Stories and Tasks by User and Date Range
+    - 
 Folder Name:
-  - ./Background Scripts/FlushOutbox 
- 	 - # Flush Outbox
+
+  - ./Background Scripts/FlushOutbox
+    - # Flush Outbox
 
 Delete or Ignore all email sitting in the outbox. Useful when enabling email in sub-prd and not wanting to get spammed with unsent email
 Folder Name:
-  - ./Background Scripts/Get Journal Entry as HTML Without Header 
- 	 - # Get Journal Entry as HTML
+
+  - ./Background Scripts/Get Journal Entry as HTML Without Header
+    - # Get Journal Entry as HTML
 
 This script can be used in a Business Rule or background script, or any other server-side script. It assumes the presence of the `current` object, but can be used with any positioned GlideRecord. 
 
@@ -67,8 +76,9 @@ This script can be used in a Business Rule or background script, or any other se
 
 Simply change `current` to whatever GlideRecord variable you're using, and change the `journalFieldName` variable so it contains the name of the journal field you want to get the value for.
 Folder Name:
-  - ./Background Scripts/Copy table name list header action 
- 	 - # Add "Copy Table Name" menu item to the List context
+
+  - ./Background Scripts/Copy table name list header action
+    - # Add "Copy Table Name" menu item to the List context
 * **Description:** This background script programmatically adds a menu item to any list context menu that will copy the respective table name of that list.
 
     >![Copy Table Name](menu.jpg)
@@ -77,8 +87,9 @@ Folder Name:
     - **addMenuItem.js:** Run this background script to add the menu item to the list context menu.
     - **removeMenuItem.js:** Run this background script to remove a previously added menu item.
 Folder Name:
-  - ./Background Scripts/Copy table name list header action 
- 	 - # Add "Copy Table Name" menu item to the List context
+
+  - ./Background Scripts/Copy table name list header action
+    - # Add "Copy Table Name" menu item to the List context
 * **Description:** This background script programmatically adds a menu item to any list context menu that will copy the respective table name of that list.
 
     >![Copy Table Name](menu.jpg)
@@ -87,8 +98,9 @@ Folder Name:
     - **addMenuItem.js:** Run this background script to add the menu item to the list context menu.
     - **removeMenuItem.js:** Run this background script to remove a previously added menu item.
 Folder Name:
-  - ./Background Scripts/Logout User 
- 	 - # Logout Users
+
+  - ./Background Scripts/Logout User
+    - # Logout Users
 Used to log out all users within the platform.
 
 ## Usage
@@ -97,11 +109,13 @@ Run script in **logoutUser.js** in 'Scripts - Background'
 * **Parameters:** 
     - **ignoreUser:** Username of a sys_user that is ignored (ex. 'admin')
 Folder Name:
-  - ./Background Scripts/Fetch Active Groups list without members 
- 	 - 
+
+  - ./Background Scripts/Fetch Active Groups list without members
+    - 
 Folder Name:
-  - ./Background Scripts/Force new value to read only or protected field 
- 	 - **Background Script**
+
+  - ./Background Scripts/Force new value to read only or protected field
+    - **Background Script**
 
 Background Script, to force update on read only or protected fields. It can be used when it is a need of fixing a value, of field which can not be done from list / form edit. It can be used to any type of table, record and field, need just correct configuration.
 
@@ -128,8 +142,9 @@ Execution effect on incident record
 
 ![Coniguration](ScreenShot_3.PNG)
 Folder Name:
-  - ./Background Scripts/Get current logged in user count in all nodes of instance 
- 	 - 
+
+  - ./Background Scripts/Get current logged in user count in all nodes of instance
+    - 
 # Get current logged in user count in all nodes of instance
 
 **Use case** : Background script that will print the count of all currently logged in users in the instance
@@ -138,28 +153,33 @@ Folder Name:
 
 **Solution** : Open `Scripts - Background` from the application navigator and run the script present in [script.js](https://github.com/ServiceNowDevProgram/code-snippets/blob/main/Background%20Scripts/Get%20current%20logged%20in%20user%20count%20in%20all%20nodes%20of%20instance/script.js)
 Folder Name:
-  - ./Background Scripts/Convert Date Time 
- 	 - 
+
+  - ./Background Scripts/Convert Date Time
+    - 
 Folder Name:
-  - ./Background Scripts/Generate JWT Token 
- 	 - 
+
+  - ./Background Scripts/Generate JWT Token
+    - 
 Folder Name:
-  - ./Background Scripts/Discover Datacenters for Service Accounts 
- 	 - # Discover the data centers for all the cloud service accounts.
+
+  - ./Background Scripts/Discover Datacenters for Service Accounts
+    - # Discover the data centers for all the cloud service accounts.
 * Description: This script will discover the data centers for all the service accounts. 
 > If you have a lot of service accounts, it is best to run the script as a *Scheduled Job*
 * Motivation: Using the UI to discover the data centers is impractical if you have many service accounts. It could potentially take hours. This script will perform the task programmatically
 Folder Name:
-  - ./Background Scripts/Convert comma separated values in string to columns 
- 	 - 1.Take any comma separated string to be displayed in columns
+
+  - ./Background Scripts/Convert comma separated values in string to columns
+    - 1.Take any comma separated string to be displayed in columns
 2.Apply above logic
 3.update to field /Print /Use this in mail scripts to include in the notification.
 4. we can also add this arryUtils script include (to convert arry elements to colums)
 
 ![image](https://user-images.githubusercontent.com/42912180/195672456-f282c82e-8516-4925-9e71-c80da8329ef3.png)
 Folder Name:
-  - ./Background Scripts/List fields in table 
- 	 - # Get Fields in Table
+
+  - ./Background Scripts/List fields in table
+    - # Get Fields in Table
 
 Quick script to print out the fields on one or multiple tables. Especialy helpful for CMBD tables when a stakeholder inevitably asks "Can you send me a list of all the tables and fields?
 
@@ -171,40 +191,49 @@ Simply add the table names from you wish to display the fields in the **table** 
 
 A demo list of CMDB tables is included. The script will list the fields numbered, in alphabetical order, and includes actual field name and label name.
 Folder Name:
-  - ./Background Scripts/Get Instance DB Size 
- 	 - 
+
+  - ./Background Scripts/Get Instance DB Size
+    - 
 Folder Name:
-  - ./Background Scripts/Find out Duplicate Records 
- 	 - This script helps to find out duplicate records in the table.
+
+  - ./Background Scripts/Find out Duplicate Records
+    - This script helps to find out duplicate records in the table.
 
 In this example I have shown how to find out records in incident table.
 Folder Name:
-  - ./Background Scripts/Attach Workflow to Existing Record 
- 	 - # Attach Workflow to existing records
+
+  - ./Background Scripts/Attach Workflow to Existing Record
+    - # Attach Workflow to existing records
 
 This background script can be useful if you run into a situation where the workflow condition did not trigger on an intended record, or an older version of a workflow had a flaw but the record already began fulfillment.
 Folder Name:
-  - ./Background Scripts/Compare Roles Between Two Users 
- 	 - 
+
+  - ./Background Scripts/Compare Roles Between Two Users
+    - 
 Folder Name:
-  - ./Background Scripts/Clone User Record 
- 	 - 
+
+  - ./Background Scripts/Clone User Record
+    - 
 Folder Name:
-  - ./Background Scripts/Set the status to Retired on Ec2 Instance 
- 	 - This background script is used to set the Install_status to Retired if the status is terminated for the Ec2 Instances(Ci's)
+
+  - ./Background Scripts/Set the status to Retired on Ec2 Instance
+    - This background script is used to set the Install_status to Retired if the status is terminated for the Ec2 Instances(Ci's)
 We are quering the table against the table cmdb_ci_ec2_instance
 Then we have encoded query to search if there is any record with the status as terminated and install_status is not retired
 We are sorting based on name and set the limit to 10K records
 We are searching if there are any records, If yes, we will set the install_Status to Retired and we are disabling the workflows to false.
 Folder Name:
-  - ./Background Scripts/Currency Conversion 
- 	 - 
+
+  - ./Background Scripts/Currency Conversion
+    - 
 Folder Name:
-  - ./Background Scripts/Get Instance Info 
- 	 - 
+
+  - ./Background Scripts/Get Instance Info
+    - 
 Folder Name:
-  - ./Background Scripts/Generate statistics about events created today 
- 	 - **Background Script** 
+
+  - ./Background Scripts/Generate statistics about events created today
+    - **Background Script** 
 
 Background Script, to easily generate statistics about today's created events in system. You can call getStats() with different parameters to get information about current situation in sysevent table. You can generate statistic about different aggregation functions, different aggregation fields and selected group by fields. It can be helpful for example to detect which type of events have the longest average processing duration or which type of events was created the most today.
 
@@ -226,21 +255,25 @@ Execution log:
 
  ![Execution](ScreenShot_1.PNG)
 Folder Name:
-  - ./Background Scripts/Check for duplicates on multiple criteria 
- 	 - 
+
+  - ./Background Scripts/Check for duplicates on multiple criteria
+    - 
 Folder Name:
-  - ./Background Scripts/Add Standard Change Model 
- 	 - Add the OOTB "Standard Change" model to an existing change record. OOTB, the Standard Change model is applied through an onDisplay business rule, and is not an available choice from the Model field. If you have migrated to use Change Models and generate some change requests with scripts, you may need to add the model with a background script if there is already an existing workflow context or if the model is not set by the generation script. The setter portion can be added to an existing generation script to prevent future need for this background script.
+
+  - ./Background Scripts/Add Standard Change Model
+    - Add the OOTB "Standard Change" model to an existing change record. OOTB, the Standard Change model is applied through an onDisplay business rule, and is not an available choice from the Model field. If you have migrated to use Change Models and generate some change requests with scripts, you may need to add the model with a background script if there is already an existing workflow context or if the model is not set by the generation script. The setter portion can be added to an existing generation script to prevent future need for this background script.
 Folder Name:
-  - ./Browser Bookmarklets/Quick login to current instance 
- 	 - ## Quick login to current instance
+
+  - ./Browser Bookmarklets/Quick login to current instance
+    - ## Quick login to current instance
 
 If you frequently have to login to the currently used instance with a different user (e.g. with your admin account), this Bookmarklet will be a huge timesaver for you!
 
 All you have to do is to click the Bookmarklet, and a popup window will appear with the current Servicenow instance's login page. After you enter your credentials (or your password manager enters it), the popup will close, and the page will reload to log you in.
 Folder Name:
-  - ./Browser Bookmarklets/Open copied record 
- 	 - ## Open copied record
+
+  - ./Browser Bookmarklets/Open copied record
+    - ## Open copied record
 
 Someone sent you the Number of a record that belong to the task table (e.g. Incident, SCTASK, RITM, Story, Problem, Change etc.), but not a link to the record itself?
 
@@ -253,11 +286,13 @@ You can save yourself a couple of clicks if you use this Bookmarklet while you a
 
 I use this Bookmarklet on a daily basis, hope you'll like it as well.
 Folder Name:
-  - ./Performance Analytics/Configure Indicators in Batch 
- 	 - 
+
+  - ./Performance Analytics/Configure Indicators in Batch
+    - 
 Folder Name:
-  - ./GlideSystem/Session 
- 	 - GlideSystem (referred as "gs") is used to get the current user session which we are using to set the custom key and value which are used in client side scripts.
+
+  - ./GlideSystem/Session
+    - GlideSystem (referred as "gs") is used to get the current user session which we are using to set the custom key and value which are used in client side scripts.
 
 Example client script used to retrieve it
 
@@ -268,8 +303,9 @@ function onLoad(){
 }
 ```
 Folder Name:
-  - ./GlideSystem/User Display Name 
- 	 - # GlideSystem - getUserDisplayName()
+
+  - ./GlideSystem/User Display Name
+    - # GlideSystem - getUserDisplayName()
 
 
 This is used to return the name field of the current user.
@@ -284,8 +320,9 @@ It returns Display name of user and not sysid or username
 
 ![image](https://user-images.githubusercontent.com/36041130/138115452-6519d2a9-6bda-4eb8-8c50-670669e8466a.png)
 Folder Name:
-  - ./GlideSystem/workflowFlush 
- 	 - ### workflowFlush() syntax
+
+  - ./GlideSystem/workflowFlush
+    - ### workflowFlush() syntax
 #### Description: 
 * Deletes any open scheduled job records in the Schedule (sys_trigger) table for the specified GlideRecord. 
 * For reference, the below code is a part of OOB 'incident events' Business Rule
@@ -293,16 +330,18 @@ Folder Name:
 * [workflowFlush() API doc](https://developer.servicenow.com/dev.do#!/reference/api/rome/server_legacy/c_GlideSystemAPI#r_GS-workflowFlush_O?navFilter=workflowFlush)
 * [workflowFlush code snippet](workflowFlush.js)
 Folder Name:
-  - ./GlideSystem/User 
- 	 - # GlideSystem User Methods
+
+  - ./GlideSystem/User
+    - # GlideSystem User Methods
 
 ### userID
 * Description: Returns the sys_id of the user associated with this session.
 * [userID Code Snippet](userID.js)
 * [userID API Doc](https://developer.servicenow.com/dev.do#!/reference/api/rome/server_legacy/c_GlideSystemAPI#r_GS-userID)
 Folder Name:
-  - ./GlideSystem/Trigger Event 
- 	 - This shows the example of triggering the event using the gs.eventQueue() or gs.eventQueueScheduled()
+
+  - ./GlideSystem/Trigger Event
+    - This shows the example of triggering the event using the gs.eventQueue() or gs.eventQueueScheduled()
 
 eventQueue() - This method inserts an specified event in an event queue
  
@@ -323,8 +362,9 @@ eventQueueScheduled(String name, Object instance, String parm1, String parm2, Ob
 
  Using eventQueue() we can specify our own event queue - which makes the event processing faster as we specify a dedictaed queue for the same. But if we are using the eventQueueScheduled this is not possible as we have to provide the time when the event should trigger.
 Folder Name:
-  - ./GlideSystem/Trigger Event 
- 	 - This shows the example of triggering the event using the gs.eventQueue() or gs.eventQueueScheduled()
+
+  - ./GlideSystem/Trigger Event
+    - This shows the example of triggering the event using the gs.eventQueue() or gs.eventQueueScheduled()
 
 eventQueue() - This method inserts an specified event in an event queue
  
@@ -345,8 +385,9 @@ eventQueueScheduled(String name, Object instance, String parm1, String parm2, Ob
 
  Using eventQueue() we can specify our own event queue - which makes the event processing faster as we specify a dedictaed queue for the same. But if we are using the eventQueueScheduled this is not possible as we have to provide the time when the event should trigger.
 Folder Name:
-  - ./GlideSystem/date-time 
- 	 - # GlideSystem date-time Methods
+
+  - ./GlideSystem/date-time
+    - # GlideSystem date-time Methods
 
 ### beginningOfLastMonth
   
@@ -409,8 +450,9 @@ Folder Name:
   * Description: Sets a date and time value using the internal format (yyyy-MM-dd HH:mm:ss) and the current user's time zone. This method attempts to parse incomplete date and time values.
   * [setDisplayValueInternalWithAlternates() API Doc](https://developer.servicenow.com/dev.do#!/reference/api/rome/server_legacy/c_GlideSystemAPI#r_GDT-setDispValInternalAlt_S?navFilter=setDisplayValueInternalWithAlternates)
 Folder Name:
-  - ./GlideSystem/date-time 
- 	 - # GlideSystem date-time Methods
+
+  - ./GlideSystem/date-time
+    - # GlideSystem date-time Methods
 
 ### beginningOfLastMonth
   
@@ -473,8 +515,9 @@ Folder Name:
   * Description: Sets a date and time value using the internal format (yyyy-MM-dd HH:mm:ss) and the current user's time zone. This method attempts to parse incomplete date and time values.
   * [setDisplayValueInternalWithAlternates() API Doc](https://developer.servicenow.com/dev.do#!/reference/api/rome/server_legacy/c_GlideSystemAPI#r_GDT-setDispValInternalAlt_S?navFilter=setDisplayValueInternalWithAlternates)
 Folder Name:
-  - ./GlideSystem/date-time 
- 	 - # GlideSystem date-time Methods
+
+  - ./GlideSystem/date-time
+    - # GlideSystem date-time Methods
 
 ### beginningOfLastMonth
   
@@ -537,8 +580,9 @@ Folder Name:
   * Description: Sets a date and time value using the internal format (yyyy-MM-dd HH:mm:ss) and the current user's time zone. This method attempts to parse incomplete date and time values.
   * [setDisplayValueInternalWithAlternates() API Doc](https://developer.servicenow.com/dev.do#!/reference/api/rome/server_legacy/c_GlideSystemAPI#r_GDT-setDispValInternalAlt_S?navFilter=setDisplayValueInternalWithAlternates)
 Folder Name:
-  - ./GlideSystem/date-time 
- 	 - # GlideSystem date-time Methods
+
+  - ./GlideSystem/date-time
+    - # GlideSystem date-time Methods
 
 ### beginningOfLastMonth
   
@@ -601,8 +645,9 @@ Folder Name:
   * Description: Sets a date and time value using the internal format (yyyy-MM-dd HH:mm:ss) and the current user's time zone. This method attempts to parse incomplete date and time values.
   * [setDisplayValueInternalWithAlternates() API Doc](https://developer.servicenow.com/dev.do#!/reference/api/rome/server_legacy/c_GlideSystemAPI#r_GDT-setDispValInternalAlt_S?navFilter=setDisplayValueInternalWithAlternates)
 Folder Name:
-  - ./GlideSystem/date-time 
- 	 - # GlideSystem date-time Methods
+
+  - ./GlideSystem/date-time
+    - # GlideSystem date-time Methods
 
 ### beginningOfLastMonth
   
@@ -665,8 +710,9 @@ Folder Name:
   * Description: Sets a date and time value using the internal format (yyyy-MM-dd HH:mm:ss) and the current user's time zone. This method attempts to parse incomplete date and time values.
   * [setDisplayValueInternalWithAlternates() API Doc](https://developer.servicenow.com/dev.do#!/reference/api/rome/server_legacy/c_GlideSystemAPI#r_GDT-setDispValInternalAlt_S?navFilter=setDisplayValueInternalWithAlternates)
 Folder Name:
-  - ./GlideSystem/date-time 
- 	 - # GlideSystem date-time Methods
+
+  - ./GlideSystem/date-time
+    - # GlideSystem date-time Methods
 
 ### beginningOfLastMonth
   
@@ -729,8 +775,9 @@ Folder Name:
   * Description: Sets a date and time value using the internal format (yyyy-MM-dd HH:mm:ss) and the current user's time zone. This method attempts to parse incomplete date and time values.
   * [setDisplayValueInternalWithAlternates() API Doc](https://developer.servicenow.com/dev.do#!/reference/api/rome/server_legacy/c_GlideSystemAPI#r_GDT-setDispValInternalAlt_S?navFilter=setDisplayValueInternalWithAlternates)
 Folder Name:
-  - ./GlideSystem/date-time 
- 	 - # GlideSystem date-time Methods
+
+  - ./GlideSystem/date-time
+    - # GlideSystem date-time Methods
 
 ### beginningOfLastMonth
   
@@ -793,8 +840,9 @@ Folder Name:
   * Description: Sets a date and time value using the internal format (yyyy-MM-dd HH:mm:ss) and the current user's time zone. This method attempts to parse incomplete date and time values.
   * [setDisplayValueInternalWithAlternates() API Doc](https://developer.servicenow.com/dev.do#!/reference/api/rome/server_legacy/c_GlideSystemAPI#r_GDT-setDispValInternalAlt_S?navFilter=setDisplayValueInternalWithAlternates)
 Folder Name:
-  - ./GlideSystem/date-time 
- 	 - # GlideSystem date-time Methods
+
+  - ./GlideSystem/date-time
+    - # GlideSystem date-time Methods
 
 ### beginningOfLastMonth
   
@@ -857,8 +905,9 @@ Folder Name:
   * Description: Sets a date and time value using the internal format (yyyy-MM-dd HH:mm:ss) and the current user's time zone. This method attempts to parse incomplete date and time values.
   * [setDisplayValueInternalWithAlternates() API Doc](https://developer.servicenow.com/dev.do#!/reference/api/rome/server_legacy/c_GlideSystemAPI#r_GDT-setDispValInternalAlt_S?navFilter=setDisplayValueInternalWithAlternates)
 Folder Name:
-  - ./GlideSystem/date-time 
- 	 - # GlideSystem date-time Methods
+
+  - ./GlideSystem/date-time
+    - # GlideSystem date-time Methods
 
 ### beginningOfLastMonth
   
@@ -921,8 +970,9 @@ Folder Name:
   * Description: Sets a date and time value using the internal format (yyyy-MM-dd HH:mm:ss) and the current user's time zone. This method attempts to parse incomplete date and time values.
   * [setDisplayValueInternalWithAlternates() API Doc](https://developer.servicenow.com/dev.do#!/reference/api/rome/server_legacy/c_GlideSystemAPI#r_GDT-setDispValInternalAlt_S?navFilter=setDisplayValueInternalWithAlternates)
 Folder Name:
-  - ./GlideSystem/date-time 
- 	 - # GlideSystem date-time Methods
+
+  - ./GlideSystem/date-time
+    - # GlideSystem date-time Methods
 
 ### beginningOfLastMonth
   
@@ -985,8 +1035,9 @@ Folder Name:
   * Description: Sets a date and time value using the internal format (yyyy-MM-dd HH:mm:ss) and the current user's time zone. This method attempts to parse incomplete date and time values.
   * [setDisplayValueInternalWithAlternates() API Doc](https://developer.servicenow.com/dev.do#!/reference/api/rome/server_legacy/c_GlideSystemAPI#r_GDT-setDispValInternalAlt_S?navFilter=setDisplayValueInternalWithAlternates)
 Folder Name:
-  - ./GlideSystem/date-time 
- 	 - # GlideSystem date-time Methods
+
+  - ./GlideSystem/date-time
+    - # GlideSystem date-time Methods
 
 ### beginningOfLastMonth
   
@@ -1049,8 +1100,9 @@ Folder Name:
   * Description: Sets a date and time value using the internal format (yyyy-MM-dd HH:mm:ss) and the current user's time zone. This method attempts to parse incomplete date and time values.
   * [setDisplayValueInternalWithAlternates() API Doc](https://developer.servicenow.com/dev.do#!/reference/api/rome/server_legacy/c_GlideSystemAPI#r_GDT-setDispValInternalAlt_S?navFilter=setDisplayValueInternalWithAlternates)
 Folder Name:
-  - ./GlideSystem/date-time 
- 	 - # GlideSystem date-time Methods
+
+  - ./GlideSystem/date-time
+    - # GlideSystem date-time Methods
 
 ### beginningOfLastMonth
   
@@ -1113,15 +1165,17 @@ Folder Name:
   * Description: Sets a date and time value using the internal format (yyyy-MM-dd HH:mm:ss) and the current user's time zone. This method attempts to parse incomplete date and time values.
   * [setDisplayValueInternalWithAlternates() API Doc](https://developer.servicenow.com/dev.do#!/reference/api/rome/server_legacy/c_GlideSystemAPI#r_GDT-setDispValInternalAlt_S?navFilter=setDisplayValueInternalWithAlternates)
 Folder Name:
-  - ./GlideSystem/hasRoleExactly 
- 	 - # Server-side version of the hasRoleExactly
+
+  - ./GlideSystem/hasRoleExactly
+    - # Server-side version of the hasRoleExactly
 
 Determines whether the current user has the specified role.
 
 This feature only exists on the client-side but can be useful on the server-side also.
 Folder Name:
-  - ./GlideSystem/Table 
- 	 - # GlideSystem Table Methods
+
+  - ./GlideSystem/Table
+    - # GlideSystem Table Methods
 
 ### tableExists(String tableName)
   * Determines if a database table exists.
@@ -1131,8 +1185,9 @@ Folder Name:
 ### truncateTable(String tableName)
   * Deletes all records in a table. ***UNDOCUMENTED
 Folder Name:
-  - ./GlideSystem/Table 
- 	 - # GlideSystem Table Methods
+
+  - ./GlideSystem/Table
+    - # GlideSystem Table Methods
 
 ### tableExists(String tableName)
   * Determines if a database table exists.
@@ -1142,14 +1197,16 @@ Folder Name:
 ### truncateTable(String tableName)
   * Deletes all records in a table. ***UNDOCUMENTED
 Folder Name:
-  - ./GlideSystem/Impersonate 
- 	 - GlideSystem (referred as "gs") provides a way to find information about the current session.
+
+  - ./GlideSystem/Impersonate
+    - GlideSystem (referred as "gs") provides a way to find information about the current session.
 Using the getSession() method of the scoped GlideSystem API.
 
 This gives the example on how to impersonate a user using the impersonate method in the code.
 Folder Name:
-  - ./UI Pages/Fetch Table(Incident) fields in UI Page 
- 	 - Fetch Incident fields(or any table fields) in a UI page via UI Action trigger
+
+  - ./UI Pages/Fetch Table(Incident) fields in UI Page
+    - Fetch Incident fields(or any table fields) in a UI page via UI Action trigger
 
 Steps
 1) Create a UI action and create a function.
@@ -1160,8 +1217,9 @@ Steps
 6) Trigger the UI Action from the Incident form and it should render the ui page with the incident fields data.
 7) Add additional static or dynamic data as per the requirement.
 Folder Name:
-  - ./UI Pages/Dynamic program status overview 
- 	 - This is a super basic set of ui page and dynamic content block that can be added to a dashboard to allow users to select program records that will then load additional information, such as overall health and executive summary, into a content block.
+
+  - ./UI Pages/Dynamic program status overview
+    - This is a super basic set of ui page and dynamic content block that can be added to a dashboard to allow users to select program records that will then load additional information, such as overall health and executive summary, into a content block.
 
 Addition to-dos:
  1. The formatting is quite basic - you'll definitely need to apply some styles as per the instance design or customer preferences.
@@ -1170,8 +1228,9 @@ Addition to-dos:
 
 See attached image for example of what this looks like.
 Folder Name:
-  - ./UI Pages/Export UI pages to word docx 
- 	 - This code allows you to export the contents of a UI page into a word document
+
+  - ./UI Pages/Export UI pages to word docx
+    - This code allows you to export the contents of a UI page into a word document
 
 Steps
 1. Create a body and contents in the html part of the UI Page
@@ -1179,14 +1238,17 @@ Steps
 3. Now, paste the js code in the client script section of the ui page.
 4. Click on try it and the contents of the html body will be exported as a word upon clicking on the 'export to word' button.
 Folder Name:
-  - ./UI Pages/Custom Alert using UI Page 
- 	 - This script helps you to create custom popup easily and attached the screenshot for the reference, have a look.
+
+  - ./UI Pages/Custom Alert using UI Page
+    - This script helps you to create custom popup easily and attached the screenshot for the reference, have a look.
 Folder Name:
-  - ./UI Pages/Custom Alert using UI Page 
- 	 - This script helps you to create custom popup easily and attached the screenshot for the reference, have a look.
+
+  - ./UI Pages/Custom Alert using UI Page
+    - This script helps you to create custom popup easily and attached the screenshot for the reference, have a look.
 Folder Name:
-  - ./UI Pages/EDM DocUnifiedSearch 
- 	 - EDM ( Employee document management) which is part of HRSD product doesn’t allow query of employee documents based on different parameters e.g employee id, document type, employee and HR Case.
+
+  - ./UI Pages/EDM DocUnifiedSearch
+    - EDM ( Employee document management) which is part of HRSD product doesn’t allow query of employee documents based on different parameters e.g employee id, document type, employee and HR Case.
 Current OOB implementation just allows users to query employee documents with list view filters.This results is slow performance and users get security constraints  error based on OOB ACLs which is not intuitive for most users.
 
 Most of the organizations will have thousands of employee documents imported from different sources e.g Workday, Sharepoint and any type of sources.
@@ -1198,8 +1260,9 @@ This results is performance improvement as well as better UX for end users to se
 
 Note : Please make sure that you have com.sn_employee_document_management plugin active on your instance before using code for this UI page.
 Folder Name:
-  - ./UI Pages/EDM DocUnifiedSearch 
- 	 - EDM ( Employee document management) which is part of HRSD product doesn’t allow query of employee documents based on different parameters e.g employee id, document type, employee and HR Case.
+
+  - ./UI Pages/EDM DocUnifiedSearch
+    - EDM ( Employee document management) which is part of HRSD product doesn’t allow query of employee documents based on different parameters e.g employee id, document type, employee and HR Case.
 Current OOB implementation just allows users to query employee documents with list view filters.This results is slow performance and users get security constraints  error based on OOB ACLs which is not intuitive for most users.
 
 Most of the organizations will have thousands of employee documents imported from different sources e.g Workday, Sharepoint and any type of sources.
@@ -1211,21 +1274,26 @@ This results is performance improvement as well as better UX for end users to se
 
 Note : Please make sure that you have com.sn_employee_document_management plugin active on your instance before using code for this UI page.
 Folder Name:
-  - ./UI Actions/Open Record in Alternate Instance/Scripted REST API/sys_ws_operation 
- 	 - 
+
+  - ./UI Actions/Open Record in Alternate Instance/Scripted REST API/sys_ws_operation
+    - 
 Folder Name:
-  - ./UI Actions/Open Record in Alternate Instance/Script Includes 
- 	 - 
+
+  - ./UI Actions/Open Record in Alternate Instance/Script Includes
+    - 
 !! The switch statement in CrossInstanceHelper.js will need to be reconfigured to match instance names, and RESTMessage naming.
 Folder Name:
-  - ./UI Actions/Open Record in Alternate Instance/UI Action 
- 	 - 
+
+  - ./UI Actions/Open Record in Alternate Instance/UI Action
+    - 
 Folder Name:
-  - ./UI Actions/View in Portal Page 
- 	 - 
+
+  - ./UI Actions/View in Portal Page
+    - 
 Folder Name:
-  - ./UI Actions/Display a 2-choice confirmation dialog 
- 	 - # Display a 2-choice confirmation dialog
+
+  - ./UI Actions/Display a 2-choice confirmation dialog
+    - # Display a 2-choice confirmation dialog
 When you press the button on the Form screen, a two-choice dialog is displayed.
 
 Click the Complete button to execute Serverside processing.
@@ -1278,8 +1346,9 @@ function serversideTask() {
 }
 ```
 Folder Name:
-  - ./UI Actions/Add Show Workflow Related link 
- 	 - There are many cases where,we would have workflows on custom tables or non task tables , where we would like to see the "Show Workflow" Related Link for ease of accessibility to the workflow.
+
+  - ./UI Actions/Add Show Workflow Related link
+    - There are many cases where,we would have workflows on custom tables or non task tables , where we would like to see the "Show Workflow" Related Link for ease of accessibility to the workflow.
 The shared code will help show this related link on any rable record that has a workflow associated with it.
 
 Below has to be set for this to work on UI action form:
@@ -1298,14 +1367,17 @@ Below has to be set for this to work on UI action form:
 
 •	Condition : new global.Workflow().hasWorkflow(current)
 Folder Name:
-  - ./UI Actions/Create Update Set on DEV 
- 	 - 
+
+  - ./UI Actions/Create Update Set on DEV
+    - 
 Folder Name:
-  - ./UI Actions/Create story 
- 	 - 
+
+  - ./UI Actions/Create story
+    - 
 Folder Name:
-  - ./UI Actions/Call Subflow 
- 	 - # Call Subflow from UI Action
+
+  - ./UI Actions/Call Subflow
+    - # Call Subflow from UI Action
 
 This UI Action enables calling a subflow from ServiceNow Flow Designer using the FlowAPI.
 
@@ -1326,8 +1398,9 @@ The API call requires the subflow internal name and scope. The internal name is 
 - Run complex server side UI Actions asynchronously via Flow Designer for better user experience (avoids long loading times in the current user session)
 - Re-use already created subflows and actions as well as provided spokes in UI actions
 Folder Name:
-  - ./UI Actions/Create incident task and relate to incident 
- 	 - This UI Action loads a modal for to create a new incident task that is linked to the incident that you generated it from.
+
+  - ./UI Actions/Create incident task and relate to incident
+    - This UI Action loads a modal for to create a new incident task that is linked to the incident that you generated it from.
 
 Suggested values:
 Name: Create Incident Task
@@ -1339,11 +1412,13 @@ Form Link: true
 Onclick: createIncidentTask()
 Condition: current.state != 7
 Folder Name:
-  - ./UI Actions/Try Catalog item in Portal view 
- 	 - 
+
+  - ./UI Actions/Try Catalog item in Portal view
+    - 
 Folder Name:
-  - ./UI Actions/Mark Records Inactive - List Action 
- 	 - Above two scripts will help you to select records in list view and mark them inactive. You can create your UI action(list action) on any table and then you should be able to
+
+  - ./UI Actions/Mark Records Inactive - List Action
+    - Above two scripts will help you to select records in list view and mark them inactive. You can create your UI action(list action) on any table and then you should be able to
 mark the records as inactive by calling the reusable script include. Process is pretty simple as shown below:
 1. Create a List action - list banner button or list choice.
 2. Check the client checkbox. Use the script and do any necessary modifications.
@@ -1351,8 +1426,9 @@ mark the records as inactive by calling the reusable script include. Process is 
 
 You can even modify the scrip include to change other fields too based on your requirements. And you do not need to pass any table name also. This is complete generic.
 Folder Name:
-  - ./UI Actions/Mark Records Inactive - List Action 
- 	 - Above two scripts will help you to select records in list view and mark them inactive. You can create your UI action(list action) on any table and then you should be able to
+
+  - ./UI Actions/Mark Records Inactive - List Action
+    - Above two scripts will help you to select records in list view and mark them inactive. You can create your UI action(list action) on any table and then you should be able to
 mark the records as inactive by calling the reusable script include. Process is pretty simple as shown below:
 1. Create a List action - list banner button or list choice.
 2. Check the client checkbox. Use the script and do any necessary modifications.
@@ -1360,18 +1436,21 @@ mark the records as inactive by calling the reusable script include. Process is 
 
 You can even modify the scrip include to change other fields too based on your requirements. And you do not need to pass any table name also. This is complete generic.
 Folder Name:
-  - ./UI Actions/Go to Agent Workspace Home Page 
- 	 - 
+
+  - ./UI Actions/Go to Agent Workspace Home Page
+    - 
 Folder Name:
-  - ./UI Actions/Copy incident details and create a child incident 
- 	 - # Copy incident details and create a child incident
+
+  - ./UI Actions/Copy incident details and create a child incident
+    - # Copy incident details and create a child incident
 
 Use case : A button on the header of incident form to copy details(fields) of current incident and create a child incident with those copied details.
 
 Solution : Added a code snippet for UI action script that copies few fields of current incident and creates a child for the current incident with those details.
 Folder Name:
-  - ./UI Actions/Copy Variable Set 
- 	 - This UI action will help create a copy of the Variable set, including the Catalog Client Script, Catalog UI actions and Variable.
+
+  - ./UI Actions/Copy Variable Set
+    - This UI action will help create a copy of the Variable set, including the Catalog Client Script, Catalog UI actions and Variable.
 
 Below Configurations need to be performed on the UI action form on creation
 
@@ -1382,8 +1461,9 @@ Client : True
 Action name : copyQuestionSet
 On Click : clientConfirm()
 Folder Name:
-  - ./UI Actions/GlideModalForm - Open New Record and Pass Query 
- 	 - This is an example of using the GlideModalForm API to open a brand new record on a specific table, passing along query parameters to it to assist with loading filling out the form
+
+  - ./UI Actions/GlideModalForm - Open New Record and Pass Query
+    - This is an example of using the GlideModalForm API to open a brand new record on a specific table, passing along query parameters to it to assist with loading filling out the form
 
 Within the UI Action settings it's recommended to ensure:
 - Active is true
@@ -1393,8 +1473,9 @@ Within the UI Action settings it's recommended to ensure:
 - Onclick contains your function name that matches the function within your Script field -- the code related to this snipped would be: **functionName()**
 - Set true to however you wish to display this UI Action to the user; whether that's via Form button, Form context menu, Form link, etc.
 Folder Name:
-  - ./UI Actions/Clone incident on Agent Workspace 
- 	 - Agent can use this UI Action on incident form to clone/copy any existing incident.
+
+  - ./UI Actions/Clone incident on Agent Workspace
+    - Agent can use this UI Action on incident form to clone/copy any existing incident.
 
 This UI Action will create a copy of incident once agent confirm the action.
 
@@ -1418,8 +1499,9 @@ Script - use clone_incident.js
 
 Workspace Client script - use workspace_client_script.js
 Folder Name:
-  - ./UI Actions/Clone incident on Agent Workspace 
- 	 - Agent can use this UI Action on incident form to clone/copy any existing incident.
+
+  - ./UI Actions/Clone incident on Agent Workspace
+    - Agent can use this UI Action on incident form to clone/copy any existing incident.
 
 This UI Action will create a copy of incident once agent confirm the action.
 
@@ -1443,13 +1525,15 @@ Script - use clone_incident.js
 
 Workspace Client script - use workspace_client_script.js
 Folder Name:
-  - ./UI Actions/Create Incident from Record - Open in both Platform and Workspace 
- 	 - Script that can be used in the Script section of a UI Action to create an Incident, or any record type, from another record and will open the record that was just created. 
+
+  - ./UI Actions/Create Incident from Record - Open in both Platform and Workspace
+    - Script that can be used in the Script section of a UI Action to create an Incident, or any record type, from another record and will open the record that was just created. 
 This script will work both in Platform UI and Workspace UI, as long as one of the Workspace Form/Menu buttons are checked. This reduced the need to create a script
 for both Platform and Workspace within one UI Action.  For more information: https://www.ashleysn.com/post/action-opengliderecord
 Folder Name:
-  - ./UI Actions/Show Today Emails Logs 
- 	 - # Show Today Emails Logs
+
+  - ./UI Actions/Show Today Emails Logs
+    - # Show Today Emails Logs
 
 The UI Action simplifies the debugging of ServiceNow notifications by redirecting you from the notification definition to the email log list view with the predefined filter.
 
@@ -1463,8 +1547,9 @@ Setting:
 - Onclick: openEmailLogList()
 - Condition: new GlideRecord('sys_email_log').canRead()
 Folder Name:
-  - ./UI Actions/Force to Update Set 
- 	 - # Introduction
+
+  - ./UI Actions/Force to Update Set
+    - # Introduction
 
 Manually Add a Record to an Update Set
 
@@ -1503,8 +1588,9 @@ else{
    action.setRedirectURL(current);
 }
 Folder Name:
-  - ./ECMASCript 2021 
- 	 - ## What?
+
+  - ./ECMASCript 2021
+    - ## What?
 
 Prior to the Tokyo Release, ServiceNow's serverside JavaScript utilized ECMAScript 5. "ECMAScript" is basically the version of JavaScript. Newer versions have come out since then (7+ years ago!) and thus, we have been missing out on some helpful functionality.
 
@@ -1595,8 +1681,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var d = current.description;
 	
 	function addDescriptions(x, y){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = addDescriptions(sd, d);
@@ -1609,8 +1694,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var sd = current.short_description;
 	var d = current.description;
 	
-	let addDescriptions = (x, y) => x + '
-'+ y; //one line!
+	let addDescriptions = (x, y) => x + '\n'+ y; //one line!
 	
 	current.work_notes = addDescriptions(sd, d);
 	
@@ -1638,8 +1722,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(incidents[inc]);
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 
@@ -1659,8 +1742,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(inc); //note that no index reference is needed
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -1711,8 +1793,7 @@ However, there are important differences that make Map preferable in some cases:
 	work_notes.push(incidents.get(keyFunc)); //Finding an a value by providing a function!
 	work_notes.push(incidents.get('a string'));
 
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -1768,9 +1849,7 @@ console.log(mySet1)
 		incidents.add(inc_gr.getValue('short_description'));
 	}
 	
-	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '
-' + incidents.values().next().value + '
-' + incidents.size;
+	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '\n' + incidents.values().next().value + '\n' + incidents.size;
 	
 })(current, previous);
 ```
@@ -1797,8 +1876,7 @@ Every Symbol() call is guaranteed to return a unique Symbol. Every Symbol.for("k
 	incidents2.push(Symbol(incident));
 	incidents2.push(Symbol(incident));
 	
-	current.work_notes = (incidents[0] == incidents[1]) + '
-' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
+	current.work_notes = (incidents[0] == incidents[1]) + '\n' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
 	
 })(current, previous);
 ```
@@ -1813,8 +1891,7 @@ Instead of having to check for included parameters in a function's body, we can 
 
 	function add (x, y){
 		if (y == null) y = 'nothing to see here';
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -1825,8 +1902,7 @@ Instead of having to check for included parameters in a function's body, we can 
 (function executeRule(current, previous /*null when async*/) {
 
 	function add (x, y = 'nothing to see here'){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -1849,15 +1925,12 @@ Instead of having to check for included parameters in a function's body, we can 
 	}
 
 	function sum(x, y, z) {
-		return x + '
-' + y + '
-' + z;
+		return x + '\n' + y + '\n' + z;
 	}
 	
 	const incidents_obj = { ...incidents}; //the array's items are "spread" out as parameters
 	
-	current.work_notes = sum(...incidents) + '
-' + JSON.stringify(incidents_obj);
+	current.work_notes = sum(...incidents) + '\n' + JSON.stringify(incidents_obj);
 
 })(current, previous);
 ```
@@ -1873,8 +1946,7 @@ I love this one because it makes it so much easier to copy and paste multi-line 
 	world
 	lchh loves you`;
 	
-	current.work_notes = x; //goodbye 
-
+	current.work_notes = x; //goodbye \n
 
 })(current, previous);
 ```
@@ -1939,8 +2011,9 @@ That's not all! Go check it out in the docs!
 - https://betterprogramming.pub/difference-between-regular-functions-and-arrow-functions-f65639aba256
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 Folder Name:
-  - ./ECMASCript 2021 
- 	 - ## What?
+
+  - ./ECMASCript 2021
+    - ## What?
 
 Prior to the Tokyo Release, ServiceNow's serverside JavaScript utilized ECMAScript 5. "ECMAScript" is basically the version of JavaScript. Newer versions have come out since then (7+ years ago!) and thus, we have been missing out on some helpful functionality.
 
@@ -2031,8 +2104,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var d = current.description;
 	
 	function addDescriptions(x, y){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = addDescriptions(sd, d);
@@ -2045,8 +2117,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var sd = current.short_description;
 	var d = current.description;
 	
-	let addDescriptions = (x, y) => x + '
-'+ y; //one line!
+	let addDescriptions = (x, y) => x + '\n'+ y; //one line!
 	
 	current.work_notes = addDescriptions(sd, d);
 	
@@ -2074,8 +2145,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(incidents[inc]);
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 
@@ -2095,8 +2165,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(inc); //note that no index reference is needed
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -2147,8 +2216,7 @@ However, there are important differences that make Map preferable in some cases:
 	work_notes.push(incidents.get(keyFunc)); //Finding an a value by providing a function!
 	work_notes.push(incidents.get('a string'));
 
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -2204,9 +2272,7 @@ console.log(mySet1)
 		incidents.add(inc_gr.getValue('short_description'));
 	}
 	
-	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '
-' + incidents.values().next().value + '
-' + incidents.size;
+	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '\n' + incidents.values().next().value + '\n' + incidents.size;
 	
 })(current, previous);
 ```
@@ -2233,8 +2299,7 @@ Every Symbol() call is guaranteed to return a unique Symbol. Every Symbol.for("k
 	incidents2.push(Symbol(incident));
 	incidents2.push(Symbol(incident));
 	
-	current.work_notes = (incidents[0] == incidents[1]) + '
-' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
+	current.work_notes = (incidents[0] == incidents[1]) + '\n' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
 	
 })(current, previous);
 ```
@@ -2249,8 +2314,7 @@ Instead of having to check for included parameters in a function's body, we can 
 
 	function add (x, y){
 		if (y == null) y = 'nothing to see here';
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -2261,8 +2325,7 @@ Instead of having to check for included parameters in a function's body, we can 
 (function executeRule(current, previous /*null when async*/) {
 
 	function add (x, y = 'nothing to see here'){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -2285,15 +2348,12 @@ Instead of having to check for included parameters in a function's body, we can 
 	}
 
 	function sum(x, y, z) {
-		return x + '
-' + y + '
-' + z;
+		return x + '\n' + y + '\n' + z;
 	}
 	
 	const incidents_obj = { ...incidents}; //the array's items are "spread" out as parameters
 	
-	current.work_notes = sum(...incidents) + '
-' + JSON.stringify(incidents_obj);
+	current.work_notes = sum(...incidents) + '\n' + JSON.stringify(incidents_obj);
 
 })(current, previous);
 ```
@@ -2309,8 +2369,7 @@ I love this one because it makes it so much easier to copy and paste multi-line 
 	world
 	lchh loves you`;
 	
-	current.work_notes = x; //goodbye 
-
+	current.work_notes = x; //goodbye \n
 
 })(current, previous);
 ```
@@ -2375,8 +2434,9 @@ That's not all! Go check it out in the docs!
 - https://betterprogramming.pub/difference-between-regular-functions-and-arrow-functions-f65639aba256
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 Folder Name:
-  - ./ECMASCript 2021 
- 	 - ## What?
+
+  - ./ECMASCript 2021
+    - ## What?
 
 Prior to the Tokyo Release, ServiceNow's serverside JavaScript utilized ECMAScript 5. "ECMAScript" is basically the version of JavaScript. Newer versions have come out since then (7+ years ago!) and thus, we have been missing out on some helpful functionality.
 
@@ -2467,8 +2527,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var d = current.description;
 	
 	function addDescriptions(x, y){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = addDescriptions(sd, d);
@@ -2481,8 +2540,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var sd = current.short_description;
 	var d = current.description;
 	
-	let addDescriptions = (x, y) => x + '
-'+ y; //one line!
+	let addDescriptions = (x, y) => x + '\n'+ y; //one line!
 	
 	current.work_notes = addDescriptions(sd, d);
 	
@@ -2510,8 +2568,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(incidents[inc]);
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 
@@ -2531,8 +2588,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(inc); //note that no index reference is needed
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -2583,8 +2639,7 @@ However, there are important differences that make Map preferable in some cases:
 	work_notes.push(incidents.get(keyFunc)); //Finding an a value by providing a function!
 	work_notes.push(incidents.get('a string'));
 
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -2640,9 +2695,7 @@ console.log(mySet1)
 		incidents.add(inc_gr.getValue('short_description'));
 	}
 	
-	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '
-' + incidents.values().next().value + '
-' + incidents.size;
+	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '\n' + incidents.values().next().value + '\n' + incidents.size;
 	
 })(current, previous);
 ```
@@ -2669,8 +2722,7 @@ Every Symbol() call is guaranteed to return a unique Symbol. Every Symbol.for("k
 	incidents2.push(Symbol(incident));
 	incidents2.push(Symbol(incident));
 	
-	current.work_notes = (incidents[0] == incidents[1]) + '
-' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
+	current.work_notes = (incidents[0] == incidents[1]) + '\n' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
 	
 })(current, previous);
 ```
@@ -2685,8 +2737,7 @@ Instead of having to check for included parameters in a function's body, we can 
 
 	function add (x, y){
 		if (y == null) y = 'nothing to see here';
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -2697,8 +2748,7 @@ Instead of having to check for included parameters in a function's body, we can 
 (function executeRule(current, previous /*null when async*/) {
 
 	function add (x, y = 'nothing to see here'){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -2721,15 +2771,12 @@ Instead of having to check for included parameters in a function's body, we can 
 	}
 
 	function sum(x, y, z) {
-		return x + '
-' + y + '
-' + z;
+		return x + '\n' + y + '\n' + z;
 	}
 	
 	const incidents_obj = { ...incidents}; //the array's items are "spread" out as parameters
 	
-	current.work_notes = sum(...incidents) + '
-' + JSON.stringify(incidents_obj);
+	current.work_notes = sum(...incidents) + '\n' + JSON.stringify(incidents_obj);
 
 })(current, previous);
 ```
@@ -2745,8 +2792,7 @@ I love this one because it makes it so much easier to copy and paste multi-line 
 	world
 	lchh loves you`;
 	
-	current.work_notes = x; //goodbye 
-
+	current.work_notes = x; //goodbye \n
 
 })(current, previous);
 ```
@@ -2811,8 +2857,9 @@ That's not all! Go check it out in the docs!
 - https://betterprogramming.pub/difference-between-regular-functions-and-arrow-functions-f65639aba256
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 Folder Name:
-  - ./ECMASCript 2021 
- 	 - ## What?
+
+  - ./ECMASCript 2021
+    - ## What?
 
 Prior to the Tokyo Release, ServiceNow's serverside JavaScript utilized ECMAScript 5. "ECMAScript" is basically the version of JavaScript. Newer versions have come out since then (7+ years ago!) and thus, we have been missing out on some helpful functionality.
 
@@ -2903,8 +2950,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var d = current.description;
 	
 	function addDescriptions(x, y){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = addDescriptions(sd, d);
@@ -2917,8 +2963,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var sd = current.short_description;
 	var d = current.description;
 	
-	let addDescriptions = (x, y) => x + '
-'+ y; //one line!
+	let addDescriptions = (x, y) => x + '\n'+ y; //one line!
 	
 	current.work_notes = addDescriptions(sd, d);
 	
@@ -2946,8 +2991,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(incidents[inc]);
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 
@@ -2967,8 +3011,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(inc); //note that no index reference is needed
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -3019,8 +3062,7 @@ However, there are important differences that make Map preferable in some cases:
 	work_notes.push(incidents.get(keyFunc)); //Finding an a value by providing a function!
 	work_notes.push(incidents.get('a string'));
 
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -3076,9 +3118,7 @@ console.log(mySet1)
 		incidents.add(inc_gr.getValue('short_description'));
 	}
 	
-	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '
-' + incidents.values().next().value + '
-' + incidents.size;
+	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '\n' + incidents.values().next().value + '\n' + incidents.size;
 	
 })(current, previous);
 ```
@@ -3105,8 +3145,7 @@ Every Symbol() call is guaranteed to return a unique Symbol. Every Symbol.for("k
 	incidents2.push(Symbol(incident));
 	incidents2.push(Symbol(incident));
 	
-	current.work_notes = (incidents[0] == incidents[1]) + '
-' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
+	current.work_notes = (incidents[0] == incidents[1]) + '\n' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
 	
 })(current, previous);
 ```
@@ -3121,8 +3160,7 @@ Instead of having to check for included parameters in a function's body, we can 
 
 	function add (x, y){
 		if (y == null) y = 'nothing to see here';
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -3133,8 +3171,7 @@ Instead of having to check for included parameters in a function's body, we can 
 (function executeRule(current, previous /*null when async*/) {
 
 	function add (x, y = 'nothing to see here'){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -3157,15 +3194,12 @@ Instead of having to check for included parameters in a function's body, we can 
 	}
 
 	function sum(x, y, z) {
-		return x + '
-' + y + '
-' + z;
+		return x + '\n' + y + '\n' + z;
 	}
 	
 	const incidents_obj = { ...incidents}; //the array's items are "spread" out as parameters
 	
-	current.work_notes = sum(...incidents) + '
-' + JSON.stringify(incidents_obj);
+	current.work_notes = sum(...incidents) + '\n' + JSON.stringify(incidents_obj);
 
 })(current, previous);
 ```
@@ -3181,8 +3215,7 @@ I love this one because it makes it so much easier to copy and paste multi-line 
 	world
 	lchh loves you`;
 	
-	current.work_notes = x; //goodbye 
-
+	current.work_notes = x; //goodbye \n
 
 })(current, previous);
 ```
@@ -3247,8 +3280,9 @@ That's not all! Go check it out in the docs!
 - https://betterprogramming.pub/difference-between-regular-functions-and-arrow-functions-f65639aba256
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 Folder Name:
-  - ./ECMASCript 2021 
- 	 - ## What?
+
+  - ./ECMASCript 2021
+    - ## What?
 
 Prior to the Tokyo Release, ServiceNow's serverside JavaScript utilized ECMAScript 5. "ECMAScript" is basically the version of JavaScript. Newer versions have come out since then (7+ years ago!) and thus, we have been missing out on some helpful functionality.
 
@@ -3339,8 +3373,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var d = current.description;
 	
 	function addDescriptions(x, y){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = addDescriptions(sd, d);
@@ -3353,8 +3386,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var sd = current.short_description;
 	var d = current.description;
 	
-	let addDescriptions = (x, y) => x + '
-'+ y; //one line!
+	let addDescriptions = (x, y) => x + '\n'+ y; //one line!
 	
 	current.work_notes = addDescriptions(sd, d);
 	
@@ -3382,8 +3414,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(incidents[inc]);
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 
@@ -3403,8 +3434,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(inc); //note that no index reference is needed
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -3455,8 +3485,7 @@ However, there are important differences that make Map preferable in some cases:
 	work_notes.push(incidents.get(keyFunc)); //Finding an a value by providing a function!
 	work_notes.push(incidents.get('a string'));
 
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -3512,9 +3541,7 @@ console.log(mySet1)
 		incidents.add(inc_gr.getValue('short_description'));
 	}
 	
-	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '
-' + incidents.values().next().value + '
-' + incidents.size;
+	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '\n' + incidents.values().next().value + '\n' + incidents.size;
 	
 })(current, previous);
 ```
@@ -3541,8 +3568,7 @@ Every Symbol() call is guaranteed to return a unique Symbol. Every Symbol.for("k
 	incidents2.push(Symbol(incident));
 	incidents2.push(Symbol(incident));
 	
-	current.work_notes = (incidents[0] == incidents[1]) + '
-' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
+	current.work_notes = (incidents[0] == incidents[1]) + '\n' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
 	
 })(current, previous);
 ```
@@ -3557,8 +3583,7 @@ Instead of having to check for included parameters in a function's body, we can 
 
 	function add (x, y){
 		if (y == null) y = 'nothing to see here';
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -3569,8 +3594,7 @@ Instead of having to check for included parameters in a function's body, we can 
 (function executeRule(current, previous /*null when async*/) {
 
 	function add (x, y = 'nothing to see here'){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -3593,15 +3617,12 @@ Instead of having to check for included parameters in a function's body, we can 
 	}
 
 	function sum(x, y, z) {
-		return x + '
-' + y + '
-' + z;
+		return x + '\n' + y + '\n' + z;
 	}
 	
 	const incidents_obj = { ...incidents}; //the array's items are "spread" out as parameters
 	
-	current.work_notes = sum(...incidents) + '
-' + JSON.stringify(incidents_obj);
+	current.work_notes = sum(...incidents) + '\n' + JSON.stringify(incidents_obj);
 
 })(current, previous);
 ```
@@ -3617,8 +3638,7 @@ I love this one because it makes it so much easier to copy and paste multi-line 
 	world
 	lchh loves you`;
 	
-	current.work_notes = x; //goodbye 
-
+	current.work_notes = x; //goodbye \n
 
 })(current, previous);
 ```
@@ -3683,8 +3703,9 @@ That's not all! Go check it out in the docs!
 - https://betterprogramming.pub/difference-between-regular-functions-and-arrow-functions-f65639aba256
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 Folder Name:
-  - ./ECMASCript 2021 
- 	 - ## What?
+
+  - ./ECMASCript 2021
+    - ## What?
 
 Prior to the Tokyo Release, ServiceNow's serverside JavaScript utilized ECMAScript 5. "ECMAScript" is basically the version of JavaScript. Newer versions have come out since then (7+ years ago!) and thus, we have been missing out on some helpful functionality.
 
@@ -3775,8 +3796,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var d = current.description;
 	
 	function addDescriptions(x, y){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = addDescriptions(sd, d);
@@ -3789,8 +3809,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var sd = current.short_description;
 	var d = current.description;
 	
-	let addDescriptions = (x, y) => x + '
-'+ y; //one line!
+	let addDescriptions = (x, y) => x + '\n'+ y; //one line!
 	
 	current.work_notes = addDescriptions(sd, d);
 	
@@ -3818,8 +3837,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(incidents[inc]);
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 
@@ -3839,8 +3857,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(inc); //note that no index reference is needed
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -3891,8 +3908,7 @@ However, there are important differences that make Map preferable in some cases:
 	work_notes.push(incidents.get(keyFunc)); //Finding an a value by providing a function!
 	work_notes.push(incidents.get('a string'));
 
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -3948,9 +3964,7 @@ console.log(mySet1)
 		incidents.add(inc_gr.getValue('short_description'));
 	}
 	
-	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '
-' + incidents.values().next().value + '
-' + incidents.size;
+	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '\n' + incidents.values().next().value + '\n' + incidents.size;
 	
 })(current, previous);
 ```
@@ -3977,8 +3991,7 @@ Every Symbol() call is guaranteed to return a unique Symbol. Every Symbol.for("k
 	incidents2.push(Symbol(incident));
 	incidents2.push(Symbol(incident));
 	
-	current.work_notes = (incidents[0] == incidents[1]) + '
-' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
+	current.work_notes = (incidents[0] == incidents[1]) + '\n' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
 	
 })(current, previous);
 ```
@@ -3993,8 +4006,7 @@ Instead of having to check for included parameters in a function's body, we can 
 
 	function add (x, y){
 		if (y == null) y = 'nothing to see here';
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -4005,8 +4017,7 @@ Instead of having to check for included parameters in a function's body, we can 
 (function executeRule(current, previous /*null when async*/) {
 
 	function add (x, y = 'nothing to see here'){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -4029,15 +4040,12 @@ Instead of having to check for included parameters in a function's body, we can 
 	}
 
 	function sum(x, y, z) {
-		return x + '
-' + y + '
-' + z;
+		return x + '\n' + y + '\n' + z;
 	}
 	
 	const incidents_obj = { ...incidents}; //the array's items are "spread" out as parameters
 	
-	current.work_notes = sum(...incidents) + '
-' + JSON.stringify(incidents_obj);
+	current.work_notes = sum(...incidents) + '\n' + JSON.stringify(incidents_obj);
 
 })(current, previous);
 ```
@@ -4053,8 +4061,7 @@ I love this one because it makes it so much easier to copy and paste multi-line 
 	world
 	lchh loves you`;
 	
-	current.work_notes = x; //goodbye 
-
+	current.work_notes = x; //goodbye \n
 
 })(current, previous);
 ```
@@ -4119,8 +4126,9 @@ That's not all! Go check it out in the docs!
 - https://betterprogramming.pub/difference-between-regular-functions-and-arrow-functions-f65639aba256
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 Folder Name:
-  - ./ECMASCript 2021 
- 	 - ## What?
+
+  - ./ECMASCript 2021
+    - ## What?
 
 Prior to the Tokyo Release, ServiceNow's serverside JavaScript utilized ECMAScript 5. "ECMAScript" is basically the version of JavaScript. Newer versions have come out since then (7+ years ago!) and thus, we have been missing out on some helpful functionality.
 
@@ -4211,8 +4219,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var d = current.description;
 	
 	function addDescriptions(x, y){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = addDescriptions(sd, d);
@@ -4225,8 +4232,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var sd = current.short_description;
 	var d = current.description;
 	
-	let addDescriptions = (x, y) => x + '
-'+ y; //one line!
+	let addDescriptions = (x, y) => x + '\n'+ y; //one line!
 	
 	current.work_notes = addDescriptions(sd, d);
 	
@@ -4254,8 +4260,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(incidents[inc]);
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 
@@ -4275,8 +4280,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(inc); //note that no index reference is needed
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -4327,8 +4331,7 @@ However, there are important differences that make Map preferable in some cases:
 	work_notes.push(incidents.get(keyFunc)); //Finding an a value by providing a function!
 	work_notes.push(incidents.get('a string'));
 
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -4384,9 +4387,7 @@ console.log(mySet1)
 		incidents.add(inc_gr.getValue('short_description'));
 	}
 	
-	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '
-' + incidents.values().next().value + '
-' + incidents.size;
+	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '\n' + incidents.values().next().value + '\n' + incidents.size;
 	
 })(current, previous);
 ```
@@ -4413,8 +4414,7 @@ Every Symbol() call is guaranteed to return a unique Symbol. Every Symbol.for("k
 	incidents2.push(Symbol(incident));
 	incidents2.push(Symbol(incident));
 	
-	current.work_notes = (incidents[0] == incidents[1]) + '
-' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
+	current.work_notes = (incidents[0] == incidents[1]) + '\n' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
 	
 })(current, previous);
 ```
@@ -4429,8 +4429,7 @@ Instead of having to check for included parameters in a function's body, we can 
 
 	function add (x, y){
 		if (y == null) y = 'nothing to see here';
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -4441,8 +4440,7 @@ Instead of having to check for included parameters in a function's body, we can 
 (function executeRule(current, previous /*null when async*/) {
 
 	function add (x, y = 'nothing to see here'){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -4465,15 +4463,12 @@ Instead of having to check for included parameters in a function's body, we can 
 	}
 
 	function sum(x, y, z) {
-		return x + '
-' + y + '
-' + z;
+		return x + '\n' + y + '\n' + z;
 	}
 	
 	const incidents_obj = { ...incidents}; //the array's items are "spread" out as parameters
 	
-	current.work_notes = sum(...incidents) + '
-' + JSON.stringify(incidents_obj);
+	current.work_notes = sum(...incidents) + '\n' + JSON.stringify(incidents_obj);
 
 })(current, previous);
 ```
@@ -4489,8 +4484,7 @@ I love this one because it makes it so much easier to copy and paste multi-line 
 	world
 	lchh loves you`;
 	
-	current.work_notes = x; //goodbye 
-
+	current.work_notes = x; //goodbye \n
 
 })(current, previous);
 ```
@@ -4555,8 +4549,9 @@ That's not all! Go check it out in the docs!
 - https://betterprogramming.pub/difference-between-regular-functions-and-arrow-functions-f65639aba256
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 Folder Name:
-  - ./ECMASCript 2021 
- 	 - ## What?
+
+  - ./ECMASCript 2021
+    - ## What?
 
 Prior to the Tokyo Release, ServiceNow's serverside JavaScript utilized ECMAScript 5. "ECMAScript" is basically the version of JavaScript. Newer versions have come out since then (7+ years ago!) and thus, we have been missing out on some helpful functionality.
 
@@ -4647,8 +4642,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var d = current.description;
 	
 	function addDescriptions(x, y){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = addDescriptions(sd, d);
@@ -4661,8 +4655,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var sd = current.short_description;
 	var d = current.description;
 	
-	let addDescriptions = (x, y) => x + '
-'+ y; //one line!
+	let addDescriptions = (x, y) => x + '\n'+ y; //one line!
 	
 	current.work_notes = addDescriptions(sd, d);
 	
@@ -4690,8 +4683,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(incidents[inc]);
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 
@@ -4711,8 +4703,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(inc); //note that no index reference is needed
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -4763,8 +4754,7 @@ However, there are important differences that make Map preferable in some cases:
 	work_notes.push(incidents.get(keyFunc)); //Finding an a value by providing a function!
 	work_notes.push(incidents.get('a string'));
 
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -4820,9 +4810,7 @@ console.log(mySet1)
 		incidents.add(inc_gr.getValue('short_description'));
 	}
 	
-	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '
-' + incidents.values().next().value + '
-' + incidents.size;
+	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '\n' + incidents.values().next().value + '\n' + incidents.size;
 	
 })(current, previous);
 ```
@@ -4849,8 +4837,7 @@ Every Symbol() call is guaranteed to return a unique Symbol. Every Symbol.for("k
 	incidents2.push(Symbol(incident));
 	incidents2.push(Symbol(incident));
 	
-	current.work_notes = (incidents[0] == incidents[1]) + '
-' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
+	current.work_notes = (incidents[0] == incidents[1]) + '\n' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
 	
 })(current, previous);
 ```
@@ -4865,8 +4852,7 @@ Instead of having to check for included parameters in a function's body, we can 
 
 	function add (x, y){
 		if (y == null) y = 'nothing to see here';
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -4877,8 +4863,7 @@ Instead of having to check for included parameters in a function's body, we can 
 (function executeRule(current, previous /*null when async*/) {
 
 	function add (x, y = 'nothing to see here'){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -4901,15 +4886,12 @@ Instead of having to check for included parameters in a function's body, we can 
 	}
 
 	function sum(x, y, z) {
-		return x + '
-' + y + '
-' + z;
+		return x + '\n' + y + '\n' + z;
 	}
 	
 	const incidents_obj = { ...incidents}; //the array's items are "spread" out as parameters
 	
-	current.work_notes = sum(...incidents) + '
-' + JSON.stringify(incidents_obj);
+	current.work_notes = sum(...incidents) + '\n' + JSON.stringify(incidents_obj);
 
 })(current, previous);
 ```
@@ -4925,8 +4907,7 @@ I love this one because it makes it so much easier to copy and paste multi-line 
 	world
 	lchh loves you`;
 	
-	current.work_notes = x; //goodbye 
-
+	current.work_notes = x; //goodbye \n
 
 })(current, previous);
 ```
@@ -4991,8 +4972,9 @@ That's not all! Go check it out in the docs!
 - https://betterprogramming.pub/difference-between-regular-functions-and-arrow-functions-f65639aba256
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 Folder Name:
-  - ./ECMASCript 2021 
- 	 - ## What?
+
+  - ./ECMASCript 2021
+    - ## What?
 
 Prior to the Tokyo Release, ServiceNow's serverside JavaScript utilized ECMAScript 5. "ECMAScript" is basically the version of JavaScript. Newer versions have come out since then (7+ years ago!) and thus, we have been missing out on some helpful functionality.
 
@@ -5083,8 +5065,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var d = current.description;
 	
 	function addDescriptions(x, y){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = addDescriptions(sd, d);
@@ -5097,8 +5078,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var sd = current.short_description;
 	var d = current.description;
 	
-	let addDescriptions = (x, y) => x + '
-'+ y; //one line!
+	let addDescriptions = (x, y) => x + '\n'+ y; //one line!
 	
 	current.work_notes = addDescriptions(sd, d);
 	
@@ -5126,8 +5106,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(incidents[inc]);
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 
@@ -5147,8 +5126,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(inc); //note that no index reference is needed
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -5199,8 +5177,7 @@ However, there are important differences that make Map preferable in some cases:
 	work_notes.push(incidents.get(keyFunc)); //Finding an a value by providing a function!
 	work_notes.push(incidents.get('a string'));
 
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -5256,9 +5233,7 @@ console.log(mySet1)
 		incidents.add(inc_gr.getValue('short_description'));
 	}
 	
-	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '
-' + incidents.values().next().value + '
-' + incidents.size;
+	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '\n' + incidents.values().next().value + '\n' + incidents.size;
 	
 })(current, previous);
 ```
@@ -5285,8 +5260,7 @@ Every Symbol() call is guaranteed to return a unique Symbol. Every Symbol.for("k
 	incidents2.push(Symbol(incident));
 	incidents2.push(Symbol(incident));
 	
-	current.work_notes = (incidents[0] == incidents[1]) + '
-' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
+	current.work_notes = (incidents[0] == incidents[1]) + '\n' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
 	
 })(current, previous);
 ```
@@ -5301,8 +5275,7 @@ Instead of having to check for included parameters in a function's body, we can 
 
 	function add (x, y){
 		if (y == null) y = 'nothing to see here';
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -5313,8 +5286,7 @@ Instead of having to check for included parameters in a function's body, we can 
 (function executeRule(current, previous /*null when async*/) {
 
 	function add (x, y = 'nothing to see here'){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -5337,15 +5309,12 @@ Instead of having to check for included parameters in a function's body, we can 
 	}
 
 	function sum(x, y, z) {
-		return x + '
-' + y + '
-' + z;
+		return x + '\n' + y + '\n' + z;
 	}
 	
 	const incidents_obj = { ...incidents}; //the array's items are "spread" out as parameters
 	
-	current.work_notes = sum(...incidents) + '
-' + JSON.stringify(incidents_obj);
+	current.work_notes = sum(...incidents) + '\n' + JSON.stringify(incidents_obj);
 
 })(current, previous);
 ```
@@ -5361,8 +5330,7 @@ I love this one because it makes it so much easier to copy and paste multi-line 
 	world
 	lchh loves you`;
 	
-	current.work_notes = x; //goodbye 
-
+	current.work_notes = x; //goodbye \n
 
 })(current, previous);
 ```
@@ -5427,8 +5395,9 @@ That's not all! Go check it out in the docs!
 - https://betterprogramming.pub/difference-between-regular-functions-and-arrow-functions-f65639aba256
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 Folder Name:
-  - ./ECMASCript 2021 
- 	 - ## What?
+
+  - ./ECMASCript 2021
+    - ## What?
 
 Prior to the Tokyo Release, ServiceNow's serverside JavaScript utilized ECMAScript 5. "ECMAScript" is basically the version of JavaScript. Newer versions have come out since then (7+ years ago!) and thus, we have been missing out on some helpful functionality.
 
@@ -5519,8 +5488,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var d = current.description;
 	
 	function addDescriptions(x, y){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = addDescriptions(sd, d);
@@ -5533,8 +5501,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var sd = current.short_description;
 	var d = current.description;
 	
-	let addDescriptions = (x, y) => x + '
-'+ y; //one line!
+	let addDescriptions = (x, y) => x + '\n'+ y; //one line!
 	
 	current.work_notes = addDescriptions(sd, d);
 	
@@ -5562,8 +5529,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(incidents[inc]);
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 
@@ -5583,8 +5549,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(inc); //note that no index reference is needed
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -5635,8 +5600,7 @@ However, there are important differences that make Map preferable in some cases:
 	work_notes.push(incidents.get(keyFunc)); //Finding an a value by providing a function!
 	work_notes.push(incidents.get('a string'));
 
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -5692,9 +5656,7 @@ console.log(mySet1)
 		incidents.add(inc_gr.getValue('short_description'));
 	}
 	
-	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '
-' + incidents.values().next().value + '
-' + incidents.size;
+	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '\n' + incidents.values().next().value + '\n' + incidents.size;
 	
 })(current, previous);
 ```
@@ -5721,8 +5683,7 @@ Every Symbol() call is guaranteed to return a unique Symbol. Every Symbol.for("k
 	incidents2.push(Symbol(incident));
 	incidents2.push(Symbol(incident));
 	
-	current.work_notes = (incidents[0] == incidents[1]) + '
-' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
+	current.work_notes = (incidents[0] == incidents[1]) + '\n' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
 	
 })(current, previous);
 ```
@@ -5737,8 +5698,7 @@ Instead of having to check for included parameters in a function's body, we can 
 
 	function add (x, y){
 		if (y == null) y = 'nothing to see here';
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -5749,8 +5709,7 @@ Instead of having to check for included parameters in a function's body, we can 
 (function executeRule(current, previous /*null when async*/) {
 
 	function add (x, y = 'nothing to see here'){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -5773,15 +5732,12 @@ Instead of having to check for included parameters in a function's body, we can 
 	}
 
 	function sum(x, y, z) {
-		return x + '
-' + y + '
-' + z;
+		return x + '\n' + y + '\n' + z;
 	}
 	
 	const incidents_obj = { ...incidents}; //the array's items are "spread" out as parameters
 	
-	current.work_notes = sum(...incidents) + '
-' + JSON.stringify(incidents_obj);
+	current.work_notes = sum(...incidents) + '\n' + JSON.stringify(incidents_obj);
 
 })(current, previous);
 ```
@@ -5797,8 +5753,7 @@ I love this one because it makes it so much easier to copy and paste multi-line 
 	world
 	lchh loves you`;
 	
-	current.work_notes = x; //goodbye 
-
+	current.work_notes = x; //goodbye \n
 
 })(current, previous);
 ```
@@ -5863,8 +5818,9 @@ That's not all! Go check it out in the docs!
 - https://betterprogramming.pub/difference-between-regular-functions-and-arrow-functions-f65639aba256
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 Folder Name:
-  - ./ECMASCript 2021 
- 	 - ## What?
+
+  - ./ECMASCript 2021
+    - ## What?
 
 Prior to the Tokyo Release, ServiceNow's serverside JavaScript utilized ECMAScript 5. "ECMAScript" is basically the version of JavaScript. Newer versions have come out since then (7+ years ago!) and thus, we have been missing out on some helpful functionality.
 
@@ -5955,8 +5911,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var d = current.description;
 	
 	function addDescriptions(x, y){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = addDescriptions(sd, d);
@@ -5969,8 +5924,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var sd = current.short_description;
 	var d = current.description;
 	
-	let addDescriptions = (x, y) => x + '
-'+ y; //one line!
+	let addDescriptions = (x, y) => x + '\n'+ y; //one line!
 	
 	current.work_notes = addDescriptions(sd, d);
 	
@@ -5998,8 +5952,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(incidents[inc]);
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 
@@ -6019,8 +5972,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(inc); //note that no index reference is needed
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -6071,8 +6023,7 @@ However, there are important differences that make Map preferable in some cases:
 	work_notes.push(incidents.get(keyFunc)); //Finding an a value by providing a function!
 	work_notes.push(incidents.get('a string'));
 
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -6128,9 +6079,7 @@ console.log(mySet1)
 		incidents.add(inc_gr.getValue('short_description'));
 	}
 	
-	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '
-' + incidents.values().next().value + '
-' + incidents.size;
+	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '\n' + incidents.values().next().value + '\n' + incidents.size;
 	
 })(current, previous);
 ```
@@ -6157,8 +6106,7 @@ Every Symbol() call is guaranteed to return a unique Symbol. Every Symbol.for("k
 	incidents2.push(Symbol(incident));
 	incidents2.push(Symbol(incident));
 	
-	current.work_notes = (incidents[0] == incidents[1]) + '
-' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
+	current.work_notes = (incidents[0] == incidents[1]) + '\n' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
 	
 })(current, previous);
 ```
@@ -6173,8 +6121,7 @@ Instead of having to check for included parameters in a function's body, we can 
 
 	function add (x, y){
 		if (y == null) y = 'nothing to see here';
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -6185,8 +6132,7 @@ Instead of having to check for included parameters in a function's body, we can 
 (function executeRule(current, previous /*null when async*/) {
 
 	function add (x, y = 'nothing to see here'){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -6209,15 +6155,12 @@ Instead of having to check for included parameters in a function's body, we can 
 	}
 
 	function sum(x, y, z) {
-		return x + '
-' + y + '
-' + z;
+		return x + '\n' + y + '\n' + z;
 	}
 	
 	const incidents_obj = { ...incidents}; //the array's items are "spread" out as parameters
 	
-	current.work_notes = sum(...incidents) + '
-' + JSON.stringify(incidents_obj);
+	current.work_notes = sum(...incidents) + '\n' + JSON.stringify(incidents_obj);
 
 })(current, previous);
 ```
@@ -6233,8 +6176,7 @@ I love this one because it makes it so much easier to copy and paste multi-line 
 	world
 	lchh loves you`;
 	
-	current.work_notes = x; //goodbye 
-
+	current.work_notes = x; //goodbye \n
 
 })(current, previous);
 ```
@@ -6299,8 +6241,9 @@ That's not all! Go check it out in the docs!
 - https://betterprogramming.pub/difference-between-regular-functions-and-arrow-functions-f65639aba256
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 Folder Name:
-  - ./ECMASCript 2021 
- 	 - ## What?
+
+  - ./ECMASCript 2021
+    - ## What?
 
 Prior to the Tokyo Release, ServiceNow's serverside JavaScript utilized ECMAScript 5. "ECMAScript" is basically the version of JavaScript. Newer versions have come out since then (7+ years ago!) and thus, we have been missing out on some helpful functionality.
 
@@ -6391,8 +6334,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var d = current.description;
 	
 	function addDescriptions(x, y){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = addDescriptions(sd, d);
@@ -6405,8 +6347,7 @@ How many times have we googled "how to do ____ in JavaScript?" and the top resul
 	var sd = current.short_description;
 	var d = current.description;
 	
-	let addDescriptions = (x, y) => x + '
-'+ y; //one line!
+	let addDescriptions = (x, y) => x + '\n'+ y; //one line!
 	
 	current.work_notes = addDescriptions(sd, d);
 	
@@ -6434,8 +6375,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(incidents[inc]);
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 
@@ -6455,8 +6395,7 @@ A different kind of for/in to add to your arsenal.
 		work_notes.push(inc); //note that no index reference is needed
 	}
 	
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -6507,8 +6446,7 @@ However, there are important differences that make Map preferable in some cases:
 	work_notes.push(incidents.get(keyFunc)); //Finding an a value by providing a function!
 	work_notes.push(incidents.get('a string'));
 
-	current.work_notes = work_notes.join('
-');
+	current.work_notes = work_notes.join('\n');
 	
 })(current, previous);
 ```
@@ -6564,9 +6502,7 @@ console.log(mySet1)
 		incidents.add(inc_gr.getValue('short_description'));
 	}
 	
-	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '
-' + incidents.values().next().value + '
-' + incidents.size;
+	current.work_notes = incidents.has(inc_gr.getValue('short_description')) + '\n' + incidents.values().next().value + '\n' + incidents.size;
 	
 })(current, previous);
 ```
@@ -6593,8 +6529,7 @@ Every Symbol() call is guaranteed to return a unique Symbol. Every Symbol.for("k
 	incidents2.push(Symbol(incident));
 	incidents2.push(Symbol(incident));
 	
-	current.work_notes = (incidents[0] == incidents[1]) + '
-' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
+	current.work_notes = (incidents[0] == incidents[1]) + '\n' + (incidents2[0] == incidents2[1]); //Notice how the first one is true and the second is false, despite all four items being the "same"
 	
 })(current, previous);
 ```
@@ -6609,8 +6544,7 @@ Instead of having to check for included parameters in a function's body, we can 
 
 	function add (x, y){
 		if (y == null) y = 'nothing to see here';
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -6621,8 +6555,7 @@ Instead of having to check for included parameters in a function's body, we can 
 (function executeRule(current, previous /*null when async*/) {
 
 	function add (x, y = 'nothing to see here'){
-		return x + '
-' + y;
+		return x + '\n' + y;
 	}
 	
 	current.work_notes = add(current.short_description);
@@ -6645,15 +6578,12 @@ Instead of having to check for included parameters in a function's body, we can 
 	}
 
 	function sum(x, y, z) {
-		return x + '
-' + y + '
-' + z;
+		return x + '\n' + y + '\n' + z;
 	}
 	
 	const incidents_obj = { ...incidents}; //the array's items are "spread" out as parameters
 	
-	current.work_notes = sum(...incidents) + '
-' + JSON.stringify(incidents_obj);
+	current.work_notes = sum(...incidents) + '\n' + JSON.stringify(incidents_obj);
 
 })(current, previous);
 ```
@@ -6669,8 +6599,7 @@ I love this one because it makes it so much easier to copy and paste multi-line 
 	world
 	lchh loves you`;
 	
-	current.work_notes = x; //goodbye 
-
+	current.work_notes = x; //goodbye \n
 
 })(current, previous);
 ```
@@ -6735,8 +6664,9 @@ That's not all! Go check it out in the docs!
 - https://betterprogramming.pub/difference-between-regular-functions-and-arrow-functions-f65639aba256
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 Folder Name:
-  - ./UI Scripts/Make OOB Attachment Mandatory 
- 	 - # Make out of the box attahcment mandatory onChange of a field in Catalog Item
+
+  - ./UI Scripts/Make OOB Attachment Mandatory
+    - # Make out of the box attahcment mandatory onChange of a field in Catalog Item
 
 This scripts makes the out of the box attachments to mandatory on the Service Portal for any Catalog Item.
 
@@ -6749,8 +6679,9 @@ Step #2 - Include the UI Script in the Portal Theme under JS Includes
 
 Step #3 - Create a Catalog Client Script for the respective Catalog Item where you want to make the OOB attachment mandatory for certain criteria
 Folder Name:
-  - ./UI Scripts/Restrict URL Hack using UI script 
- 	 - 1.Go to System UI >UI Scripts >Create a new UI script and Check the Global field.
+
+  - ./UI Scripts/Restrict URL Hack using UI script
+    - 1.Go to System UI >UI Scripts >Create a new UI script and Check the Global field.
 2.Below is an example 
 
 Lets say the Original URL opened is:
@@ -6762,22 +6693,25 @@ and we need to monitor "sysparm_fixed_query" parameter in the URL.
 
 ![image](https://user-images.githubusercontent.com/42912180/195846361-d51f40ba-cdc0-40e1-8057-b19a0906a9a8.png)
 Folder Name:
-  - ./UI Scripts/Display number of created records 
- 	 - # Display number of created records
+
+  - ./UI Scripts/Display number of created records
+    - # Display number of created records
 
 Use case / Requirement : When trying to create a new record in a table, Display a message showing number of records already created by him/her in that table.
 
 Solution : Created a UI script to display number of records and call that UI script from an onLoad client script.
 Folder Name:
-  - ./UI Scripts/Display number of created records 
- 	 - # Display number of created records
+
+  - ./UI Scripts/Display number of created records
+    - # Display number of created records
 
 Use case / Requirement : When trying to create a new record in a table, Display a message showing number of records already created by him/her in that table.
 
 Solution : Created a UI script to display number of records and call that UI script from an onLoad client script.
 Folder Name:
-  - ./GlideQuery/Get User's Roles from User Name 
- 	 - # Get User's Roles from User Name
+
+  - ./GlideQuery/Get User's Roles from User Name
+    - # Get User's Roles from User Name
 
 GlideQuery's can greatly simplify extracting information from queries, especially when dot walking.
 
@@ -6785,8 +6719,9 @@ This query retrieves a user's roles, and returns an array of objects with the th
 value, the role's active status, the user's display value, and the user's email.  Adding more
 fields is trivial with this format, and the query stream is very easy to follow.
 Folder Name:
-  - ./GlideQuery/FlatMap to Nest New Queries 
- 	 - # Using FlatMap to Nest Queries
+
+  - ./GlideQuery/FlatMap to Nest New Queries
+    - # Using FlatMap to Nest Queries
 
 `flatMap` returns a Stream to a parent stream, that cause the parent stream to return the result of the nested Stream.  It is extremely useful for using the results of a query to create and return the results of a new query based on the original's results.
 
@@ -6794,8 +6729,9 @@ The provided example is slightly contrived, but exhibits this behavior of using 
 
 It finds uses the `sys_user` table to find the `sys_id` for username = david.miller, then queries the incident table for incidents where the `caller_id` is David Miller's sys_id (from the first query).  The output is the result of the inner query.
 Folder Name:
-  - ./GlideQuery/Nested WHERE orWHERE GlideQueries 
- 	 - # WHERE Clauses with Nested GlideQueries
+
+  - ./GlideQuery/Nested WHERE orWHERE GlideQueries
+    - # WHERE Clauses with Nested GlideQueries
 
 Creating a query with multiple groupings of AND and OR statements would be impossible to decipher,
 so `GlideQuery` forbids them.
@@ -6821,11 +6757,13 @@ secondQuery = new GlideQuery('task')
 Instead, using the equivalent nested GlideQuery in the JavaScript file shows the proper way of nesting
 OR WHERE queries.
 Folder Name:
-  - ./GlideQuery/Remote Table 
- 	 - 
+
+  - ./GlideQuery/Remote Table
+    - 
 Folder Name:
-  - ./GlideQuery/Basic Wrappers 
- 	 - # GlideQuery
+
+  - ./GlideQuery/Basic Wrappers
+    - # GlideQuery
 
 GlideQuery is a wrapper for the GlideRecord and GlideAggregate APIs. The wrapper offers several advantages, including a single point of entry, fail-fast with friendly error messaging, native JavaScript syntax, and more. Here are some functions that implement the basic GlideQuery capabilities to help you get started.
 
@@ -6879,12 +6817,8 @@ function insertRecords( strTableName, arrValues, boolDisableWorkflow ){
 	
 		gs.error( 
 			'An error occurred trying to insert records into ' + strTableName + 
-			'
-Values: 
-' + JSON.stringify( arrValues, null, 2 ) + 
-			'
-
-Error: ' + e.name + ': ' + e.message 
+			'\nValues: \n' + JSON.stringify( arrValues, null, 2 ) + 
+			'\n\nError: ' + e.name + ': ' + e.message 
 		);
 		
 	}
@@ -6916,14 +6850,9 @@ function updateRecords( strTableName, strEncodedQuery, objValues, boolDisableWor
 	
 		gs.error( 
 			'An error occurred trying to update records in ' + strTableName + 
-			'
-Query: ' + strEncodedQuery + 
-			'
-Values: 
-' + JSON.stringify( objValues, null, 2 ) + 
-			'
-
-Error: ' + e.name + ': ' + e.message 
+			'\nQuery: ' + strEncodedQuery + 
+			'\nValues: \n' + JSON.stringify( objValues, null, 2 ) + 
+			'\n\nError: ' + e.name + ': ' + e.message 
 		);
 		
 	}
@@ -6955,11 +6884,8 @@ function deleteRecords( strTableName, strEncodedQuery, boolDisableWorkflow ){
 	
 		gs.error( 
 			'An error occurred trying to delete records from ' + strTableName + 
-			'
-Query: ' + strEncodedQuery + 
-			'
-
-Error: ' + e.name + ': ' + e.message 
+			'\nQuery: ' + strEncodedQuery + 
+			'\n\nError: ' + e.name + ': ' + e.message 
 		);
 		
 	}
@@ -6968,8 +6894,9 @@ Error: ' + e.name + ': ' + e.message
 
 ```
 Folder Name:
-  - ./GlideQuery/Basic Wrappers 
- 	 - # GlideQuery
+
+  - ./GlideQuery/Basic Wrappers
+    - # GlideQuery
 
 GlideQuery is a wrapper for the GlideRecord and GlideAggregate APIs. The wrapper offers several advantages, including a single point of entry, fail-fast with friendly error messaging, native JavaScript syntax, and more. Here are some functions that implement the basic GlideQuery capabilities to help you get started.
 
@@ -7023,12 +6950,8 @@ function insertRecords( strTableName, arrValues, boolDisableWorkflow ){
 	
 		gs.error( 
 			'An error occurred trying to insert records into ' + strTableName + 
-			'
-Values: 
-' + JSON.stringify( arrValues, null, 2 ) + 
-			'
-
-Error: ' + e.name + ': ' + e.message 
+			'\nValues: \n' + JSON.stringify( arrValues, null, 2 ) + 
+			'\n\nError: ' + e.name + ': ' + e.message 
 		);
 		
 	}
@@ -7060,14 +6983,9 @@ function updateRecords( strTableName, strEncodedQuery, objValues, boolDisableWor
 	
 		gs.error( 
 			'An error occurred trying to update records in ' + strTableName + 
-			'
-Query: ' + strEncodedQuery + 
-			'
-Values: 
-' + JSON.stringify( objValues, null, 2 ) + 
-			'
-
-Error: ' + e.name + ': ' + e.message 
+			'\nQuery: ' + strEncodedQuery + 
+			'\nValues: \n' + JSON.stringify( objValues, null, 2 ) + 
+			'\n\nError: ' + e.name + ': ' + e.message 
 		);
 		
 	}
@@ -7099,11 +7017,8 @@ function deleteRecords( strTableName, strEncodedQuery, boolDisableWorkflow ){
 	
 		gs.error( 
 			'An error occurred trying to delete records from ' + strTableName + 
-			'
-Query: ' + strEncodedQuery + 
-			'
-
-Error: ' + e.name + ': ' + e.message 
+			'\nQuery: ' + strEncodedQuery + 
+			'\n\nError: ' + e.name + ': ' + e.message 
 		);
 		
 	}
@@ -7112,8 +7027,9 @@ Error: ' + e.name + ': ' + e.message
 
 ```
 Folder Name:
-  - ./GlideQuery/Basic Wrappers 
- 	 - # GlideQuery
+
+  - ./GlideQuery/Basic Wrappers
+    - # GlideQuery
 
 GlideQuery is a wrapper for the GlideRecord and GlideAggregate APIs. The wrapper offers several advantages, including a single point of entry, fail-fast with friendly error messaging, native JavaScript syntax, and more. Here are some functions that implement the basic GlideQuery capabilities to help you get started.
 
@@ -7167,12 +7083,8 @@ function insertRecords( strTableName, arrValues, boolDisableWorkflow ){
 	
 		gs.error( 
 			'An error occurred trying to insert records into ' + strTableName + 
-			'
-Values: 
-' + JSON.stringify( arrValues, null, 2 ) + 
-			'
-
-Error: ' + e.name + ': ' + e.message 
+			'\nValues: \n' + JSON.stringify( arrValues, null, 2 ) + 
+			'\n\nError: ' + e.name + ': ' + e.message 
 		);
 		
 	}
@@ -7204,14 +7116,9 @@ function updateRecords( strTableName, strEncodedQuery, objValues, boolDisableWor
 	
 		gs.error( 
 			'An error occurred trying to update records in ' + strTableName + 
-			'
-Query: ' + strEncodedQuery + 
-			'
-Values: 
-' + JSON.stringify( objValues, null, 2 ) + 
-			'
-
-Error: ' + e.name + ': ' + e.message 
+			'\nQuery: ' + strEncodedQuery + 
+			'\nValues: \n' + JSON.stringify( objValues, null, 2 ) + 
+			'\n\nError: ' + e.name + ': ' + e.message 
 		);
 		
 	}
@@ -7243,11 +7150,8 @@ function deleteRecords( strTableName, strEncodedQuery, boolDisableWorkflow ){
 	
 		gs.error( 
 			'An error occurred trying to delete records from ' + strTableName + 
-			'
-Query: ' + strEncodedQuery + 
-			'
-
-Error: ' + e.name + ': ' + e.message 
+			'\nQuery: ' + strEncodedQuery + 
+			'\n\nError: ' + e.name + ': ' + e.message 
 		);
 		
 	}
@@ -7256,8 +7160,9 @@ Error: ' + e.name + ': ' + e.message
 
 ```
 Folder Name:
-  - ./GlideQuery/Basic Wrappers 
- 	 - # GlideQuery
+
+  - ./GlideQuery/Basic Wrappers
+    - # GlideQuery
 
 GlideQuery is a wrapper for the GlideRecord and GlideAggregate APIs. The wrapper offers several advantages, including a single point of entry, fail-fast with friendly error messaging, native JavaScript syntax, and more. Here are some functions that implement the basic GlideQuery capabilities to help you get started.
 
@@ -7311,12 +7216,8 @@ function insertRecords( strTableName, arrValues, boolDisableWorkflow ){
 	
 		gs.error( 
 			'An error occurred trying to insert records into ' + strTableName + 
-			'
-Values: 
-' + JSON.stringify( arrValues, null, 2 ) + 
-			'
-
-Error: ' + e.name + ': ' + e.message 
+			'\nValues: \n' + JSON.stringify( arrValues, null, 2 ) + 
+			'\n\nError: ' + e.name + ': ' + e.message 
 		);
 		
 	}
@@ -7348,14 +7249,9 @@ function updateRecords( strTableName, strEncodedQuery, objValues, boolDisableWor
 	
 		gs.error( 
 			'An error occurred trying to update records in ' + strTableName + 
-			'
-Query: ' + strEncodedQuery + 
-			'
-Values: 
-' + JSON.stringify( objValues, null, 2 ) + 
-			'
-
-Error: ' + e.name + ': ' + e.message 
+			'\nQuery: ' + strEncodedQuery + 
+			'\nValues: \n' + JSON.stringify( objValues, null, 2 ) + 
+			'\n\nError: ' + e.name + ': ' + e.message 
 		);
 		
 	}
@@ -7387,11 +7283,8 @@ function deleteRecords( strTableName, strEncodedQuery, boolDisableWorkflow ){
 	
 		gs.error( 
 			'An error occurred trying to delete records from ' + strTableName + 
-			'
-Query: ' + strEncodedQuery + 
-			'
-
-Error: ' + e.name + ': ' + e.message 
+			'\nQuery: ' + strEncodedQuery + 
+			'\n\nError: ' + e.name + ': ' + e.message 
 		);
 		
 	}
@@ -7400,54 +7293,66 @@ Error: ' + e.name + ': ' + e.message
 
 ```
 Folder Name:
-  - ./GlideHTTPRequest 
- 	 - GlideHTTPRequest API is used to work on Glide HTTP Request and Response.
+
+  - ./GlideHTTPRequest
+    - GlideHTTPRequest API is used to work on Glide HTTP Request and Response.
 
 API Documentation Link for "PARIS" release : https://developer.servicenow.com/dev.do#!/reference/api/paris/server_legacy/GlideHTTPRequestAPI
 
 Please update the variable details in the script to check it.
 Folder Name:
-  - ./Mail Scripts/Call UI Message or System Property in Notification Mail Script 
- 	 - Here is the syntax to call your UI Message or System property into Notification Mail script.
+
+  - ./Mail Scripts/Call UI Message or System Property in Notification Mail Script
+    - Here is the syntax to call your UI Message or System property into Notification Mail script.
 Folder Name:
-  - ./Mail Scripts/Call Script Include in Notification Mail Script 
- 	 - Here is the syntax to call your Script Include from a Global or Scoped application into Notification Mail script.
+
+  - ./Mail Scripts/Call Script Include in Notification Mail Script
+    - Here is the syntax to call your Script Include from a Global or Scoped application into Notification Mail script.
 Folder Name:
-  - ./Mail Scripts/Open Survey In Portal 
- 	 - 1)create a notification on "Assessment Instance" table</br>
+
+  - ./Mail Scripts/Open Survey In Portal
+    - 1)create a notification on "Assessment Instance" table</br>
 2)when record is created and state is ready to take trigger notification to assigned to </br>
 3)use this mail script to get the url to survey in the email that takes them to the portal</br>
 Folder Name:
-  - ./Mail Scripts/Add Checklist 
- 	 - 
+
+  - ./Mail Scripts/Add Checklist
+    - 
 Folder Name:
-  - ./Mail Scripts/Print variables to mail 
- 	 - Script block to be used within a Notification Email Script or as a standalone one.
+
+  - ./Mail Scripts/Print variables to mail
+    - Script block to be used within a Notification Email Script or as a standalone one.
 It prints all variables + answers of a catalog produced record to the email body, along with the short description of the task on top (please check script).
 Folder Name:
-  - ./Mail Scripts/Add a link which opens ticket in Service Portal 
- 	 - Use this script to add a link in email notification which opens the ticket in Service Portal 
+
+  - ./Mail Scripts/Add a link which opens ticket in Service Portal
+    - Use this script to add a link in email notification which opens the ticket in Service Portal 
 Folder Name:
-  - ./Mail Scripts/Add HTML Table for Requested Item Variables 
- 	 - Use this snippet to create an HTML file of requested item variables.  Will exclude variables that are not needed (empty/undefined)
+
+  - ./Mail Scripts/Add HTML Table for Requested Item Variables
+    - Use this snippet to create an HTML file of requested item variables.  Will exclude variables that are not needed (empty/undefined)
 Folder Name:
-  - ./Mail Scripts/HTML Table Creation from ServiceNow Table 
- 	 - This mail script uses a GlideRecord object to get values from a ServiceNow table and then format that information into an HTML table in a notification.
+
+  - ./Mail Scripts/HTML Table Creation from ServiceNow Table
+    - This mail script uses a GlideRecord object to get values from a ServiceNow table and then format that information into an HTML table in a notification.
 
 Replace "example_table" with your desired table.
 
 Change the style tags to fit your desired results, like background-color, etc.
 Folder Name:
-  - ./Regular Expressions/AllowAnyLanguage 
- 	 - Allow Any Language Character Remove Special Characters, Can be used to verify valid names. Sorry Elon Musk's First born.
+
+  - ./Regular Expressions/AllowAnyLanguage
+    - Allow Any Language Character Remove Special Characters, Can be used to verify valid names. Sorry Elon Musk's First born.
 Folder Name:
-  - ./Regular Expressions/Format mobile into Australian mobile format 
- 	 - # Format phone into Australian mobile Format
+
+  - ./Regular Expressions/Format mobile into Australian mobile format
+    - # Format phone into Australian mobile Format
 
 Use this script to format a phone number from +61433394881 style to 0433 394 881 style.
 Folder Name:
-  - ./Regular Expressions/Negative RegExp for Condition Builder 
- 	 - # Negative regular expressions for Condition Builder
+
+  - ./Regular Expressions/Negative RegExp for Condition Builder
+    - # Negative regular expressions for Condition Builder
 
 ## What problem does it solve?
 
@@ -7471,21 +7376,25 @@ Whereas this one matches anything that does NOT match a well formed MAC address:
 
 The script in this example shows how to use this, but it's really in a condition builder that it will be useful. As matter of fact, a script can always reverse the logic (but the condition builder cannot). The script identifies all the entries in an array that do NOT have a well formed MAC address: note that it does not use a __false__ logic in the _if_, proving that the regex does revert the logic.
 Folder Name:
-  - ./Regular Expressions/Check if number has 10 digits 
- 	 - Script is used to check if the number has 10 digts( you can update the digit count in the code based on the need.
+
+  - ./Regular Expressions/Check if number has 10 digits
+    - Script is used to check if the number has 10 digts( you can update the digit count in the code based on the need.
 Folder Name:
-  - ./Regular Expressions/Remove Extra Spaces 
- 	 - 
+
+  - ./Regular Expressions/Remove Extra Spaces
+    - 
 Folder Name:
-  - ./Regular Expressions/Remove newline and carriage return 
- 	 - Will accept a string and remove all newline (
-) and carriage return () characters
+
+  - ./Regular Expressions/Remove newline and carriage return
+    - Will accept a string and remove all newline (\n) and carriage return (\r) characters
 Folder Name:
-  - ./Regular Expressions/Encode spaces for URLs 
- 	 - convert spaces to %20 for creating dynamic urls
+
+  - ./Regular Expressions/Encode spaces for URLs
+    - convert spaces to %20 for creating dynamic urls
 Folder Name:
-  - ./Regular Expressions/Poland country code 
- 	 - **Regular Expressions**
+
+  - ./Regular Expressions/Poland country code
+    - **Regular Expressions**
 
  Regular Expressions, which allows checking for Poland nine-digit Country code. Poland format starts with +48 and is followed by nine digits.
 
@@ -7493,8 +7402,9 @@ Folder Name:
 
 ![Execution](ScreenShot_1.PNG)
 Folder Name:
-  - ./Regular Expressions/IP Address Validation 
- 	 - This regex validates for ip address(ipv4) based on the input.
+
+  - ./Regular Expressions/IP Address Validation
+    - This regex validates for ip address(ipv4) based on the input.
 
 Following are the valid IP address examples:
 
@@ -7514,14 +7424,16 @@ Following are the valid IP address examples:
 
 1.2.3.4
 Folder Name:
-  - ./Regular Expressions/Allow Characters + - ) ( for Phone numbers 
- 	 - ### Allows Characters +, -, (, ) for entering Phone Numbers
+
+  - ./Regular Expressions/Allow Characters + - ) ( for Phone numbers
+    - ### Allows Characters +, -, (, ) for entering Phone Numbers
 
 Allows characters useful for adding phone numbers in various formats like (+1) - 123 - 456 - 789, +1-978-654-362, (123) (567) (897) etc.
 One can add more functionality to it, by controlling the number of digits added etc.
 Folder Name:
-  - ./Regular Expressions/Match URL's from ServiceNow domain 
- 	 - **Regular Expressions**
+
+  - ./Regular Expressions/Match URL's from ServiceNow domain
+    - **Regular Expressions**
 
 Regular Expressions, which allows checking if URL belongs to ServiceNow domain. It is verifying all starting prefix like 'https://', 'http://' or just 'www' which belongs to servicenow.com.
 
@@ -7531,43 +7443,55 @@ You can easily change that regex to different domain, by changing 'servicenow' t
 
  ![Execution](ScreenShot_1.PNG)
 Folder Name:
-  - ./Regular Expressions/Find Emoji 
- 	 - # Detect emoji in string
+
+  - ./Regular Expressions/Find Emoji
+    - # Detect emoji in string
 
 Use this script to detect if string contains emoji
 Folder Name:
-  - ./CMDB/CMDB record count 
- 	 - 
+
+  - ./CMDB/CMDB record count
+    - 
 Folder Name:
-  - ./CMDB/IRE Queridentify 
- 	 - 
+
+  - ./CMDB/IRE Queridentify
+    - 
 Folder Name:
-  - ./CMDB/Mandatory Field Analysis 
- 	 - 
+
+  - ./CMDB/Mandatory Field Analysis
+    - 
 Folder Name:
-  - ./CMDB/CSDM Maturity Report 
- 	 - 
+
+  - ./CMDB/CSDM Maturity Report
+    - 
 Folder Name:
-  - ./CMDB/IRE Errors 
- 	 - 
+
+  - ./CMDB/IRE Errors
+    - 
 Folder Name:
-  - ./GraphQL/Sample group query 
- 	 - 
+
+  - ./GraphQL/Sample group query
+    - 
 Folder Name:
-  - ./GraphQL/Sample group query 
- 	 - 
+
+  - ./GraphQL/Sample group query
+    - 
 Folder Name:
-  - ./GraphQL/Sample users query 
- 	 - 
+
+  - ./GraphQL/Sample users query
+    - 
 Folder Name:
-  - ./GraphQL/Sample users query 
- 	 - 
+
+  - ./GraphQL/Sample users query
+    - 
 Folder Name:
-  - ./GraphQL/Sample users query 
- 	 - 
+
+  - ./GraphQL/Sample users query
+    - 
 Folder Name:
-  - ./Script Includes/Get Reference Display Value 
- 	 - # Get Reference Choice Display Value
+
+  - ./Script Includes/Get Reference Display Value
+    - # Get Reference Choice Display Value
 
 This scripts gets the display value of the selected reference value. 
 
@@ -7576,8 +7500,9 @@ This scripts gets the display value of the selected reference value.
 -   @param {String} table: name of the referenced table.
 -   @param {String} value: Value of that reference field
 Folder Name:
-  - ./Script Includes/Testing Script Include Using Jasmine 
- 	 - # Testing Script Include Using ATF and Jasmine
+
+  - ./Script Includes/Testing Script Include Using Jasmine
+    - # Testing Script Include Using ATF and Jasmine
 
 Step 1.
 Create a new Script Include based on Sample Calculator Script.js
@@ -7589,8 +7514,9 @@ Step 3. Add a Test Step by clicking "Add Test Step". Update the content of the "
 
 Step 4. Run the test
 Folder Name:
-  - ./Script Includes/Testing Script Include Using Jasmine 
- 	 - # Testing Script Include Using ATF and Jasmine
+
+  - ./Script Includes/Testing Script Include Using Jasmine
+    - # Testing Script Include Using ATF and Jasmine
 
 Step 1.
 Create a new Script Include based on Sample Calculator Script.js
@@ -7602,18 +7528,21 @@ Step 3. Add a Test Step by clicking "Add Test Step". Update the content of the "
 
 Step 4. Run the test
 Folder Name:
-  - ./Script Includes/Get Group Members 
- 	 - # Get Group Members by Id
+
+  - ./Script Includes/Get Group Members
+    - # Get Group Members by Id
 
 A Script utils containing utility functions, to get the group members sys ids
 Folder Name:
-  - ./Script Includes/Create Multiple RITMS from MRVS 
- 	 - # Create Multiple RITMS from MRVS
+
+  - ./Script Includes/Create Multiple RITMS from MRVS
+    - # Create Multiple RITMS from MRVS
 Use this script to submit multiple Requested Items with data being populated from the MRVS.
 Match the variables names in the Obj to the respective Catalog Item variable names and the MRVS variables to the variable names for the MRVS
 Folder Name:
-  - ./Script Includes/PerformanceAnalyticsUtils 
- 	 - # Performance Analytics Utils
+
+  - ./Script Includes/PerformanceAnalyticsUtils
+    - # Performance Analytics Utils
 
 A Script Include to gather methods for handling Performance Analytics subjects. Typical use case is to be invoked by PA Scripts (for custom aggregation or breakdown mappings).
 
@@ -7625,16 +7554,19 @@ This is a replacement for SNC.CMDBUtil.getAllChildrenOfAsCommaList() that I did 
 
 I understand this also could be in an CMDBUtil Script Include, but I found very useful for building a PA Breakdown Source.
 Folder Name:
-  - ./Script Includes/Excel Parser 
- 	 - Server side Excel parser utility leveraging the GlideExcelParser API.
+
+  - ./Script Includes/Excel Parser
+    - Server side Excel parser utility leveraging the GlideExcelParser API.
 
 Pass in the sys_id of an Excel attachment and get back an array of objects, with every row in the sheet being an element in the array.
 Folder Name:
-  - ./Script Includes/GlideDateTimeUtils 
- 	 - 
+
+  - ./Script Includes/GlideDateTimeUtils
+    - 
 Folder Name:
-  - ./Script Includes/BackfillAssignmentGroup 
- 	 - # BackFillAssignmentGroup
+
+  - ./Script Includes/BackfillAssignmentGroup
+    - # BackFillAssignmentGroup
 
 This script include is an advanced reference qualifier for the Assignment group field. It restricts the Assignment group choices to only relevant groups of which the current Assigned to user is a member.
 
@@ -7659,8 +7591,9 @@ Configure the dictionary entry of the assignment_group field on Task table.
 5. In the **Reference qual** field, enter: **javascript:new BackfillAssignmentGroup().BackfillAssignmentGroup()**
 6. Save
 Folder Name:
-  - ./Script Includes/Table List Copy Context Options 
- 	 - # Add "Copy Field Name, Value, Display Value" to context menu for list records
+
+  - ./Script Includes/Table List Copy Context Options
+    - # Add "Copy Field Name, Value, Display Value" to context menu for list records
 
 Add context menu options allowing for admins to be able to right click a record's field in the list view and choose "Copy Field Name", "Copy Field Value", and "Copy Field Display Value" to quickly get the column variable name and values to their clipboard.
 
@@ -7684,8 +7617,9 @@ Add context menu options allowing for admins to be able to right click a record'
 - Condition: `gs.hasRightsTo("ui/context_menu.copy_sysid/read", null)`
 - Action Script: see .js files in this folder for each one
 Folder Name:
-  - ./Script Includes/Table List Copy Context Options 
- 	 - # Add "Copy Field Name, Value, Display Value" to context menu for list records
+
+  - ./Script Includes/Table List Copy Context Options
+    - # Add "Copy Field Name, Value, Display Value" to context menu for list records
 
 Add context menu options allowing for admins to be able to right click a record's field in the list view and choose "Copy Field Name", "Copy Field Value", and "Copy Field Display Value" to quickly get the column variable name and values to their clipboard.
 
@@ -7709,8 +7643,9 @@ Add context menu options allowing for admins to be able to right click a record'
 - Condition: `gs.hasRightsTo("ui/context_menu.copy_sysid/read", null)`
 - Action Script: see .js files in this folder for each one
 Folder Name:
-  - ./Script Includes/Table List Copy Context Options 
- 	 - # Add "Copy Field Name, Value, Display Value" to context menu for list records
+
+  - ./Script Includes/Table List Copy Context Options
+    - # Add "Copy Field Name, Value, Display Value" to context menu for list records
 
 Add context menu options allowing for admins to be able to right click a record's field in the list view and choose "Copy Field Name", "Copy Field Value", and "Copy Field Display Value" to quickly get the column variable name and values to their clipboard.
 
@@ -7734,8 +7669,9 @@ Add context menu options allowing for admins to be able to right click a record'
 - Condition: `gs.hasRightsTo("ui/context_menu.copy_sysid/read", null)`
 - Action Script: see .js files in this folder for each one
 Folder Name:
-  - ./Script Includes/Table List Copy Context Options 
- 	 - # Add "Copy Field Name, Value, Display Value" to context menu for list records
+
+  - ./Script Includes/Table List Copy Context Options
+    - # Add "Copy Field Name, Value, Display Value" to context menu for list records
 
 Add context menu options allowing for admins to be able to right click a record's field in the list view and choose "Copy Field Name", "Copy Field Value", and "Copy Field Display Value" to quickly get the column variable name and values to their clipboard.
 
@@ -7759,8 +7695,9 @@ Add context menu options allowing for admins to be able to right click a record'
 - Condition: `gs.hasRightsTo("ui/context_menu.copy_sysid/read", null)`
 - Action Script: see .js files in this folder for each one
 Folder Name:
-  - ./Script Includes/Logger 
- 	 - # ArtifactRank
+
+  - ./Script Includes/Logger
+    - # ArtifactRank
 
 Logger script include that helps you to specify the environments that you want create log records without commenting
 your logging lines in your code. The logger will check if it is one of the sub-prod environments that you have specified
@@ -7775,8 +7712,9 @@ var logger = new SubProdLogger(); // This will log for the default environments 
 logger.warn('This is a warning.');
 ```
 Folder Name:
-  - ./Script Includes/StripHTML 
- 	 - # StripHTML
+
+  - ./Script Includes/StripHTML
+    - # StripHTML
 Script Include that removes all HTML from a specific string.
 
 It doesn't use the typical `Class.create`, instead it is a simple javascript function.
@@ -7789,16 +7727,19 @@ var plainText = StripHTML(someHTML);
 gs.debug(plainText);
 ```
 Folder Name:
-  - ./Script Includes/Auto Execute Import Set on File Attachment 
- 	 - # Auto Execute Import Set on File Attachment
+
+  - ./Script Includes/Auto Execute Import Set on File Attachment
+    - # Auto Execute Import Set on File Attachment
 You have to create a data source and a transform map first. After that you can use Flow Designer with the trigger condition Attachment is added to the data source. Once the flow triggers, it will call the action which in turn will trigger the Script Include to create an Import Set and Transform Map.
 Folder Name:
-  - ./Script Includes/Auto Execute Import Set on File Attachment 
- 	 - # Auto Execute Import Set on File Attachment
+
+  - ./Script Includes/Auto Execute Import Set on File Attachment
+    - # Auto Execute Import Set on File Attachment
 You have to create a data source and a transform map first. After that you can use Flow Designer with the trigger condition Attachment is added to the data source. Once the flow triggers, it will call the action which in turn will trigger the Script Include to create an Import Set and Transform Map.
 Folder Name:
-  - ./Script Includes/KBArticleExpPDF 
- 	 - This utility contains a script include which generates PDF export of knowledge article  and this script include handles all HTML formatting of Knowledge article as well.
+
+  - ./Script Includes/KBArticleExpPDF
+    - This utility contains a script include which generates PDF export of knowledge article  and this script include handles all HTML formatting of Knowledge article as well.
 Also, this utility will handle any images attached in KB article body.
 
 Sample Script to call this Script Include:
@@ -7808,38 +7749,45 @@ new PolicyPDFHelper().getPDFBase64('b10db60e2fc738101d84d2172799b69c','landscape
 // First paramter is sys_id of KB article from kb_knowledge record
 // Second Parameter is PDF Export Mode. Accepted inputs are landscape or portrait.
 Folder Name:
-  - ./Script Includes/StarterPack 
- 	 - Also available on Share here: https://developer.servicenow.com/connect.do#!/share/contents/6592535_script_include_starter_pack?t=PRODUCT_DETAILS
+
+  - ./Script Includes/StarterPack
+    - Also available on Share here: https://developer.servicenow.com/connect.do#!/share/contents/6592535_script_include_starter_pack?t=PRODUCT_DETAILS
 
 and related to [CCB1193-K21 Script Includes: What are they and why should I care?](https://events.servicenow.com/widget/servicenow/knowledge2021/library/session/1612301555107001YVuE#1617832086855001eNVb)
 Folder Name:
-  - ./Script Includes/StarterPack 
- 	 - Also available on Share here: https://developer.servicenow.com/connect.do#!/share/contents/6592535_script_include_starter_pack?t=PRODUCT_DETAILS
+
+  - ./Script Includes/StarterPack
+    - Also available on Share here: https://developer.servicenow.com/connect.do#!/share/contents/6592535_script_include_starter_pack?t=PRODUCT_DETAILS
 
 and related to [CCB1193-K21 Script Includes: What are they and why should I care?](https://events.servicenow.com/widget/servicenow/knowledge2021/library/session/1612301555107001YVuE#1617832086855001eNVb)
 Folder Name:
-  - ./Script Includes/StarterPack 
- 	 - Also available on Share here: https://developer.servicenow.com/connect.do#!/share/contents/6592535_script_include_starter_pack?t=PRODUCT_DETAILS
+
+  - ./Script Includes/StarterPack
+    - Also available on Share here: https://developer.servicenow.com/connect.do#!/share/contents/6592535_script_include_starter_pack?t=PRODUCT_DETAILS
 
 and related to [CCB1193-K21 Script Includes: What are they and why should I care?](https://events.servicenow.com/widget/servicenow/knowledge2021/library/session/1612301555107001YVuE#1617832086855001eNVb)
 Folder Name:
-  - ./Script Includes/StarterPack 
- 	 - Also available on Share here: https://developer.servicenow.com/connect.do#!/share/contents/6592535_script_include_starter_pack?t=PRODUCT_DETAILS
+
+  - ./Script Includes/StarterPack
+    - Also available on Share here: https://developer.servicenow.com/connect.do#!/share/contents/6592535_script_include_starter_pack?t=PRODUCT_DETAILS
 
 and related to [CCB1193-K21 Script Includes: What are they and why should I care?](https://events.servicenow.com/widget/servicenow/knowledge2021/library/session/1612301555107001YVuE#1617832086855001eNVb)
 Folder Name:
-  - ./Script Includes/StarterPack 
- 	 - Also available on Share here: https://developer.servicenow.com/connect.do#!/share/contents/6592535_script_include_starter_pack?t=PRODUCT_DETAILS
+
+  - ./Script Includes/StarterPack
+    - Also available on Share here: https://developer.servicenow.com/connect.do#!/share/contents/6592535_script_include_starter_pack?t=PRODUCT_DETAILS
 
 and related to [CCB1193-K21 Script Includes: What are they and why should I care?](https://events.servicenow.com/widget/servicenow/knowledge2021/library/session/1612301555107001YVuE#1617832086855001eNVb)
 Folder Name:
-  - ./Script Includes/StarterPack 
- 	 - Also available on Share here: https://developer.servicenow.com/connect.do#!/share/contents/6592535_script_include_starter_pack?t=PRODUCT_DETAILS
+
+  - ./Script Includes/StarterPack
+    - Also available on Share here: https://developer.servicenow.com/connect.do#!/share/contents/6592535_script_include_starter_pack?t=PRODUCT_DETAILS
 
 and related to [CCB1193-K21 Script Includes: What are they and why should I care?](https://events.servicenow.com/widget/servicenow/knowledge2021/library/session/1612301555107001YVuE#1617832086855001eNVb)
 Folder Name:
-  - ./Script Includes/GlideRecord to JSON 
- 	 - # GlideRecord to JSON object converter
+
+  - ./Script Includes/GlideRecord to JSON
+    - # GlideRecord to JSON object converter
 * Description: This script include (gr2obj) converts GlideRecord to a JSON object
 * Sample Usage: 
 ```javascript
@@ -7856,24 +7804,28 @@ gs.info(JSON.stringify(obj));
 {"active":"true","activity_due":"","additional_assignee_list":null,"approval":"not requested","approval_history":"","approval_set":"","assigned_to":null,"assignment_group":null,"business_duration":"","business_service":null,"business_stc":null,"calendar_duration":"","calendar_stc":null,"caller_id":"System Administrator","category":"inquiry","caused_by":null,"child_incidents":"0","close_code":null,"close_notes":null,"closed_at":"","closed_by":null,"cmdb_ci":null,"comments":"","comments_and_work_notes":"","company":null,"contact_type":null,"contract":null,"correlation_display":null,"correlation_id":null,"delivery_plan":null,"delivery_task":null,"description":null,"due_date":"","escalation":"0","expected_start":"","follow_up":"","group_list":null,"hold_reason":null,"impact":"3","incident_state":"2","knowledge":"false","location":null,"made_sla":"true","notify":"1","number":"INC0010007","opened_at":"2021-08-08 03:42:27","opened_by":"System Administrator","order":null,"parent":null,"parent_incident":null,"priority":"5","problem_id":null,"reassignment_count":"0","rejection_goto":null,"reopen_count":"0","reopened_by":null,"reopened_time":"","resolved_at":"","resolved_by":null,"rfc":null,"route_reason":null,"service_offering":null,"severity":"3","short_description":"test2","sla_due":"","state":"2","subcategory":null,"sys_class_name":"incident","sys_created_by":"admin","sys_created_on":"2021-08-08 03:42:56","sys_domain":"global","sys_domain_path":"/","sys_id":"96cef4561b3530108b59a8e5604bcb74","sys_mod_count":"1","sys_tags":"","sys_updated_by":"admin","sys_updated_on":"2021-09-27 16:35:00","task_effective_number":"INC0010007","time_worked":"","u_requested_for":"Abel Tuter","universal_request":null,"upon_approval":"proceed","upon_reject":"cancel","urgency":"3","user_input":"","variables":null,"watch_list":null,"wf_activity":null,"work_end":"","work_notes":"","work_notes_list":null,"work_start":""}
 ```
 Folder Name:
-  - ./Script Includes/Slack JSON Block Factory 
- 	 - This Script Includes provides simple factories (Slacktory) to create Slack JSON blocks, that can be sent in payloads. 
+
+  - ./Script Includes/Slack JSON Block Factory
+    - This Script Includes provides simple factories (Slacktory) to create Slack JSON blocks, that can be sent in payloads. 
 Documentation for syntax is inline in the code.
 
 The factories will always return the created or modified block [Object].
 Folder Name:
-  - ./Script Includes/Delete Multiple Records Async 
- 	 - 
+
+  - ./Script Includes/Delete Multiple Records Async
+    - 
 Folder Name:
-  - ./Script Includes/ManagerRecursiveUtil 
- 	 - Many teams have a  use case to build reports for executives that shows data related all groups underneath them, such as problem tickets assigned to their reports. 
+
+  - ./Script Includes/ManagerRecursiveUtil
+    - Many teams have a  use case to build reports for executives that shows data related all groups underneath them, such as problem tickets assigned to their reports. 
 
 The script include return a list of group sys_ids that roll up to the given leader. 
 
 This is  client callable script includes and there is a limit the maximum amount of reporting depth, such as 7 users for performance reaasons.
 Folder Name:
-  - ./Script Includes/API Model Template for New Application 
- 	 - # Application Baseline Pattern
+
+  - ./Script Includes/API Model Template for New Application
+    - # Application Baseline Pattern
 
 Use this Script Include to extend into your new API model and provide a set of re-usable and extendable methods to enhance your application design
 
@@ -7882,8 +7834,9 @@ Then change the name and ensure all references are updated
 
 You can re-use and extend this pattern based on any object and centralise code in the core API base
 Folder Name:
-  - ./Script Includes/API Model Template for New Application 
- 	 - # Application Baseline Pattern
+
+  - ./Script Includes/API Model Template for New Application
+    - # Application Baseline Pattern
 
 Use this Script Include to extend into your new API model and provide a set of re-usable and extendable methods to enhance your application design
 
@@ -7892,8 +7845,9 @@ Then change the name and ensure all references are updated
 
 You can re-use and extend this pattern based on any object and centralise code in the core API base
 Folder Name:
-  - ./Script Includes/API Model Template for New Application 
- 	 - # Application Baseline Pattern
+
+  - ./Script Includes/API Model Template for New Application
+    - # Application Baseline Pattern
 
 Use this Script Include to extend into your new API model and provide a set of re-usable and extendable methods to enhance your application design
 
@@ -7902,8 +7856,9 @@ Then change the name and ensure all references are updated
 
 You can re-use and extend this pattern based on any object and centralise code in the core API base
 Folder Name:
-  - ./Script Includes/API Model Template for New Application 
- 	 - # Application Baseline Pattern
+
+  - ./Script Includes/API Model Template for New Application
+    - # Application Baseline Pattern
 
 Use this Script Include to extend into your new API model and provide a set of re-usable and extendable methods to enhance your application design
 
@@ -7912,8 +7867,9 @@ Then change the name and ensure all references are updated
 
 You can re-use and extend this pattern based on any object and centralise code in the core API base
 Folder Name:
-  - ./Script Includes/API Model Template for New Application 
- 	 - # Application Baseline Pattern
+
+  - ./Script Includes/API Model Template for New Application
+    - # Application Baseline Pattern
 
 Use this Script Include to extend into your new API model and provide a set of re-usable and extendable methods to enhance your application design
 
@@ -7922,8 +7878,9 @@ Then change the name and ensure all references are updated
 
 You can re-use and extend this pattern based on any object and centralise code in the core API base
 Folder Name:
-  - ./Script Includes/API Model Template for New Application 
- 	 - # Application Baseline Pattern
+
+  - ./Script Includes/API Model Template for New Application
+    - # Application Baseline Pattern
 
 Use this Script Include to extend into your new API model and provide a set of re-usable and extendable methods to enhance your application design
 
@@ -7932,8 +7889,9 @@ Then change the name and ensure all references are updated
 
 You can re-use and extend this pattern based on any object and centralise code in the core API base
 Folder Name:
-  - ./Script Includes/API Model Template for New Application 
- 	 - # Application Baseline Pattern
+
+  - ./Script Includes/API Model Template for New Application
+    - # Application Baseline Pattern
 
 Use this Script Include to extend into your new API model and provide a set of re-usable and extendable methods to enhance your application design
 
@@ -7942,8 +7900,9 @@ Then change the name and ensure all references are updated
 
 You can re-use and extend this pattern based on any object and centralise code in the core API base
 Folder Name:
-  - ./Script Includes/API Model Template for New Application 
- 	 - # Application Baseline Pattern
+
+  - ./Script Includes/API Model Template for New Application
+    - # Application Baseline Pattern
 
 Use this Script Include to extend into your new API model and provide a set of re-usable and extendable methods to enhance your application design
 
@@ -7952,8 +7911,9 @@ Then change the name and ensure all references are updated
 
 You can re-use and extend this pattern based on any object and centralise code in the core API base
 Folder Name:
-  - ./Script Includes/API Model Template for New Application 
- 	 - # Application Baseline Pattern
+
+  - ./Script Includes/API Model Template for New Application
+    - # Application Baseline Pattern
 
 Use this Script Include to extend into your new API model and provide a set of re-usable and extendable methods to enhance your application design
 
@@ -7962,8 +7922,9 @@ Then change the name and ensure all references are updated
 
 You can re-use and extend this pattern based on any object and centralise code in the core API base
 Folder Name:
-  - ./Script Includes/API Model Template for New Application 
- 	 - # Application Baseline Pattern
+
+  - ./Script Includes/API Model Template for New Application
+    - # Application Baseline Pattern
 
 Use this Script Include to extend into your new API model and provide a set of re-usable and extendable methods to enhance your application design
 
@@ -7972,8 +7933,9 @@ Then change the name and ensure all references are updated
 
 You can re-use and extend this pattern based on any object and centralise code in the core API base
 Folder Name:
-  - ./Script Includes/API Model Template for New Application 
- 	 - # Application Baseline Pattern
+
+  - ./Script Includes/API Model Template for New Application
+    - # Application Baseline Pattern
 
 Use this Script Include to extend into your new API model and provide a set of re-usable and extendable methods to enhance your application design
 
@@ -7982,8 +7944,9 @@ Then change the name and ensure all references are updated
 
 You can re-use and extend this pattern based on any object and centralise code in the core API base
 Folder Name:
-  - ./Script Includes/API Model Template for New Application 
- 	 - # Application Baseline Pattern
+
+  - ./Script Includes/API Model Template for New Application
+    - # Application Baseline Pattern
 
 Use this Script Include to extend into your new API model and provide a set of re-usable and extendable methods to enhance your application design
 
@@ -7992,27 +7955,33 @@ Then change the name and ensure all references are updated
 
 You can re-use and extend this pattern based on any object and centralise code in the core API base
 Folder Name:
-  - ./Script Includes/Client and Server Callable Script Include 
- 	 - # Client and Server Callable Script Include
+
+  - ./Script Includes/Client and Server Callable Script Include
+    - # Client and Server Callable Script Include
 
 Example of a script include that can be called via both client and server.
 Folder Name:
-  - ./Script Includes/TableUtils Extension 
- 	 - 
+
+  - ./Script Includes/TableUtils Extension
+    - 
 Folder Name:
-  - ./Script Includes/Match URL with a String 
- 	 - # Match URL with a String using Regex
+
+  - ./Script Includes/Match URL with a String
+    - # Match URL with a String using Regex
 
 This script gets the url using the referer method and matches the substring in the url.
 Folder Name:
-  - ./Script Includes/Dynamic Dropdown List 
- 	 - 
+
+  - ./Script Includes/Dynamic Dropdown List
+    - 
 Folder Name:
-  - ./Script Includes/Dynamic Dropdown List 
- 	 - 
+
+  - ./Script Includes/Dynamic Dropdown List
+    - 
 Folder Name:
-  - ./Script Includes/JSONtoYAML 
- 	 - Hi Everyone,
+
+  - ./Script Includes/JSONtoYAML
+    - Hi Everyone,
 
 This code is to convert JSON object into Yaml format.
 
@@ -8032,8 +8001,9 @@ hello2:
 - hello
 - world
 Folder Name:
-  - ./Script Includes/customArrayUtil 
- 	 - Convert input array to JSON 
+
+  - ./Script Includes/customArrayUtil
+    - Convert input array to JSON 
 
 Make a function call like
 
@@ -8043,8 +8013,9 @@ var outputObj = new customArrayUtil().arrToJSON(arrayObj, true);
 
 output would be a JSON Object like {"name":"John","Age":"32"}
 Folder Name:
-  - ./Script Includes/Hybrid Script Include for AJAX or Server Side Parameters 
- 	 - This example shows how one could code a script include that might be called in two different scenarios. One being a client AJAX call, and the other being a server side call, from another script include perhaps.
+
+  - ./Script Includes/Hybrid Script Include for AJAX or Server Side Parameters
+    - This example shows how one could code a script include that might be called in two different scenarios. One being a client AJAX call, and the other being a server side call, from another script include perhaps.
 
 Example usage:
 Client script AJAX call:
@@ -8063,14 +8034,17 @@ Client script AJAX call:
         result = pr.checkPrereq(parm1, parm2, parm3, parm4);
         return result;
 Folder Name:
-  - ./Script Includes/attachments 
- 	 - 
+
+  - ./Script Includes/attachments
+    - 
 Folder Name:
-  - ./Script Includes/Excel Attachment Via script 
- 	 - 
+
+  - ./Script Includes/Excel Attachment Via script
+    - 
 Folder Name:
-  - ./Script Includes/Role Checker Util 
- 	 - # Script incude with 4 functions to check if users have a certain role.
+
+  - ./Script Includes/Role Checker Util
+    - # Script incude with 4 functions to check if users have a certain role.
 Should work server side as well as client side with the right prameters (with some caviats for the 4th function).
 Pay attention to the defined sysparm names in the script if used on client side.
 
@@ -8103,8 +8077,9 @@ Checks if an array of users have a given role based on the role's name
 
 NOTE: if you want to use this function in GlideAjax, you should stringify the array here, and convert it back (if you want) on the client side!
 Folder Name:
-  - ./Script Includes/Check User Has Role 
- 	 - # User Has Role
+
+  - ./Script Includes/Check User Has Role
+    - # User Has Role
 
 This script checks whether the user has a role or not.
 This script takes two arguments
@@ -8112,8 +8087,9 @@ This script takes two arguments
 Argument #1: userId - userId of the record for which you need to validate the roles exists
 Argument #2: roleId - roleId is the sys_id of the role that we need to check whether exists against the provided userId
 Folder Name:
-  - ./Script Includes/Get Field Label in Specific Language 
- 	 - # Get Field Label in Specific Language
+
+  - ./Script Includes/Get Field Label in Specific Language
+    - # Get Field Label in Specific Language
 
 This Script Include enables retrieving the label of a certain table field in any given language. 
 Often in multi-language instances, the label of a field must be accessed via a script (e.g. to add it to the HTML of an email or add it to another fields like the description or work notes). Instead of retrieving the value each time individually this script include can be re-used (e.g. by multiple Business Rules or Mail Scripts). 
@@ -8132,8 +8108,9 @@ gs.log(util.getLabel("incident", "category", "de"));
 - If no label in the provided language can be found, the default English label is returned
 - Re-use this Script Include and call it from different types of scripts (e.g. Business Rule, Mail Script or Flow Action)
 Folder Name:
-  - ./Script Includes/Get Choice Display Value 
- 	 - # Get Selected Choice Display Value
+
+  - ./Script Includes/Get Choice Display Value
+    - # Get Selected Choice Display Value
 
 This scripts gets the display value of the selected choice. 
 
@@ -8142,8 +8119,9 @@ This scripts gets the display value of the selected choice.
 -   @param {String} question: Name of the question that needs to be queried
 -   @param {String} value: Value of that question
 Folder Name:
-  - ./Script Includes/VariableHelper 
- 	 - ## Variable Helper
+
+  - ./Script Includes/VariableHelper
+    - ## Variable Helper
 
  Working with variables in ServiceNow is no fun sometimes, especially [Multi Row Variable Sets](https://docs.servicenow.com/bundle/paris-application-development/page/script/server-scripting/concept/c_ScriptableServiceCatalogVariables.html#d2332110e207).  For that reason I created a helper Script Include to make my life easier.  
 
@@ -8172,8 +8150,9 @@ var myMRVS = varHelper.getMRVS(myGlideRecordObject.variables[mrvsName]); //Get a
   
 ```
 Folder Name:
-  - ./Script Includes/CatalogUtils 
- 	 - # CatalogUtils
+
+  - ./Script Includes/CatalogUtils
+    - # CatalogUtils
 This Script Include is a helper class for dealing with Service Catalog Items
 and Requested Items.
 ## getCatalogVariables()
@@ -8227,39 +8206,42 @@ var jsonVariables = JSON.parse(gaCatalogUtils.getAnswer() || "");
 ]
 ```
 Folder Name:
-  - ./Script Includes/ConversationUtils 
- 	 - 
+
+  - ./Script Includes/ConversationUtils
+    - 
 Folder Name:
-  - ./Script Includes/Records Calculator 
- 	 - 
+
+  - ./Script Includes/Records Calculator
+    - 
 Folder Name:
-  - ./Script Includes/CSV Parser 
- 	 - # Script Include: CSVParser
+
+  - ./Script Includes/CSV Parser
+    - # Script Include: CSVParser
 
 A script includes that parses concatenated CSV string and returns and array of the JSON objects for each row of the CSV data.
 
 ## Example usage
 
 ```
-var csv = "John, Doe, 33
-Jane, Doe, 32
-Jack, Doe, 11
-Josh, Doe, 13"  // Your CSV data
+var csv = "John, Doe, 33\nJane, Doe, 32\nJack, Doe, 11\nJosh, Doe, 13"  // Your CSV data
 var delimiter = ","
 var headers = ["first_name", "last_name", "age"] // Your CSV data headers
 var result = parser.parse(csv, headers, delimiter);
 ```
 Folder Name:
-  - ./Script Includes/getGlideRecordObject 
- 	 - 
+
+  - ./Script Includes/getGlideRecordObject
+    - 
 Folder Name:
-  - ./Script Includes/Standard Change Creator 
- 	 - This Script Includes provides a way to create a Standard Change, that will be auto-populated with certain fields.
+
+  - ./Script Includes/Standard Change Creator
+    - This Script Includes provides a way to create a Standard Change, that will be auto-populated with certain fields.
 
 Usage and list of required variables, as well as documentation and commets are inline in the code.
 Folder Name:
-  - ./Script Includes/UserCriteriaUtil 
- 	 - # UserCriteriaUtil
+
+  - ./Script Includes/UserCriteriaUtil
+    - # UserCriteriaUtil
 This Script Include helps to evaluate if a certain UserCriteria did match with a User.
 
 It doesn't use the typical `Class.create`, instead it is a simple javascript function.
@@ -8274,8 +8256,9 @@ UserCriteriaUtil().match(myUserCriteriaSysId);
 UserCriteriaUtil("<user_sys_id>").match(myUserCriteriaSysId);
 ```
 Folder Name:
-  - ./Script Includes/UserUtil 
- 	 - # UserUtil
+
+  - ./Script Includes/UserUtil
+    - # UserUtil
 
 A collection of scripts related to some esoteric user functions.
 
@@ -8312,16 +8295,18 @@ Returns a comma-separated list of sys_ids for assets belonging to the user. Can 
 
 > 3a3bf7421bdf9c50470a4267cc4bcb35,5e6930081b8f8c94470a4267cc4bcbaa
 Folder Name:
-  - ./Script Includes/regexCheckerScript 
- 	 - Script Include to check regex 
+
+  - ./Script Includes/regexCheckerScript
+    - Script Include to check regex 
 
 This script include can be used in a report or any other script/BR/Action to check if a particular type of text or a field matches the required regex. 
 Returns the sys_id of the records that match the regex. You can select your desired table, query and field, also update the required regex in the script. 
 
 Thankyou.
 Folder Name:
-  - ./Script Includes/NotificationUtil 
- 	 - # NotificationUtil
+
+  - ./Script Includes/NotificationUtil
+    - # NotificationUtil
 
 Quickly format all MRVS variables into a table of your current record into a notification mail scripts by using the NotificationUtil script include.
 
@@ -8336,8 +8321,9 @@ Mail script
 })(current, template, email, email_action, event);
 ```
 Folder Name:
-  - ./Script Includes/HTMLUtils 
- 	 - # Creates an HTML Table from an object
+
+  - ./Script Includes/HTMLUtils
+    - # Creates an HTML Table from an object
 
 @param  {String} [title] - Title above table
 @param  {Object} [table] - Object with headers attribute and row multi dimension array
@@ -8359,8 +8345,9 @@ hU.createHTMLTable("Test",table);
 <p style='margin: 10px 0px 10px;'><b>Test</b></p><table class='template_TBL table'><tbody><tr><td>col1</td><td>col2</td></tr><tr><td>row1col1</td><td>row1col2</td></tr><tr><td>row2col1</td><td>row2col2</td></tr></tbody></table>
 ```
 Folder Name:
-  - ./Script Includes/Merge Array 
- 	 - 	 @name mergeArray
+
+  - ./Script Includes/Merge Array
+    - 	 @name mergeArray
 	 @description Compare two arrays of objects, provide add/remove/edit based on the difference of the two arrays
 	 @param  {Object} [originalArray] - Array of objects is the base of comparison
 	 @param  {Object} [modifiedArray] - Array of objects compared against original to determin add/remove/edit
@@ -8370,23 +8357,26 @@ Folder Name:
    
    This is something I wrote when comparing JSON objects from MRVS that were leveraged on a catalog item to maintain CMDB relationships, however, doesn't have to be limited to that.
 Folder Name:
-  - ./Script Includes/UnloadXml 
- 	 - # Unload XML
+
+  - ./Script Includes/UnloadXml
+    - # Unload XML
 With this script include you can export a GlideRecord Query to XML which can be imported via the "Import XML" functionality.
 
 ```javascript
 var exportedXmlStr = UnloadXml("incident", "active=true");
 ```
 Folder Name:
-  - ./Script Includes/Public Script Include search 
- 	 - # Find public Script Includes
+
+  - ./Script Includes/Public Script Include search
+    - # Find public Script Includes
 
 The snippet helps to find public Script Includes (can be executed by a non-logged-in user) and check their security later manually.
 
 Such Script Include can be called from a public page (e.g. login.do page) in the browser console.
 Folder Name:
-  - ./Script Includes/Retrieve Last Comment by Ticket 
- 	 - # Retrieve Last Comment By Ticket
+
+  - ./Script Includes/Retrieve Last Comment by Ticket
+    - # Retrieve Last Comment By Ticket
 
 This script returns the last comment that has been added on a ticket by the record id.
 The function 'retrieveLastCommentByTicket' requires two arguments
@@ -8394,18 +8384,21 @@ The function 'retrieveLastCommentByTicket' requires two arguments
     Argument #1: sys_id - this is the sys_id of the record from which you need to pick the last comment
     Argument #2: tableName - this is the table name of the record
 Folder Name:
-  - ./Script Includes/Generate QR Code and attach to RITM 
- 	 - # Create QR Code
+
+  - ./Script Includes/Generate QR Code and attach to RITM
+    - # Create QR Code
 This sample script uses a free QR Code API and does a REST call to the server and returns the QR code as image. Then attaches
 the QR code into Requested Item record.
 
 In the script, replace the Requested Item sys_id with sys_id of your record. Change the text to the text you want to appear in the QR Code.
 Folder Name:
-  - ./Script Includes/Collect Field Values from Any One Table Record 
- 	 - 
+
+  - ./Script Includes/Collect Field Values from Any One Table Record
+    - 
 Folder Name:
-  - ./Script Includes/Scheduled Recursion 
- 	 - # Scheduled Recursion
+
+  - ./Script Includes/Scheduled Recursion
+    - # Scheduled Recursion
 
 To take action on a large number of records in a table, a single script may time out before the actions are completed. This is especially true for deletes. To avoid timing out the script, this solution will enable the action to be scheduled in batches with delays to avoid hanging the system for an extended operation.
 
@@ -8452,8 +8445,7 @@ ScheduledRecursion.prototype = {
 			if( objInputs.intBatchCount == undefined ){
 				objInputs.intBatchCount = 0;
 				gs.info( objInputs.strLogPrefix + 'Starting to process ' + totalRecordCount + ' records from ' + 
-						objInputs.strTableName + ' in batches of ' + objInputs.intBatchSize + ' records.
-Function: ' + JSON.stringify( objInputs.strFunction ) );				
+						objInputs.strTableName + ' in batches of ' + objInputs.intBatchSize + ' records.\nFunction: ' + JSON.stringify( objInputs.strFunction ) );				
 			}
 			gs.info( objInputs.strLogPrefix + 'Batch #' + ++objInputs.intBatchCount + ', Processing ' + objInputs.intBatchSize < totalRecordCount ? objInputs.intBatchSize : totalRecordCount + 
 				' of ' + totalRecordCount + ' remaining records.' );
@@ -8478,8 +8470,7 @@ Function: ' + JSON.stringify( objInputs.strFunction ) );
 		catch( e ){
 			gs.error( 
 				objInputs.strLogPrefix + 'An error occurred trying to process records from ' + objInputs.strTableName + 
-				'
-ERROR: ' + e.name + ': ' + e.message 
+				'\nERROR: ' + e.name + ': ' + e.message 
 			);
 		}
 
@@ -8506,8 +8497,9 @@ ERROR: ' + e.name + ': ' + e.message
 };
 ```
 Folder Name:
-  - ./Script Includes/Scheduled Recursion 
- 	 - # Scheduled Recursion
+
+  - ./Script Includes/Scheduled Recursion
+    - # Scheduled Recursion
 
 To take action on a large number of records in a table, a single script may time out before the actions are completed. This is especially true for deletes. To avoid timing out the script, this solution will enable the action to be scheduled in batches with delays to avoid hanging the system for an extended operation.
 
@@ -8554,8 +8546,7 @@ ScheduledRecursion.prototype = {
 			if( objInputs.intBatchCount == undefined ){
 				objInputs.intBatchCount = 0;
 				gs.info( objInputs.strLogPrefix + 'Starting to process ' + totalRecordCount + ' records from ' + 
-						objInputs.strTableName + ' in batches of ' + objInputs.intBatchSize + ' records.
-Function: ' + JSON.stringify( objInputs.strFunction ) );				
+						objInputs.strTableName + ' in batches of ' + objInputs.intBatchSize + ' records.\nFunction: ' + JSON.stringify( objInputs.strFunction ) );				
 			}
 			gs.info( objInputs.strLogPrefix + 'Batch #' + ++objInputs.intBatchCount + ', Processing ' + objInputs.intBatchSize < totalRecordCount ? objInputs.intBatchSize : totalRecordCount + 
 				' of ' + totalRecordCount + ' remaining records.' );
@@ -8580,8 +8571,7 @@ Function: ' + JSON.stringify( objInputs.strFunction ) );
 		catch( e ){
 			gs.error( 
 				objInputs.strLogPrefix + 'An error occurred trying to process records from ' + objInputs.strTableName + 
-				'
-ERROR: ' + e.name + ': ' + e.message 
+				'\nERROR: ' + e.name + ': ' + e.message 
 			);
 		}
 
@@ -8608,23 +8598,28 @@ ERROR: ' + e.name + ': ' + e.message
 };
 ```
 Folder Name:
-  - ./Script Includes/Project Base Line 
- 	 - 
+
+  - ./Script Includes/Project Base Line
+    - 
 Folder Name:
-  - ./Script Includes/Store data in User Session 
- 	 - 
+
+  - ./Script Includes/Store data in User Session
+    - 
 Folder Name:
-  - ./Script Includes/ArrayUtil 
- 	 - ArrayUtil API is a script include with useful functions for working with JavaScript arrays.
+
+  - ./Script Includes/ArrayUtil
+    - ArrayUtil API is a script include with useful functions for working with JavaScript arrays.
 The example shared helps removes duplicate items from an array using the 'unique' method
 Folder Name:
-  - ./Script Includes/SRAPIUtil 
- 	 - #SRAPIUtil
+
+  - ./Script Includes/SRAPIUtil
+    - #SRAPIUtil
 
 Utility class for common methods when implementing SRAPIs. Also includes examples of SNDocs and Revealing Module script include pattern with true private methods
 Folder Name:
-  - ./Script Includes/Check Valid Choice 
- 	 - Introduction :
+
+  - ./Script Includes/Check Valid Choice
+    - Introduction :
 
 This script include is a client callable script include which can be used to check if the value of a choice field is valid, optionally given a dependent value. This is helpful when you do transforms and when you want to do some validations in your REST inbound messages.
 
@@ -8633,8 +8628,9 @@ Inputs and Outputs :
      * @param {string} The name of the choice field
      * @returns {bool}         - Boolean indicating whether the value of a choice field is valid
 Folder Name:
-  - ./Script Includes/OrderedRecords 
- 	 - # ArtifactRank
+
+  - ./Script Includes/OrderedRecords
+    - # ArtifactRank
 Script Include that helps with getting the next spaced out ordering 
 
 ## Example Script
@@ -8642,8 +8638,9 @@ Script Include that helps with getting the next spaced out ordering
 var nextRank = new ArtifactRank.getNextRank();
 ```
 Folder Name:
-  - ./Script Includes/ListFieldUtil 
- 	 - # ListFieldUtil
+
+  - ./Script Includes/ListFieldUtil
+    - # ListFieldUtil
 Script Include that helps with handling list fields, like for example "Watch List" on the task table.
 
 It doesn't use the typical `Class.create`, instead it is a simple javascript function.
@@ -8665,8 +8662,9 @@ var currentUserInWatchList = ListFieldUtil(watchListVal).exists(gs.getUserID());
 gs.debug("Current user is in watch list: " + currentUserInWatchList);
 ```
 Folder Name:
-  - ./Script Includes/TimeZoneUtils 
- 	 - # TimeZoneUtils
+
+  - ./Script Includes/TimeZoneUtils
+    - # TimeZoneUtils
 This Script Include is a tool for handling time-zones in ServiceNow. Specifically, this solves the problem of being unable to get a GlideDate/GlideDateTime object in a SPECIFIED time-zone, without having to get a user object for a user who's already in that specific time-zone.
 
 ## getGDT()
@@ -8679,7 +8677,7 @@ the object to which your variable is a reference! In other words, your variable 
 
 ## setTZ(tz) / setTimeZone(tz)
 Note that you can specify time-zones in a number of formats, like "US/Pacific",
-"US\Eastern", or by short name (such as "mountain").
+"US\\Eastern", or by short name (such as "mountain").
 
 Currently, this utility only understands a few time-zones by short name. You can print out a list of
 pre-defined these supported short-names by printing out the keys in the timeZones property.
@@ -8760,8 +8758,9 @@ function thingTwo(arrArgs) {
 	return objObj;
 }
 Folder Name:
-  - ./Script Includes/Find months between two dates 
- 	 - # getMonths
+
+  - ./Script Includes/Find months between two dates
+    - # getMonths
 
 Helper function that calculates total months between two specified dates e.g. total months between 2020-01-01 and
 2022-01-01 is 24!
@@ -8774,8 +8773,9 @@ var helper = new DateUtils();
 gs.log(helper.getMonths('2020-01-01', '2022-01-01')); // This returns 24
 ```
 Folder Name:
-  - ./Script Includes/JSONPath 
- 	 - # JSONPath Plus
+
+  - ./Script Includes/JSONPath
+    - # JSONPath Plus
 
 Analyse, transform, and selectively extract data from JSON documents (and JavaScript objects).
 
@@ -9013,8 +9013,9 @@ More examples can be found [here](https://github.com/JSONPath-Plus/JSONPath/blob
 
 The code has been taken from [JSONPath-Plus repo](https://github.com/JSONPath-Plus/JSONPath) and slightly adjusted to be able to run on the platform JavaScript engine.
 Folder Name:
-  - ./Script Includes/getCountFunction 
- 	 - Introduction :
+
+  - ./Script Includes/getCountFunction
+    - Introduction :
 
 We have two script includes in here. Main aim for this is to have a generic count function which can be called from all server side scripts and you don’t have to write GlideAggregate every time. It is scripted in such a way that you can pass table name and query dynamically and get the count.
 
@@ -9030,8 +9031,9 @@ Parameters in script include to be passed:
 Output:
 Count of records matching the query.
 Folder Name:
-  - ./Script Includes/getCountFunction 
- 	 - Introduction :
+
+  - ./Script Includes/getCountFunction
+    - Introduction :
 
 We have two script includes in here. Main aim for this is to have a generic count function which can be called from all server side scripts and you don’t have to write GlideAggregate every time. It is scripted in such a way that you can pass table name and query dynamically and get the count.
 
@@ -9047,13 +9049,15 @@ Parameters in script include to be passed:
 Output:
 Count of records matching the query.
 Folder Name:
-  - ./Script Includes/Get Approvers of a Ticket 
- 	 - # Get Approvers of a Ticket
+
+  - ./Script Includes/Get Approvers of a Ticket
+    - # Get Approvers of a Ticket
 
 This script returns the number of approvers sys_id that are being requested for Approval
 Folder Name:
-  - ./Script Includes/get field values for multiple records from a table 
- 	 - ## Script contains scalable method to get display value of particular field from a table for any number of records filtered by a encoded query
+
+  - ./Script Includes/get field values for multiple records from a table
+    - ## Script contains scalable method to get display value of particular field from a table for any number of records filtered by a encoded query
 
 > Method: \_getFieldDisplayValues(tableName, query, fieldName)
 
@@ -9076,17 +9080,20 @@ Folder Name:
 -   @param {String} sysIDs: Comma separated list of sysIDs (can also be single sysID)
 -   @returns {String}: comma separated names of user profiles sys_id passed in as comma separated values.
 Folder Name:
-  - ./Script Includes/Non Prod Instance Password Reset 
- 	 - 
+
+  - ./Script Includes/Non Prod Instance Password Reset
+    - 
 Folder Name:
-  - ./Script Includes/Return Object 
- 	 - ## ReturnRecord Script Include
+
+  - ./Script Includes/Return Object
+    - ## ReturnRecord Script Include
 - The script include is client callable
 - The returnRecordObject function allows for users to return a record values within the objects properties.
 - In call back function, in client script, parse the object that is return, then dot walk to access its propery values.
 Folder Name:
-  - ./Script Includes/EvtMgmtCustom_PostTransformHandler 
- 	 - ## EvtMgmtCustom_PostTransformHandler Script Include
+
+  - ./Script Includes/EvtMgmtCustom_PostTransformHandler
+    - ## EvtMgmtCustom_PostTransformHandler Script Include
 
 I came across a requirement where we wanted to a create a new alert/incident when the same event is encountered after a certain amount of time, even if the existing alert/incident are still open. OOTB if this is the case and same event comes into the system, it will go ahead and append it to the existing alert. 
 
@@ -9094,8 +9101,9 @@ So, I made the EvtMgmtCustom_PostTransformHandler as active and scripted the cod
 
 Note: This script is present in the system to make any changes to the alert which will be created out of this Event. The Event itself is immutable, and will not be changed in the database
 Folder Name:
-  - ./Script Includes/Extending OOB TableUtils 
- 	 - # Extending the baseline TableUtils Script Include
+
+  - ./Script Includes/Extending OOB TableUtils
+    - # Extending the baseline TableUtils Script Include
 
 This code snippet extends the out of the box __Table Utils__ Script Include by adding a method to retrieve all fields -and the properties- of a given table. There is already a baseline API called _getFields()_ that does the same, but it required an existing GlideRecord to perform it. There are cases where we want the fields of a table without necessarily having a GlideRecord.
 
@@ -9129,8 +9137,9 @@ And returns a JSON structure of this format:
 }
 ```
 Folder Name:
-  - ./Script Includes/GlideRecordHelper 
- 	 - Various functions for working with gliderecords, inspired by some of the methods available in the service portal with $sp. Functions have JSDoc documnetation for use.
+
+  - ./Script Includes/GlideRecordHelper
+    - Various functions for working with gliderecords, inspired by some of the methods available in the service portal with $sp. Functions have JSDoc documnetation for use.
 
 @name getField
 @description: Checks the specified field and returns an object.
@@ -9147,8 +9156,9 @@ Folder Name:
 @name getFieldsObjectWithQueryAjax
 @description: Client callable to get fields array of objects with query
 Folder Name:
-  - ./Script Includes/Custom Discovery Schedule With Freeze Periods 
- 	 - # Custom Discovery Schedule
+
+  - ./Script Includes/Custom Discovery Schedule With Freeze Periods
+    - # Custom Discovery Schedule
 
 One of the requirements we had from one of our client was that they didn't want discovery schedules to run for few days at the begining of the month (BOM) and few days for the end of the month (EOM) as they internally had to generate some big financial reports and didn't want discovery to take any network resources.
 
@@ -9191,8 +9201,9 @@ helper.process();
 
 ```
 Folder Name:
-  - ./Script Includes/BenchmarkRunner 
- 	 - # BenchmarkRunner
+
+  - ./Script Includes/BenchmarkRunner
+    - # BenchmarkRunner
 This Script Include is a tool for benchmarking individual functions, or comparing the execution time or two functions, to determine whether one method of doing something is faster than another, and by how much. 
 
 For example (as you can see in the example below), comparing whether it's faster to *stringify* an object, or *parse* a JSON string into an object. 
@@ -9256,11 +9267,13 @@ function thingTwo(arrArgs) {
 	return objObj;
 }
 Folder Name:
-  - ./Script Includes/Number Padding 
- 	 - Lets you pad your single digit number for better formating
+
+  - ./Script Includes/Number Padding
+    - Lets you pad your single digit number for better formating
 Folder Name:
-  - ./Inbound Actions/Email Text as Attachment 
- 	 - # Save Email Text as Attachment
+
+  - ./Inbound Actions/Email Text as Attachment
+    - # Save Email Text as Attachment
 
 ### Steps:
 
@@ -9280,11 +9293,13 @@ var emailAsAttachment = new global.emailAsAttachmentUtil();
 emailAsAttachment.createAttachment(email, current);
 ```
 Folder Name:
-  - ./Inbound Actions/Automate creation of incidents through inbound actions 
- 	 - This is a simple code to automate creation of incidents for the alerts receiving to ServiceNow instance. This code has functionality of adding receipients (excluding service-now instance emails) of email to watchlist of incident.
+
+  - ./Inbound Actions/Automate creation of incidents through inbound actions
+    - This is a simple code to automate creation of incidents for the alerts receiving to ServiceNow instance. This code has functionality of adding receipients (excluding service-now instance emails) of email to watchlist of incident.
 Folder Name:
-  - ./Inbound Actions/Advanced Scripts 
- 	 - ## These inbound action scripts will help you with the following:
+
+  - ./Inbound Actions/Advanced Scripts
+    - ## These inbound action scripts will help you with the following:
 
 ### 1) Creation - Map values from an email to variables and create a requested item for the same.
 Check with script -> create_catalog_item_from_email.js  
@@ -9302,8 +9317,9 @@ Check with script -> cancel_catalog_item_from_email.js
 Third Scenario, here is once a termination request is submitted, now we need to re-hire the candidate. So, in this case we need to cancel the RITM. 
 This script will help you query the existing RITM for the user and cancel the RITM and all related tasks. So, as per your case scenario in a similar way you can query the existing RITM and cancel it with all the related catalog tasks.
 Folder Name:
-  - ./Inbound Actions/Advanced Scripts 
- 	 - ## These inbound action scripts will help you with the following:
+
+  - ./Inbound Actions/Advanced Scripts
+    - ## These inbound action scripts will help you with the following:
 
 ### 1) Creation - Map values from an email to variables and create a requested item for the same.
 Check with script -> create_catalog_item_from_email.js  
@@ -9321,8 +9337,9 @@ Check with script -> cancel_catalog_item_from_email.js
 Third Scenario, here is once a termination request is submitted, now we need to re-hire the candidate. So, in this case we need to cancel the RITM. 
 This script will help you query the existing RITM for the user and cancel the RITM and all related tasks. So, as per your case scenario in a similar way you can query the existing RITM and cancel it with all the related catalog tasks.
 Folder Name:
-  - ./Inbound Actions/Advanced Scripts 
- 	 - ## These inbound action scripts will help you with the following:
+
+  - ./Inbound Actions/Advanced Scripts
+    - ## These inbound action scripts will help you with the following:
 
 ### 1) Creation - Map values from an email to variables and create a requested item for the same.
 Check with script -> create_catalog_item_from_email.js  
@@ -9340,8 +9357,9 @@ Check with script -> cancel_catalog_item_from_email.js
 Third Scenario, here is once a termination request is submitted, now we need to re-hire the candidate. So, in this case we need to cancel the RITM. 
 This script will help you query the existing RITM for the user and cancel the RITM and all related tasks. So, as per your case scenario in a similar way you can query the existing RITM and cancel it with all the related catalog tasks.
 Folder Name:
-  - ./Inbound Actions/Auto Reply Email 
- 	 - There are use cases where it has been requested to setup an "auto reply" type process within ServiceNow
+
+  - ./Inbound Actions/Auto Reply Email
+    - There are use cases where it has been requested to setup an "auto reply" type process within ServiceNow
 
 To accomplish this, you'll need to do 3 steps:
 1) Create an event - https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/platform-events/task/t_CreateYourOwnEvent.html
@@ -9356,8 +9374,9 @@ To accomplish this, you'll need to do 3 steps:
 
 Additional things to keep in mind is that this setup is recommended for an already established process/inbound action, so you can simply take the script from code.js and add it to your current script at the point where you'd like the email sent. If this is for a new inbound action, select the table that matches the table you set on the notification. You'll want to ensure that the "Execution order" field within the inbound action is set low enough number that this process will not be blocked by other inbound action that was evaluated before it and has its "Stop processing" checkbox set to true. For the inbound action you've created, also ensure the "Stop processing" checkbox is not checked if you require additional inbound actions to evaluate the inbound email and complete other actions.
 Folder Name:
-  - ./Client Scripts/Validate date is in future without GlideAjax 
- 	 - # Client Script - Date in future
+
+  - ./Client Scripts/Validate date is in future without GlideAjax
+    - # Client Script - Date in future
 
 A client script that validates that a specified date is in future without the need for a GlideAjax and Script Include
 
@@ -9369,16 +9388,19 @@ A client script that validates that a specified date is in future without the ne
 - Navigate to the form and set the date field to the past
 - There will be a validation error close to the field
 Folder Name:
-  - ./Client Scripts/Make Variable Editor Read Only for Catalog Items containing MRVS 
- 	 - # Make Variable Editor Read Only for Catalog Items which have a Multi Row Variable Set
+
+  - ./Client Scripts/Make Variable Editor Read Only for Catalog Items containing MRVS
+    - # Make Variable Editor Read Only for Catalog Items which have a Multi Row Variable Set
 Create an onLoad Client Script which would call a Script Include and pass in the Catalog Item sys_id to check if the Catalog Item contains a MRVS. The script has been tailored to work with the Requested Item table. To make it work for any other table which has the Variable Editor replace the field "cat_item" with the field containing the details of the Catalog Item
 Folder Name:
-  - ./Client Scripts/Make Variable Editor Read Only for Catalog Items containing MRVS 
- 	 - # Make Variable Editor Read Only for Catalog Items which have a Multi Row Variable Set
+
+  - ./Client Scripts/Make Variable Editor Read Only for Catalog Items containing MRVS
+    - # Make Variable Editor Read Only for Catalog Items which have a Multi Row Variable Set
 Create an onLoad Client Script which would call a Script Include and pass in the Catalog Item sys_id to check if the Catalog Item contains a MRVS. The script has been tailored to work with the Requested Item table. To make it work for any other table which has the Variable Editor replace the field "cat_item" with the field containing the details of the Catalog Item
 Folder Name:
-  - ./Client Scripts/End Date can't be before Start Date 
- 	 - This script is for an onChange client script
+
+  - ./Client Scripts/End Date can't be before Start Date
+    - This script is for an onChange client script
 
 This is using an example where you have two date variables and need to ensure the user does not choose an end date that's before the start date
 
@@ -9388,15 +9410,17 @@ This is using an example where you have two date variables and need to ensure th
 
 This script works for both the standard (desktop) UI and Service Portal
 Folder Name:
-  - ./Client Scripts/Make all fields read only 
- 	 - Use this script to make all fields readonly via client script.
+
+  - ./Client Scripts/Make all fields read only
+    - Use this script to make all fields readonly via client script.
 
 **Tested in Global scope
 **You can't make mandatory fields as readonly
 **Best Practice is to use ACLs
 Folder Name:
-  - ./Client Scripts/g_form console access in workspace 
- 	 - # Access g_form instance inside Agent Workspace from DevTools Console
+
+  - ./Client Scripts/g_form console access in workspace
+    - # Access g_form instance inside Agent Workspace from DevTools Console
 When developing forms in ServiceNow it can be useful to try stuff out directly in the DevTools Console.
 In UI16 this was pretty straightforward because g_form was available globally, Agent Workspace makes this a little bit more complicated.
 So this script provides access to the g_form object of the currently active tab in a Workspace.
@@ -9404,8 +9428,9 @@ So this script provides access to the g_form object of the currently active tab 
 Just copy the Script in the DevTools Console and run `var g_form = getGlideFormAW()` 
 now you should be able to do stuff like `g_form.setValue("short_description", "Lorem ipsum")`
 Folder Name:
-  - ./Client Scripts/MRVS variables validations 
- 	 - Multi Row Variable Set (MRVS) variables validations which are based on variables out of MRVS
+
+  - ./Client Scripts/MRVS variables validations
+    - Multi Row Variable Set (MRVS) variables validations which are based on variables out of MRVS
 
 for this we need to use "g_service_catalog" client side API of ServiceNow
 
@@ -9416,8 +9441,9 @@ We are restricting here only to enter extended leave start date after the last w
 
 ![image](https://user-images.githubusercontent.com/46869542/193416763-27fb52c9-e15b-48b5-99fd-6c146a6819c3.png)
 Folder Name:
-  - ./Client Scripts/Check all mandatory fields using mandatoryCheck() 
- 	 - **Client Script**
+
+  - ./Client Scripts/Check all mandatory fields using mandatoryCheck()
+    - **Client Script**
 
 Client script which is showing how to use g_form.mandatoryCheck() function, which allows to easily detect if any of mandatory field is not filled on record.
 
@@ -9429,16 +9455,19 @@ Client script which is showing how to use g_form.mandatoryCheck() function, whic
 
 ![Execution](ScreenShot_2.PNG)
 Folder Name:
-  - ./Client Scripts/Add Image to Field Based on Company 
- 	 - # Add Image to Field Based on Company
+
+  - ./Client Scripts/Add Image to Field Based on Company
+    - # Add Image to Field Based on Company
 From the User Profile get the Company associated to the User using a Display Business Rule and putting the value in the scratchpad. After that use the scratchpad value in the Client Script to check the company name and then associate the image accordingly. You would need to add all your images to the ServiceNow instance first with the correct names.
 Folder Name:
-  - ./Client Scripts/Add Image to Field Based on Company 
- 	 - # Add Image to Field Based on Company
+
+  - ./Client Scripts/Add Image to Field Based on Company
+    - # Add Image to Field Based on Company
 From the User Profile get the Company associated to the User using a Display Business Rule and putting the value in the scratchpad. After that use the scratchpad value in the Client Script to check the company name and then associate the image accordingly. You would need to add all your images to the ServiceNow instance first with the correct names.
 Folder Name:
-  - ./Client Scripts/Verify if e-mail already exists with Ajax call 
- 	 - **Client Script**
+
+  - ./Client Scripts/Verify if e-mail already exists with Ajax call
+    - **Client Script**
 
 Client script for verification if changed e-mail adders on user record is not already existing in sys_user table (real-time information about duplicated e-mail). Check is performed using asynchronous Ajax call and processed in callback function. In case e-mail already exists in sys_user table, message is displayed under email field with information which has have that e-mail.
 
@@ -9456,8 +9485,9 @@ Example Client Script configuration (code in [clientScript.js](clientScript.js))
 
 ![Coniguration_SI](ScreenShot_3.PNG)
 Folder Name:
-  - ./Client Scripts/Verify if e-mail already exists with Ajax call 
- 	 - **Client Script**
+
+  - ./Client Scripts/Verify if e-mail already exists with Ajax call
+    - **Client Script**
 
 Client script for verification if changed e-mail adders on user record is not already existing in sys_user table (real-time information about duplicated e-mail). Check is performed using asynchronous Ajax call and processed in callback function. In case e-mail already exists in sys_user table, message is displayed under email field with information which has have that e-mail.
 
@@ -9475,18 +9505,21 @@ Example Client Script configuration (code in [clientScript.js](clientScript.js))
 
 ![Coniguration_SI](ScreenShot_3.PNG)
 Folder Name:
-  - ./Client Scripts/Translate Message 
- 	 - # Translate your messages in client script using getMessage method
+
+  - ./Client Scripts/Translate Message
+    - # Translate your messages in client script using getMessage method
 
   *[getMessage() code snippet](getMessage.js)
   
   *[Translate message in client script doc](https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/localization/task/t_TranslateAClientScriptMessage.html)
 Folder Name:
-  - ./Client Scripts/Make fields read only in specific states 
- 	 - 
+
+  - ./Client Scripts/Make fields read only in specific states
+    - 
 Folder Name:
-  - ./Client Scripts/Sync Ajax with no getXMLWait 
- 	 - # onSubmit Ajax validation with no getXMLWait
+
+  - ./Client Scripts/Sync Ajax with no getXMLWait
+    - # onSubmit Ajax validation with no getXMLWait
 
 Using getXMLWait() ensures the order of execution, but can cause the application to seem unresponsive, significantly degrading the user experience of any application that uses it.
 
@@ -9494,15 +9527,17 @@ Also, the getXMLWait method is not available in scoped applications.
 
 This snippet simulates the behavior of the getXMLWait method.
 Folder Name:
-  - ./Client Scripts/Auto-populate watch_list based on company 
- 	 - Table: Incident
+
+  - ./Client Scripts/Auto-populate watch_list based on company
+    - Table: Incident
 Type: onChange
 field: caller_id
 
 Sometimes customers have a requirement to add users or distribution lists to all tickets that are raised for their company. This script allows to automatically add a list of users or external email addresses to the watch_list field.
 Folder Name:
-  - ./Client Scripts/Client script using getMessage() function without filling Messages field 
- 	 - # Client scripts using getMessage() function without filling Messages field
+
+  - ./Client Scripts/Client script using getMessage() function without filling Messages field
+    - # Client scripts using getMessage() function without filling Messages field
 
 **Problem scenario :**
 Developers while writing a client script uses getMessage() function but there are no messages preloaded in the 'Messages' field in client script form
@@ -9514,35 +9549,40 @@ Check the file `script.js` file for example.
 
 Note : As a best practice for this scenario use 'Checks' in the'Instance scan' feature of serviceNow. If Instance scan is not configured in your instance yet or if you want to avoid the problem during development itself then use this client script.
 Folder Name:
-  - ./Client Scripts/Get URL Parameters 
- 	 - # Get URL Parameters in Global,Scoped Application for Record & Catalog Item
+
+  - ./Client Scripts/Get URL Parameters
+    - # Get URL Parameters in Global,Scoped Application for Record & Catalog Item
 
 Many times there is a need to grab parameters from URL. This could be required at table form load or catalog item load and either in Global scope or custom scope application when redirection happened. Given script will help you in achieving this:
 
 [Click here for the script](script.js)
 Folder Name:
-  - ./Client Scripts/Populate Jelly Slushbucket with Values 
- 	 - This code is used to populate the <g:ui_slushbucket up_down="true"/> Jelly tag within a UI Page.
+
+  - ./Client Scripts/Populate Jelly Slushbucket with Values
+    - This code is used to populate the <g:ui_slushbucket up_down="true"/> Jelly tag within a UI Page.
 
 In the UI Page, must ensure that this tag is located in the HTML section.
 
 Then in the client script, include the code provided in the example.
 Folder Name:
-  - ./Client Scripts/Get Value from URL Parameter 
- 	 - Script that can be used in Client scripts to get URL parameter value.
+
+  - ./Client Scripts/Get Value from URL Parameter
+    - Script that can be used in Client scripts to get URL parameter value.
 
 ** Isolate script should be **false**
 Folder Name:
-  - ./Client Scripts/Show field if x things are checked 
- 	 - Use this script to show a field after `n` checkboxes are checked and not before.
+
+  - ./Client Scripts/Show field if x things are checked
+    - Use this script to show a field after `n` checkboxes are checked and not before.
 
 **Tested in Global scope
 **You can't make mandatory fields as readonly
 **Best Practice is to use UI Policies
 **Sometimes you have a lot of check marks and that logic gets narly
 Folder Name:
-  - ./Client Scripts/Only number validation for input 
- 	 - # Client Script - Input is number only
+
+  - ./Client Scripts/Only number validation for input
+    - # Client Script - Input is number only
 
 A client script that validates that the input entry is number only
 
@@ -9555,8 +9595,9 @@ A client script that validates that the input entry is number only
 - Navigate to the form and set the field to a string
 - There will be a validation error close to the field
 Folder Name:
-  - ./Client Scripts/Hide Work Notes section 
- 	 - **Client Script**
+
+  - ./Client Scripts/Hide Work Notes section
+    - **Client Script**
 
 Client Script for hiding work notes section on incident form. In this example it is configured to hide work notes section, when incident is in state new, but you can adjust condition to fit your requirements. 
 
@@ -9574,11 +9615,13 @@ When incident is not in state NEW (Work notes section visible):
 
 ![Visible](ScreenShot_3.PNG)
 Folder Name:
-  - ./Client Scripts/Expanding Info Message 
- 	 - This is an expanding info message. It can even run a script when an element is clicked.
+
+  - ./Client Scripts/Expanding Info Message
+    - This is an expanding info message. It can even run a script when an element is clicked.
 Folder Name:
-  - ./Client Scripts/onfocus and onblur 
- 	 - Using "onfocus" & "onblur" Show/Hide field messages while updating a field.
+
+  - ./Client Scripts/onfocus and onblur
+    - Using "onfocus" & "onblur" Show/Hide field messages while updating a field.
 
 Example:On load Client script on the incident form
 
@@ -9591,8 +9634,9 @@ Example:On load Client script on the incident form
 
 https://user-images.githubusercontent.com/42912180/195825799-aff13ca5-0b85-4660-98a3-ea1af8b61974.mp4
 Folder Name:
-  - ./Client Scripts/Set field style like font and background 
- 	 - # Client Script - Change field style
+
+  - ./Client Scripts/Set field style like font and background
+    - # Client Script - Change field style
 
 A client script that changes field font, and background based on some condition
 And example would be if the currently raised incident is by a VIP user and hightlight the caller...
@@ -9603,8 +9647,9 @@ And example would be if the currently raised incident is by a VIP user and hight
 - Copy this script into it
 - Set the condition and the field that requires to be changed
 Folder Name:
-  - ./Catalog Client Script/PopulateDropdown 
- 	 - ## Load / Populate the options for the second dropdown field (select box) based on what user chooses in the first dropdown
+
+  - ./Catalog Client Script/PopulateDropdown
+    - ## Load / Populate the options for the second dropdown field (select box) based on what user chooses in the first dropdown
 ![alt text](demo_catalog.png)
 
 ### Use case
@@ -9622,11 +9667,13 @@ This will especially come in handy when you have hundreds of options to populate
 - In the 2nd dropdwon, add any value for the question choices to bypass the mandatory
 - Create new client script, on change, for the FIRST dropdown. Only applies on Catalog Item view. It is recommended to set the variables readonly on the RITM and SCTASK view.
 Folder Name:
-  - ./Catalog Client Script/Add Label For Attachment 
- 	 - 
+
+  - ./Catalog Client Script/Add Label For Attachment
+    - 
 Folder Name:
-  - ./Catalog Client Script/Prevent duplicate records on MRVS 
- 	 - # Prevent duplicate records to be selected in Multi row variable set
+
+  - ./Catalog Client Script/Prevent duplicate records on MRVS
+    - # Prevent duplicate records to be selected in Multi row variable set
 
 We have many ways to do this but this is bit unique compare to what you find in community, you can do it in one single script within the Variable set. 
 Of course ServiceNow introduce a new feature in Quebec and have Unique checkbox field introuduced but to have a custom info message you need to go with the custom script.
@@ -9635,8 +9682,9 @@ Of course ServiceNow introduce a new feature in Quebec and have Unique checkbox 
   
   [Click here for the script](script.js)
 Folder Name:
-  - ./Catalog Client Script/Mandatory Attachments with 'n' numbers 
- 	 - # Enable Mandatory Attachments Count wtih 'n' numbers on Service Catalog item
+
+  - ./Catalog Client Script/Mandatory Attachments with 'n' numbers
+    - # Enable Mandatory Attachments Count wtih 'n' numbers on Service Catalog item
 **Problem:** Check if exact 'n' number of attachments are added or not when user submit a request through service catalog from Portal/Platform UI.
 
 **For example:** We need to ensure there are exact 3 attachments added before submission
@@ -9645,8 +9693,9 @@ Folder Name:
 
 * [Click here for script](onSubmitClientScript.js)
 Folder Name:
-  - ./Catalog Client Script/Set fields from URL Parameters 
- 	 - # Set fields on a catalog item from URL parameters.
+
+  - ./Catalog Client Script/Set fields from URL Parameters
+    - # Set fields on a catalog item from URL parameters.
 
 This only works on both the classic ui and service portal.
 
@@ -9659,15 +9708,18 @@ For the OOTB Password Reset catalog item it has a field "Whose password needs to
 
 /sp?id=sc_cat_item&sys_id=29a39e830a0a0b27007d1e200ad52253&**caller_id=62826bf03710200044e0bfc8bcbe5df1**
 Folder Name:
-  - ./Catalog Client Script/Restrict Number of rows in Multi Row Variable 
- 	 - ## restrict_multi_row.js
+
+  - ./Catalog Client Script/Restrict Number of rows in Multi Row Variable
+    - ## restrict_multi_row.js
 Use this to restrict multi row variable set rows to 1. this value can be changed to any number of rows as requirement.
 Folder Name:
-  - ./Catalog Client Script/Block Submit 
- 	 - 
+
+  - ./Catalog Client Script/Block Submit
+    - 
 Folder Name:
-  - ./Catalog Client Script/Currency Validation 
- 	 - ## Currency Validation 
+
+  - ./Catalog Client Script/Currency Validation
+    - ## Currency Validation 
 
 Use this catalog client script to validate the value of a variable used to get currency. As of now 3 things are being checked in the script but you can make changes as per requirement.
 
@@ -9675,8 +9727,9 @@ Use this catalog client script to validate the value of a variable used to get c
 2) Entered value should have a decimal point.
 3) There must be 2 digits only after the decimal.
 Folder Name:
-  - ./Catalog Client Script/Date Management 
- 	 - #### Useful ways to interact with variable date/time values without needing to make a trip to the server
+
+  - ./Catalog Client Script/Date Management
+    - #### Useful ways to interact with variable date/time values without needing to make a trip to the server
 
 The following functions and variables are defined by ServiceNow and loaded at run-time. They are accessible from within the client script without the need to turn off script isolation.
 
@@ -9687,8 +9740,9 @@ The following functions and variables are defined by ServiceNow and loaded at ru
 - formatDate()
 - getDateFromFormat()
 Folder Name:
-  - ./Catalog Client Script/Make OOB Attachment Mandatory 
- 	 - # Make out of the box attahcment mandatory onChange of a field in Catalog Item
+
+  - ./Catalog Client Script/Make OOB Attachment Mandatory
+    - # Make out of the box attahcment mandatory onChange of a field in Catalog Item
 
 This scripts makes the out of the box attachments to mandatory on the Service Portal for any Catalog Item.
 
@@ -9703,11 +9757,13 @@ Step #3 - Create a Catalog Client Script for the respective Catalog Item where y
 
 * [Click here for script](Catalog Client Script/Make OOB Attachment Mandatory/onChange.js)
 Folder Name:
-  - ./Catalog Client Script/Remove reference icon from portal 
- 	 - 
+
+  - ./Catalog Client Script/Remove reference icon from portal
+    - 
 Folder Name:
-  - ./Catalog Client Script/Combine variables into Description 
- 	 - OnSUbmit Catalog Client script is created to Combine all variable values required and display in Description field.
+
+  - ./Catalog Client Script/Combine variables into Description
+    - OnSUbmit Catalog Client script is created to Combine all variable values required and display in Description field.
 Steps:
 1. Navigate to your instance open catalog client script table [catalog_script_client]
 2. Create new catalog client script -> click new
@@ -9721,8 +9777,9 @@ Steps:
       - Catalog item: select your catalog item
  4. create the script as per script.js file.  
 Folder Name:
-  - ./Catalog Client Script/Control all RITM variables in one go 
- 	 - # Control all RITM variables in one go
+
+  - ./Catalog Client Script/Control all RITM variables in one go
+    - # Control all RITM variables in one go
 
 Requirement : We need to make all the variables on the RITM (sc_req_item) form read only or editable
 
@@ -9730,8 +9787,9 @@ Problem : If there are so many variables then it becomes difficult to write mult
 
 Solution : With the above code snippet you can control(make read-only or editable) all the variables in the RITM form with very minimal code)
 Folder Name:
-  - ./Catalog Client Script/Autopopulate Department 
- 	 - # Autopopulate Department Catalog Client Script
+
+  - ./Catalog Client Script/Autopopulate Department
+    - # Autopopulate Department Catalog Client Script
 
 Use this onChange catalog client script to populate a **department** variable in a catalog item based on a modifiable **requested_for**. Both variables must be reference type pointing to their respective tables.
 
@@ -9741,20 +9799,23 @@ The GlideUser API (g_user) does not provide a way to retrieve a user's departmen
 
 Attach this client script to a variable set for easy reuse. It can be augmented with a number of other fields from the user record such as email, phone number, manager, etc. Just be mindful of field types and whether the desired field will return a sys_id or display text.
 Folder Name:
-  - ./Catalog Client Script/Special Characters 
- 	 - # Validate Special Characters for a catalog variable
+
+  - ./Catalog Client Script/Special Characters
+    - # Validate Special Characters for a catalog variable
 
 With this onChange catalog client script you can validate if there are any special characters present in the input given by user in a particular field and show an error message below the field and clear the field value. Although we have other methods to do this, it is much easier and you can customize your error message.
 Folder Name:
-  - ./Catalog Client Script/Regex Validation 
- 	 - # Regular Expression on Catalog Client script
+
+  - ./Catalog Client Script/Regex Validation
+    - # Regular Expression on Catalog Client script
   
 With the help of this code you can easily validate the input value from the user and if it's not a email format you can clear and throw a error message below the variable. Of course you can use Email type variable as well but you cannot have a formatted error message.
 
 * [Click here for script](script.js)
 Folder Name:
-  - ./Catalog Client Script/Rounding Money or Price Field 
- 	 - This script is OnChange, and will automatically round the selected field to [x] value.
+
+  - ./Catalog Client Script/Rounding Money or Price Field
+    - This script is OnChange, and will automatically round the selected field to [x] value.
 The script can either be applied to a Catalog Item, or a specific Variable in a Var Set.
 
 For example, if prompting a user for a cost, and said cost should only be in multiples of $5.
@@ -9763,13 +9824,15 @@ Any instance of `[VAR NAME]` in these files should be replaced with the name of 
 
 More information and a full write-up available on [Community](https://community.servicenow.com/community?id=community_article&sys_id=75ab01271bac5d10c17111751a4bcb40).
 Folder Name:
-  - ./Catalog Client Script/MRVS Interact With Parent Form 
- 	 - Use this code snippet to interact with the parent form (i.e the main catalogue item) from within a catalog client script on a Multi-row variable set.
+
+  - ./Catalog Client Script/MRVS Interact With Parent Form
+    - Use this code snippet to interact with the parent form (i.e the main catalogue item) from within a catalog client script on a Multi-row variable set.
 
 The g_service_catalog object allows for accessing the "parent" GlideForm (g_form) object and its related functions
 Folder Name:
-  - ./Catalog Client Script/Clear all fields 
- 	 - # Clear all fields on a catalog item form
+
+  - ./Catalog Client Script/Clear all fields
+    - # Clear all fields on a catalog item form
 
 This works on both the native platform and service portal / mobile. Typically used with an OnChange catalog client script when you would like to reset all the fields after a certain variable is changed.
 
@@ -9783,11 +9846,13 @@ clearFields(['field1', 'field2']);
 
 All fields on the form **except** field1 and field2 will be cleared.
 Folder Name:
-  - ./Catalog Client Script/MRVS Loop Rows 
- 	 - Use this to loop through a Multi Row Variable Set and create an array of objects with the variables in it.
+
+  - ./Catalog Client Script/MRVS Loop Rows
+    - Use this to loop through a Multi Row Variable Set and create an array of objects with the variables in it.
 Folder Name:
-  - ./Catalog Client Script/Set User Field Values on Load 
- 	 - On Load Catalog client script is created to auto set the field values and make that field read only
+
+  - ./Catalog Client Script/Set User Field Values on Load
+    - On Load Catalog client script is created to auto set the field values and make that field read only
  - Navigate to your instance -> App Navigator > Open Catalog CLient Script [catalog_script_client]
  - Set following field Values
         - Name: xyz
@@ -9798,8 +9863,9 @@ Folder Name:
         - Isolated script: Checked
   -  Create the script as per script.js file.
 Folder Name:
-  - ./GlideElement/getDependent 
- 	 - GlideElement API provides different functions to work with the fields, attribute, values, etc.,
+
+  - ./GlideElement/getDependent
+    - GlideElement API provides different functions to work with the fields, attribute, values, etc.,
 getDependent function on GlideElement API - helpful in validating the dependent field values if any for the given field. 
 
 Used subcategory field in incident table as an example so that it will print "category" as result.
@@ -9807,11 +9873,13 @@ If we update the field_name variable to some other field that is not dependent o
 
 Link to documentation - https://developer.servicenow.com/dev.do#!/reference/api/paris/server_legacy/c_GlideElementAPI#r_GlideElement-getDependent
 Folder Name:
-  - ./GlideElement/Display available choices 
- 	 - 
+
+  - ./GlideElement/Display available choices
+    - 
 Folder Name:
-  - ./Advanced Conditions/Exclude Email Reply Comment Notifications by Group 
- 	 - # Exclude Email Replies from Comment Notifications based on Group Membership
+
+  - ./Advanced Conditions/Exclude Email Reply Comment Notifications by Group
+    - # Exclude Email Replies from Comment Notifications based on Group Membership
 
 ### This is an advanced condition script for new comment notifications that will exclude new comments that are email replies for specific groups.  
 
@@ -9829,28 +9897,32 @@ Specify the group name such as Service Desk, Network Team, or CAB Approvers etc 
 if (groupMember.isMemberOf('Special Group')) { //check if membership is true
 ```
 Folder Name:
-  - ./Advanced Conditions/Group Approval Check 
- 	 - # Group Approval Check
+
+  - ./Advanced Conditions/Group Approval Check
+    - # Group Approval Check
 
 ### This is an email notification advanced condition script for approval requests that will check if an approval has already been granted prior to sending out a request.
 
 This script can be applied to any approval request notification on the sysapproval_approver table with no additional configuration necessary
 Folder Name:
-  - ./MIDServer/API Class Examples 
- 	 - # MIDServer class samples
+
+  - ./MIDServer/API Class Examples
+    - # MIDServer class samples
 
 * Description: Usage samples for the MIDServer API class.
 * [MIDServer Code Snippet](scripts.js)
 * [MIDServer API Doc](https://developer.servicenow.com/dev.do#!/reference/api/rome/server_legacy/c_MIDServerAPI)
 Folder Name:
-  - ./Flow Actions/Check MID Server Availability 
- 	 - ## Action Script to check mid server availability
+
+  - ./Flow Actions/Check MID Server Availability
+    - ## Action Script to check mid server availability
 
 ### Use this script in a new flow action to check if a mid server is up/available or not. This can be used to for orchestration projects or similar. 
 ### Note: The script returns availability as true/false back as the action output to the flow.
 Folder Name:
-  - ./Flow Actions/Scheduled data import trigger 
- 	 - This action script will execute the scheduled import via a flow action.
+
+  - ./Flow Actions/Scheduled data import trigger
+    - This action script will execute the scheduled import via a flow action.
 
 Inputs are  - 'importSet'  - the sys_id of the scheduled import set  - mandatory
 
@@ -9859,23 +9931,27 @@ Outputs are - 'returnerror'- true if no import set found             - mandatory
 We found this useful when triggering a data import from a catalog item. User attaches the import file to catalog item and submit, which triggers flow, which then
 had this action to import the file using the right import set.
 Folder Name:
-  - ./Flow Actions/get Catalog Variables as JSON 
- 	 - Get catalog variables from a given RITM
+
+  - ./Flow Actions/get Catalog Variables as JSON
+    - Get catalog variables from a given RITM
 Folder Name:
-  - ./Flow Actions/Runscript activities 
- 	 - This code help to set the RITM description as the summary of catalog item variables.
+
+  - ./Flow Actions/Runscript activities
+    - This code help to set the RITM description as the summary of catalog item variables.
 we can reuse the code on catalog workflows in runscript activity and flow designers
 Folder Name:
-  - ./Flow Actions/Get Property 
- 	 - Flow Action to return the value of a sys_properties
+
+  - ./Flow Actions/Get Property
+    - Flow Action to return the value of a sys_properties
 
 Action requires:
 - One string input for sys_properties name
 - Script Step (provided in getPropertyFlowAction.js)
 - One string output for returned value
 Folder Name:
-  - ./Flow Actions/Trigger event action 
- 	 - Useful for tasks like triggering notifications or to trigger asynchronous script actions from a flow. 
+
+  - ./Flow Actions/Trigger event action
+    - Useful for tasks like triggering notifications or to trigger asynchronous script actions from a flow. 
 
 This flow action triggers the passed in event with optional parameters. Will work for most scenarios as the event record is passed in as a Document ID input.
 
@@ -9889,8 +9965,9 @@ parm1					- String
 
 parm2					- String
 Folder Name:
-  - ./Fix scripts/Swiss German Language Update 
- 	 - # Swiss German Language Update
+
+  - ./Fix scripts/Swiss German Language Update
+    - # Swiss German Language Update
 
 This Fix Script replaces all "ß" special characters generated by the German language plugin (com.snc.i18n.german). 
 In Swiss German, this character does not exist and must be replaced with "ss". Currently, unfortunately, there is no dedicated Swiss German language plugin available. 
@@ -9907,8 +9984,9 @@ I would recommend to run the Fix Script in the background, since the execution m
 
 - Quick fix to automatically replace all customer/end user visible special characters "ß" 
 Folder Name:
-  - ./Fix scripts/Fiscal period renamer 
- 	 - OOTB the Fiscal periods are named as such - "FY21: M01". This naming convention relies on each and every user knowing what M01 is (i.e. does the fiscal year start in January or does it start in March). This renaming script will append a descriptor to the end of each fiscal period name to increase usability and to preserve numeric sorting. Assuming M01 is January, the renamed fiscal period might be - "FY21: M01 Jan".
+
+  - ./Fix scripts/Fiscal period renamer
+    - OOTB the Fiscal periods are named as such - "FY21: M01". This naming convention relies on each and every user knowing what M01 is (i.e. does the fiscal year start in January or does it start in March). This renaming script will append a descriptor to the end of each fiscal period name to increase usability and to preserve numeric sorting. Assuming M01 is January, the renamed fiscal period might be - "FY21: M01 Jan".
 
 The fiscal period generator also assumes a hard-coded convention for the FYXX component of the name. Many customers differ from this and require it in the format FY23-24 if a fiscal year stretches across two calendar years. This script will allow manual selection of the 'from' year component (i.e. if FY is FY23 and stretches from July 2022 to June 2023 the FY will be renamed FY22-23:).
 
@@ -9920,8 +9998,9 @@ Instructions:
 5. Run the script and confirm the log statements are correct
 6. Uncomment row 83 and run again to commit output of step 5
 Folder Name:
-  - ./Fix scripts/Post-clone Email Properties Script 
- 	 - # Post-clone script for email properties
+
+  - ./Fix scripts/Post-clone Email Properties Script
+    - # Post-clone script for email properties
 
 To be used as a fix script or background script, meant to help with small adjustments needed per-environment after a clone.
 
@@ -9929,16 +10008,19 @@ Notes: Make sure you fill in all of the instance names up top, with anything in 
 
 This makes sure your email properties are disabled.
 Folder Name:
-  - ./Fix scripts/Cancel Workflow 
- 	 - Script to Cancel the workflow context attached to a record
+
+  - ./Fix scripts/Cancel Workflow
+    - Script to Cancel the workflow context attached to a record
 Folder Name:
-  - ./Fix scripts/Find duplicate records 
- 	 - # Find duplicate records
+
+  - ./Fix scripts/Find duplicate records
+    - # Find duplicate records
 
 Run the script to find duplicate records in a table. It is using GlideAggregate to find duplicate records. Replace the TABLE_TO_FIND_DUPLICATE_IN and FIELD_TO_GROUP_BY constants with your table and field and it will spit the records.
 Folder Name:
-  - ./Fix scripts/Post-clone Set Banner Name 
- 	 - # Post-clone script for email properties
+
+  - ./Fix scripts/Post-clone Set Banner Name
+    - # Post-clone script for email properties
 
 To be used as a fix script or background script, meant to help with small adjustments needed per-environment after a clone.
 
@@ -9946,8 +10028,9 @@ Notes: Make sure you fill in all of the instance names up top, with anything in 
 
 This sets the banner description (that appears at the top of the instance) to the instance name and the date/time of the last clone. Helps keep users of that sub-prod instance informed of when the last clone date/time.
 Folder Name:
-  - ./Fix scripts/Assign user list to a specific group 
- 	 - **Fix Script**
+
+  - ./Fix scripts/Assign user list to a specific group
+    - **Fix Script**
 
 Script to *automatically assign a list of users to a specific group*; you can change the user query to prepare a correct list of users according to your needs. To assign a different group, change the value of the GROUP_ID variable to the sys_id of the group which you would like to assign. 
 
@@ -9959,24 +10042,28 @@ Script to *automatically assign a list of users to a specific group*; you can ch
 
 ![Logs](ScreenShot_2.PNG)
 Folder Name:
-  - ./Fix scripts/Multiply records from filer breadcrumbs 
- 	 - ## Multiply records from filer breadcrumbs
+
+  - ./Fix scripts/Multiply records from filer breadcrumbs
+    - ## Multiply records from filer breadcrumbs
 
 Using this script you can multiply records (such as Story, Incident, SCTASK, ...), while assigning them to a different user. 
 The script will also copy the attachments to the duplicate record.
 
 I use this script to create sample stories / incidents for our new joiners that they can practice on in a non productive instance.
 Folder Name:
-  - ./Fix scripts/Install Demo Data 
- 	 - Add demo data to a list of installed plugins. I use this to add demo data for the OOTB ATF tests to work in sub-prod instances. It is expected that the corresponding ATF Test plugins are installed on the production instance already, and we are only adding the demo data.
+
+  - ./Fix scripts/Install Demo Data
+    - Add demo data to a list of installed plugins. I use this to add demo data for the OOTB ATF tests to work in sub-prod instances. It is expected that the corresponding ATF Test plugins are installed on the production instance already, and we are only adding the demo data.
 Folder Name:
-  - ./Fix scripts/Delete Duplicate Mobile records 
- 	 - Below script is a Fix script used to delete duplicate mobile assets and Cis in your CMDB. In this script we keep recently created assets and its related CI and delete other duplicate assets and related Cis if any.
+
+  - ./Fix scripts/Delete Duplicate Mobile records
+    - Below script is a Fix script used to delete duplicate mobile assets and Cis in your CMDB. In this script we keep recently created assets and its related CI and delete other duplicate assets and related Cis if any.
 
 Note : In this script I have used u_alm_mobile as the table and u_cmdb_ci_mobile, this are my tables but you can use your own table where you have stored your mobile devices.
 Folder Name:
-  - ./Fix scripts/Post-clone Set Instance Banner 
- 	 - # Set a unique banner to your non-production instance to help users realise where they are :)
+
+  - ./Fix scripts/Post-clone Set Instance Banner
+    - # Set a unique banner to your non-production instance to help users realise where they are :)
  ## Can be used as clean-up script on a clone profile, or run as fix script, background script etc. manually on the target instance after cloning.
 
 
@@ -9985,22 +10072,27 @@ Folder Name:
  * 2) Make sure the table above mentioned table and record and included in your clone!
  * 3) Set the source table name and the source record's sys_id as values for srcTbl and srcRec variables in the below section!
 Folder Name:
-  - ./Fix scripts/Delete Change Conflict 
- 	 - Use this script to delete change Conflicts and set conflict status as 'No Conflict' using fix script.
+
+  - ./Fix scripts/Delete Change Conflict
+    - Use this script to delete change Conflicts and set conflict status as 'No Conflict' using fix script.
 Folder Name:
-  - ./Fix scripts/Add Fields On All List Views 
- 	 - # Add Fields On All List Views
+
+  - ./Fix scripts/Add Fields On All List Views
+    - # Add Fields On All List Views
 
 This will add Updated On, Updated By, Created on, and Created by to every list view for the current user. You can add or remove fields to fieldsToAdd if you want others added as well
 Folder Name:
-  - ./Fix scripts/Ignore outbound emails 
- 	 - 
+
+  - ./Fix scripts/Ignore outbound emails
+    - 
 Folder Name:
-  - ./Fix scripts/Log out active User sessions 
- 	 - 
+
+  - ./Fix scripts/Log out active User sessions
+    - 
 Folder Name:
-  - ./Fix scripts/Adjust Variable Order on Catalog Item 
- 	 - # Adjust Variable Order on Catalog Item
+
+  - ./Fix scripts/Adjust Variable Order on Catalog Item
+    - # Adjust Variable Order on Catalog Item
 
 This Fix Script helps developers to automatically re-order all variables of a given Catalog Item or Variable Set.  
 We all know the struggle, that initially we set up variables with fixed order steps such as: 100, 200, 300, 400    
@@ -10023,15 +10115,17 @@ var step_size = 100; //provide the step size for the new order
 - Keep Catalog Items and Variable Sets clean and structured
 - Reduce efforts maintaining variable orders
 Folder Name:
-  - ./Fix scripts/Restart Flow (CatalogItem) 
- 	 - # Restart a Catalog Item Flow
+
+  - ./Fix scripts/Restart Flow (CatalogItem)
+    - # Restart a Catalog Item Flow
 
 To be used as a fix script or background script to restart a flow for a catalog item or selection of catalog items.  Typically this might be used in a scenarion in which you've modified a Flow and need to ensure that existing items are running the current version of the flow.
 
 Note: This will RESTART your flows from the beginning.  So if your item is in progress you may see some undesirable behavior.  Also keep in mind any notifications you may have set to fire from the Flow.
 Folder Name:
-  - ./Fix scripts/Copy favourite to other users 
- 	 - You can use this script to take an existing favaourite from the sys_ui_bookmark table and create a copy of it for any number of users.
+
+  - ./Fix scripts/Copy favourite to other users
+    - You can use this script to take an existing favaourite from the sys_ui_bookmark table and create a copy of it for any number of users.
 Can be useful when onboarding new staff, doing testing, etc.
 
 You will need two things to get started:
@@ -10041,21 +10135,25 @@ You will need two things to get started:
 Run the script wherever you like, background script, Xplore, or as fix script.
 Have fun!
 Folder Name:
-  - ./Fix scripts/Add Variable set to multiple catalog items 
- 	 - 
+
+  - ./Fix scripts/Add Variable set to multiple catalog items
+    - 
 Folder Name:
-  - ./Fix scripts/deleteMultiple 
- 	 - This script is recommended to be used (with caution) when it's necessary to delete multiple records from a table.
+
+  - ./Fix scripts/deleteMultiple
+    - This script is recommended to be used (with caution) when it's necessary to delete multiple records from a table.
 
 deleteMultiple is considerably faster than deleteRecord
 
 As stated in the script, it's important to limit the amount of records being processed by this script at a time and never test this on Production without doing so on Development first
 Folder Name:
-  - ./Fix scripts/Merge stages or choice 
- 	 - 
+
+  - ./Fix scripts/Merge stages or choice
+    - 
 Folder Name:
-  - ./Fix scripts/Measure code time execution 
- 	 - **Fix Script**
+
+  - ./Fix scripts/Measure code time execution
+    - **Fix Script**
 
 Script which is showing how to *measure time execution of specific part of code*. You can use it to check performance of code or track time execution of part of code in Fix Scripts. You can add any amount of measuring parts, based of your needs.
 
@@ -10067,8 +10165,9 @@ Script which is showing how to *measure time execution of specific part of code*
 
 ![Logs](ScreenShot_2.PNG)
 Folder Name:
-  - ./Fix scripts/Clean update set 
- 	 - **Fix script**
+
+  - ./Fix scripts/Clean update set
+    - **Fix script**
 
 Fix Script for cleaning update set from customer updates made by a selected developer. Script can be adjusted to match different query for cleaning which fits your needs.
 
@@ -10090,15 +10189,17 @@ Before execution:
 After execution:
 ![After](ScreenShot_2.PNG)
 Folder Name:
-  - ./Fix scripts/Search Results Weight 
- 	 - # Find the weight of Search Results
+
+  - ./Fix scripts/Search Results Weight
+    - # Find the weight of Search Results
 
 The order in which search results are returned is based on the weight of the object against the searched value.  This script can be run as a background script to determine what results are returned for specific search results and what their weight is in the search.
 
 This can be used to determine why one item might returned in front of another item.
 Folder Name:
-  - ./Fix scripts/De-Provision Admin user (configurable) 
- 	 - Objective:
+
+  - ./Fix scripts/De-Provision Admin user (configurable)
+    - Objective:
 
 The purpose of this standalone fix script is to routinize the common sysadmin task of stripping admin access from an account. The de-provisioning process is going to be different for every organization, but it is often useful to have a repeatable, predictable technical solution for literally stripping an account of its rights in the event of an organizational change or security incident.
 
@@ -10116,8 +10217,9 @@ As written the script is designed to be updated once for each use. Modify the va
 
 'deprov_result_msg' includes the text that will be written to the system log (and outputted when running the fix script interactively)
 Folder Name:
-  - ./Fix scripts/Fix model names after enabling glide.cmdb_model.display_name.shorten 
- 	 - There is a property that enables de-duplication of Manufacturer/Publisher Names from Model records (property name: [glide.cmdb_model.display_name.shorten](https://docs.servicenow.com/bundle/rome-it-service-management/page/product/asset-management/concept/c_InstalledWithModelManagement.html#r_ModelManagementProperties "glide.cmdb_model.display_name.shorten")). If this property is not active and users enter the Manufacturer/Publisher name into the Model Name field the Manufacturer/Publisher name will show twice in the Display Name.
+
+  - ./Fix scripts/Fix model names after enabling glide.cmdb_model.display_name.shorten
+    - There is a property that enables de-duplication of Manufacturer/Publisher Names from Model records (property name: [glide.cmdb_model.display_name.shorten](https://docs.servicenow.com/bundle/rome-it-service-management/page/product/asset-management/concept/c_InstalledWithModelManagement.html#r_ModelManagementProperties "glide.cmdb_model.display_name.shorten")). If this property is not active and users enter the Manufacturer/Publisher name into the Model Name field the Manufacturer/Publisher name will show twice in the Display Name.
 
 <div style="padding-left: 2em;">
 
@@ -10133,11 +10235,13 @@ Once this property is activated, inserts/updates of Model records will trigger t
 
 The script below can be run as a Fix Script or as a Background Script. Normally, I would `setWorkflow(false)` for this kind of cleanup, but there are a few cascade Business Rules that need to run as this fix is implemented.
 Folder Name:
-  - ./Fix scripts/Install Base PDI Plugins 
- 	 - 
+
+  - ./Fix scripts/Install Base PDI Plugins
+    - 
 Folder Name:
-  - ./Fix scripts/Post-clone Clear Email Queue 
- 	 - # Post-clone script for email properties
+
+  - ./Fix scripts/Post-clone Clear Email Queue
+    - # Post-clone script for email properties
 
 To be used as a fix script or background script, meant to help with small adjustments needed per-environment after a clone.
 
@@ -10145,8 +10249,9 @@ Notes: Make sure you fill in all of the instance names up top, with anything in 
 
 This clears out the email queue.
 Folder Name:
-  - ./Fix scripts/Update field with value in sys_audit 
- 	 - Hopefully this is something you never need to use.   It will udpate with either the newest or oldest entry from sys_audit.
+
+  - ./Fix scripts/Update field with value in sys_audit
+    - Hopefully this is something you never need to use.   It will udpate with either the newest or oldest entry from sys_audit.
 
 ## Example
 
@@ -10162,16 +10267,16 @@ var updateArgs = {
 
 try {
 
-    gs.print(updateRecords(updateArgs).join('
-'));
+    gs.print(updateRecords(updateArgs).join('\n'));
 } catch (ex) {
     gs.error(ex.message || ex);
 }
 
 ```
 Folder Name:
-  - ./Fix scripts/Anonymise Data 
- 	 - **Script Include** 
+
+  - ./Fix scripts/Anonymise Data
+    - **Script Include** 
 
 Script for anonymising data in specified table and chosen fields. You can pass an additional query to limit records which will be cleared. It can be used for example to remove GDPR data from development instances or anonymise old records. It can be used for example in fix script or scheduled job for long-term cleaning. 
 
@@ -10213,8 +10318,9 @@ Example of Fix script execution:
 
  ![Coniguration](ScreenShot_4.PNG)
 Folder Name:
-  - ./GlideDateTime/Get Next Monday Date 
- 	 - 
+
+  - ./GlideDateTime/Get Next Monday Date
+    - 
 # A Date Function to get the next upcoming Monday date.
 
 This function uses a few Glide date and Glide Date Time API's 
@@ -10227,15 +10333,18 @@ This function uses a few Glide date and Glide Date Time API's
 
 4. Finally, we calcualtate the day using AddDays we return the New Date transforming it back with getDate()
 Folder Name:
-  - ./GlideDateTime/Due date generation 
- 	 - For the workflows created using flow designer, the due date for sctasks is not populated automatically.
+
+  - ./GlideDateTime/Due date generation
+    - For the workflows created using flow designer, the due date for sctasks is not populated automatically.
 This code populates the due date of sctask automatically when RITMs are created through flow designers.
 Folder Name:
-  - ./GlideDateTime/Current Date with Fixed Time 
- 	 - This script helps to set fixed time to Present Date..
+
+  - ./GlideDateTime/Current Date with Fixed Time
+    - This script helps to set fixed time to Present Date..
 Folder Name:
-  - ./GlideDateTime/Set time zone and date format to output string dates 
- 	 - # Set time zone and date format to output dates.
+
+  - ./GlideDateTime/Set time zone and date format to output string dates
+    - # Set time zone and date format to output dates.
 Examples
 ```javascript
 // Set time zone and date format to output string dates.
@@ -10277,13 +10386,15 @@ gs.info( gd.getByFormat("EEEE,MMMM dd,yyyy HH:mm:ss z Z") );
 // Output in UTC, not in the time zone set by the user.
 ```
 Folder Name:
-  - ./GlideDateTime/Check if today is weekend 
- 	 - Use this script to know whether today is weekend or weekday.
+
+  - ./GlideDateTime/Check if today is weekend
+    - Use this script to know whether today is weekend or weekday.
 
 It helps to restrict the schedule job/ any other activity during weekends.
 Folder Name:
-  - ./GlideDateTime/Start, End, and Duration Updates 
- 	 - # Start, End, and Duration Updates
+
+  - ./GlideDateTime/Start, End, and Duration Updates
+    - # Start, End, and Duration Updates
 ### Use this code to auto update associated GlideDateTime and Duration fields on a record.
 
 This code assumes you're working on the sc_req_item and sc_task tables but can be modified to support other tables such as change.
@@ -10294,11 +10405,13 @@ This code assumes you're working on the sc_req_item and sc_task tables but can b
 5. If all 3 data points change at the same time, only the start and duration fields will be accepted as input.  
 6. It also includes a section to update an associated task if needed.
 Folder Name:
-  - ./GlideDateTime/AddDays 
- 	 - 
+
+  - ./GlideDateTime/AddDays
+    - 
 Folder Name:
-  - ./GlideDateTime/Convert date format 
- 	 - # Convert date format
+
+  - ./GlideDateTime/Convert date format
+    - # Convert date format
 
 **Use-case / Requirement :**
 Convert date from one format to another format
@@ -10308,16 +10421,18 @@ For example from dd-mm-yyyy to yyyy-mm-dd or yyyy/mm/dd etc
 Use GlideDate object and getByFormat method for conversion.
 Check the script.js file to find the code
 Folder Name:
-  - ./Business Rules/Display current user display name on top of form 
- 	 - **Use case :**
+
+  - ./Business Rules/Display current user display name on top of form
+    - **Use case :**
  Display info message with current user display name on top of a form
  
  **Soulution :**
  Write a "Display business rule" on any table using `GlideSystem - getUserDisplayName()` API <br/>
  Check script.js file for example
 Folder Name:
-  - ./Business Rules/Create a copy of incident in another servicenow instance 
- 	 - # Create incident copy
+
+  - ./Business Rules/Create a copy of incident in another servicenow instance
+    - # Create incident copy
 
 **Use case** : Whenever a new incident is created in servicenow production instance, a copy of that incident should be created in backup instance.
 
@@ -10325,8 +10440,9 @@ Folder Name:
 
 **Solution** : Create a `After` business rule on incident table with `insert` checkbox checked. Follow the script present in [script.js](script.js) 
 Folder Name:
-  - ./Business Rules/Preserve enhancement when deleting project 
- 	 - Stops the related enhancement records being cascade deleted from a project record when they also belong to a demand (i.e. we're deleting the project, but want to re-evaluate the original demand with it's associated enhancements). IF you want all enhancements to be preserved then just adjust the filter conditions to suit.
+
+  - ./Business Rules/Preserve enhancement when deleting project
+    - Stops the related enhancement records being cascade deleted from a project record when they also belong to a demand (i.e. we're deleting the project, but want to re-evaluate the original demand with it's associated enhancements). IF you want all enhancements to be preserved then just adjust the filter conditions to suit.
 
 Table: pm_project
 
@@ -10336,8 +10452,9 @@ Delete: true
 
 Filter: Demand is not empty AND Demand is not ""
 Folder Name:
-  - ./Business Rules/Create comment on referenced record 
- 	 - **Business Rule**
+
+  - ./Business Rules/Create comment on referenced record
+    - **Business Rule**
 
  Script which allows adding comments to referenced records after some insert or update was made. In this example, after changing name on a Configuration Item, all incident which have that Ci  assigned will get comment about that change. You can change the script to different table, query and conditions to fit your needs.
 
@@ -10349,8 +10466,9 @@ Folder Name:
 
 ![Effect](ScreenShot_2.PNG)
 Folder Name:
-  - ./Business Rules/Assign specific role to user 
- 	 - **Business Rule**
+
+  - ./Business Rules/Assign specific role to user
+    - **Business Rule**
 
 Script to *automatically assign* a *specific role* on creation or update of users, with additional protection against duplication of roles. You can run that Business Rules based on your needs (on user creation or on update when specific field was changed). To assign different role, copy sys_id of chose role into ROLE_ID variable.
 
@@ -10360,8 +10478,9 @@ Script to *automatically assign* a *specific role* on creation or update of user
 **Example execution effect**
 ![Execution](ScreenShot2.PNG)
 Folder Name:
-  - ./Business Rules/Enforce Percentage 
- 	 - # Objective
+
+  - ./Business Rules/Enforce Percentage
+    - # Objective
 A Business Entity has multiple owners who are individuals. 
 Each indivisual owns a percentage of the business.
 This business rule insures that the total of all ownership percentage does not exceed 100%.
@@ -10374,11 +10493,13 @@ The aggregate function calculates the sum by using the values that are stored in
 2. Calculate the sum using the values in the database
 3. Substract the previous value and then add the current value to calculate what the future sum would be
 Folder Name:
-  - ./Business Rules/Recursive logic 
- 	 - Using this Recursive BR, when you select the CMDB CI on incident then it would automatically add all level of affected CIs and when you change the new cmdb_ci then its corresponding affected CIs will get added and old affected CIs will get deleted.
+
+  - ./Business Rules/Recursive logic
+    - Using this Recursive BR, when you select the CMDB CI on incident then it would automatically add all level of affected CIs and when you change the new cmdb_ci then its corresponding affected CIs will get added and old affected CIs will get deleted.
 Folder Name:
-  - ./Business Rules/DeleteUserRole 
- 	 - Bussienss Rule to delete the User Role from table like 'Service Category User Roles [service_category_user_role]'
+
+  - ./Business Rules/DeleteUserRole
+    - Bussienss Rule to delete the User Role from table like 'Service Category User Roles [service_category_user_role]'
 Steps:
  - Navigate to your instance 
  - Open Business Rule Table [sys_script] and click on New
@@ -10391,43 +10512,51 @@ Steps:
    !current.user_role.nil()
   - Select Advance option and use the script
 Folder Name:
-  - ./Business Rules/QueryBR-restrict users to see their company records 
- 	 - This script is used to restrict logged in users to see only their company records. This is a generic script and can be used in any table where there is a Company field present
+
+  - ./Business Rules/QueryBR-restrict users to see their company records
+    - This script is used to restrict logged in users to see only their company records. This is a generic script and can be used in any table where there is a Company field present
 which is associated to the User table.
 Query BR contains below specifications:
 1. Advanced = true
 2. When = Before
 3. Query = true
 Folder Name:
-  - ./Business Rules/Copy worknotes from SCTASK to RITM comments 
- 	 - 
+
+  - ./Business Rules/Copy worknotes from SCTASK to RITM comments
+    - 
 Folder Name:
-  - ./Business Rules/Update Child Incident based on Parent Incident 
- 	 - 
+
+  - ./Business Rules/Update Child Incident based on Parent Incident
+    - 
 Folder Name:
-  - ./Business Rules/Set program business duration 
- 	 - OOTB the project records exclude weekends and public holidays when calculating the duration, whereas program does not exclude these things. 
+
+  - ./Business Rules/Set program business duration
+    - OOTB the project records exclude weekends and public holidays when calculating the duration, whereas program does not exclude these things. 
 
 This business rule and associated script include address this issue and ensure that the duration field on the program record are calculated in the same way as projects.
 Folder Name:
-  - ./Business Rules/Set program business duration 
- 	 - OOTB the project records exclude weekends and public holidays when calculating the duration, whereas program does not exclude these things. 
+
+  - ./Business Rules/Set program business duration
+    - OOTB the project records exclude weekends and public holidays when calculating the duration, whereas program does not exclude these things. 
 
 This business rule and associated script include address this issue and ensure that the duration field on the program record are calculated in the same way as projects.
 Folder Name:
-  - ./Business Rules/Add itil role to ootb user query to also see inactive users 
- 	 - A common request is to also allow itil users to also be able to see inactive user records.
+
+  - ./Business Rules/Add itil role to ootb user query to also see inactive users
+    - A common request is to also allow itil users to also be able to see inactive user records.
 There are two pieces of code in the code.js file:
 1) A conditional piece of code that should be added to the "Condition" field within the business rule
 2) A single line that should be added to the "Script" field within the business rule
 Folder Name:
-  - ./Business Rules/Count Associated Incidents in Problem 
- 	 - <h2> Count the number of associated incidents in Problem Form </h2>
+
+  - ./Business Rules/Count Associated Incidents in Problem
+    - <h2> Count the number of associated incidents in Problem Form </h2>
 <h3>Use - Case: </h3>
 <h4>Created a field in the Problem form which shows the number of incident records associated with the same problem. This makes it easy for the helpdesk to find out if there are any linked incidents without scrolling down.</h4>
 Folder Name:
-  - ./Business Rules/Exclude Redundant Email Recipients 
- 	 - # Exclude Redundant Email Recipients
+
+  - ./Business Rules/Exclude Redundant Email Recipients
+    - # Exclude Redundant Email Recipients
 ### This business rule is designed to intercept new comment notifications and modify the recipients to mitigate redundant notifications in response to email replies that users were previously included on as a direct or copied recipient.
 
 Initial Settings (modify as needed for your purposes)
@@ -10440,16 +10569,18 @@ Initial Settings (modify as needed for your purposes)
   - Type > changes to > send-ready
   - Subject > contains > comment
 Folder Name:
-  - ./Business Rules/Prevent RITM to get closed 
- 	 - This is a code snippet which can be used in a Business rule to prevent the closure of RITM when there is any active catalog task attached to that RITM.
+
+  - ./Business Rules/Prevent RITM to get closed
+    - This is a code snippet which can be used in a Business rule to prevent the closure of RITM when there is any active catalog task attached to that RITM.
 Below are the conditions of Business rule mostly suited.
 When: Before
 Update: True
 
 Note: This script is helpful for all the tables and their related tables. It can work same way by editing the table names for other parent child ralations as well.
 Folder Name:
-  - ./Business Rules/Manipulating system properties values 
- 	 - **Business Rule**
+
+  - ./Business Rules/Manipulating system properties values
+    - **Business Rule**
 
 Script which allows *getting value of specific system property and manipulate these values*. In this example, true/false property is got to determine if script should be executed. Then value of system property which is keeping last created user which gets 'admin' role is updated.
 
@@ -10468,8 +10599,9 @@ Before you can get or manipulate custom system property you need to create it in
 
 ![Execution effect](ScreenShot_2.PNG)
 Folder Name:
-  - ./Business Rules/Create choice sets if required for new choices 
- 	 - Type: Business Rule
+
+  - ./Business Rules/Create choice sets if required for new choices
+    - Type: Business Rule
 When: Before
 Insert: true
 
@@ -10477,29 +10609,35 @@ This script checks whether there is a choice set already created/available for t
 If there is, it returns without doing anything.
 If there is not, it creates the choice set. This prevents the DELETE behaviour that occurs when a new choice is created that doesn't have a valid choice set available to be associated to.
 Folder Name:
-  - ./Business Rules/Randomly distrubite events between custom queues 
- 	 - 
+
+  - ./Business Rules/Randomly distrubite events between custom queues
+    - 
 Folder Name:
-  - ./Business Rules/Transform Data from Attachment 
- 	 - 
+
+  - ./Business Rules/Transform Data from Attachment
+    - 
 Folder Name:
-  - ./Business Rules/Copy Attachment INC to Case 
- 	 - 
+
+  - ./Business Rules/Copy Attachment INC to Case
+    - 
 Folder Name:
-  - ./Business Rules/Display BR to get groupInfo of logged in User 
- 	 - This code snippet will help you to make fields read only/hide if a the logged in user belongs to a specific group.
+
+  - ./Business Rules/Display BR to get groupInfo of logged in User
+    - This code snippet will help you to make fields read only/hide if a the logged in user belongs to a specific group.
 To achieve this, we need to create a display Business rule and an onLoad client script.
 Display BR will look for the group of logged in user and return true or false in a scratchpad variable.
 Client script will validate the value and make the field read only/hide.
 Folder Name:
-  - ./Business Rules/Display BR to get groupInfo of logged in User 
- 	 - This code snippet will help you to make fields read only/hide if a the logged in user belongs to a specific group.
+
+  - ./Business Rules/Display BR to get groupInfo of logged in User
+    - This code snippet will help you to make fields read only/hide if a the logged in user belongs to a specific group.
 To achieve this, we need to create a display Business rule and an onLoad client script.
 Display BR will look for the group of logged in user and return true or false in a scratchpad variable.
 Client script will validate the value and make the field read only/hide.
 Folder Name:
-  - ./Business Rules/getMyDirectReports 
- 	 - This looping script traverses the User table from a certain point to get either one level of employees or all employees in the hierarchy underneath the logged on user. There are two functions:
+
+  - ./Business Rules/getMyDirectReports
+    - This looping script traverses the User table from a certain point to get either one level of employees or all employees in the hierarchy underneath the logged on user. There are two functions:
 * getMyDirectReports: gets only users directly connected to the User sys_id that is passed in
 * getMyReports: gets all of the users underneath the the User sys_id that is passed in
 
@@ -10535,16 +10673,19 @@ Dynamic Filter Option (sys_filter_option_dynamic)
 
 Use of this script could have performance impacts for very large organizations. Use at your own discretion.
 Folder Name:
-  - ./Business Rules/Change Lead Time Calculations 
- 	 - Before business rule runs on insert/update - you can set the conditions as you require. Script in change_lead_time_calculations.js
+
+  - ./Business Rules/Change Lead Time Calculations
+    - Before business rule runs on insert/update - you can set the conditions as you require. Script in change_lead_time_calculations.js
 
 System property name:change.leadtime.values | type:string | value -> { "High": 5, "Moderate" : 3, "Low" : 1 } 
 Folder Name:
-  - ./Business Rules/Mandatory Attachment 
- 	 - 
+
+  - ./Business Rules/Mandatory Attachment
+    - 
 Folder Name:
-  - ./Business Rules/Auto add email recipients to the message body when Email Override is on 
- 	 - A common complaint I hear about testing email is that people don’t know who was actually supposed to receive emails when the override is on ([glide.email.test.user](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/administer/reference-pages/reference/r_OutboundMailConfiguration.html) property).
+
+  - ./Business Rules/Auto add email recipients to the message body when Email Override is on
+    - A common complaint I hear about testing email is that people don’t know who was actually supposed to receive emails when the override is on ([glide.email.test.user](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/administer/reference-pages/reference/r_OutboundMailConfiguration.html) property).
 
 The included business rule takes the intended recipients information and puts it in the body of the email at the bottom as shown below. This information can be used by testers to validate that emails would have been sent to the correct recipients.
 
@@ -10560,8 +10701,9 @@ If there aren’t any CC or BCC recipients those lines will be omitted respectiv
 
 The business rule checks to see if the override is on, so it’s ok to have in a production instance because it won’t apply once they remove the override value.
 Folder Name:
-  - ./Business Rules/Copy attachments from idea to demand 
- 	 - Code will copy attachments from idea to demand
+
+  - ./Business Rules/Copy attachments from idea to demand
+    - Code will copy attachments from idea to demand
 
 Name: Copy attachments to demand
 
@@ -10573,18 +10715,22 @@ Filter conditions: demand changes and demand is not empty
 
 Update: true
 Folder Name:
-  - ./Business Rules/Copy latest comment from RITM to SCTASK 
- 	 - This simple snap code helps to copy latest comment of RITM to SCTASK.
+
+  - ./Business Rules/Copy latest comment from RITM to SCTASK
+    - This simple snap code helps to copy latest comment of RITM to SCTASK.
 Folder Name:
-  - ./Business Rules/Make Attachment Mandatory 
- 	 - This simple code snippet will help in making attachments mandotary.
+
+  - ./Business Rules/Make Attachment Mandatory
+    - This simple code snippet will help in making attachments mandotary.
 Can be used in Before BR/Script Inculde.
 Folder Name:
-  - ./Business Rules/Prevent invalid fiscal period in cost plan breakdown 
- 	 - Simple business rule that will ensure a cost plan breakdowns fiscal period will remain within the start and end period of the parent cost plan. If a cost plan breakdown is added ousdide of the start/end fiscal periods then rollups do not work correctly.
+
+  - ./Business Rules/Prevent invalid fiscal period in cost plan breakdown
+    - Simple business rule that will ensure a cost plan breakdowns fiscal period will remain within the start and end period of the parent cost plan. If a cost plan breakdown is added ousdide of the start/end fiscal periods then rollups do not work correctly.
 Folder Name:
-  - ./Business Rules/setting future week dates 
- 	 - So the script "setting future week dates" is used to set a date field on a record to a future value and use that to trigger reminders to end users
+
+  - ./Business Rules/setting future week dates
+    - So the script "setting future week dates" is used to set a date field on a record to a future value and use that to trigger reminders to end users
 or external customers. 
 
 The script addresses the use case where the first reminder is expected to be sent 14 days from case create and the rest of the reminders every 3 days, and should be sent only on weekdays.
@@ -10594,8 +10740,9 @@ If the future computed date falls on a Sat 2 days are added, and if it falls on 
 Using this process a flow can be run each day to scan all the case records that have a notification date for the current day and a notification be sent
 to the case contact.
 Folder Name:
-  - ./Business Rules/Previous Approval Check 
- 	 - # Previous Approval Check
+
+  - ./Business Rules/Previous Approval Check
+    - # Previous Approval Check
 ### Business rule to check for any approval requests by previous approvers and auto approve them.  If an approver had already approved a request, and is later asked to approve the same request again, usually in a different capacity, then the approval will be set as approved by the system automatically. 
 
 Business rule settings:
@@ -10613,19 +10760,23 @@ Business rule settings:
 
 ![image](https://user-images.githubusercontent.com/25243029/136676161-0a842f97-0721-4f28-8b20-a83f52bed949.png)
 Folder Name:
-  - ./Business Rules/Name Change Profile Update 
- 	 - This business rule is being used to update the live_profile record for a user if their first or last name changes. 
+
+  - ./Business Rules/Name Change Profile Update
+    - This business rule is being used to update the live_profile record for a user if their first or last name changes. 
 When a sys_user record is updated it runs a query against the live_profile table to match the document field with the sys ID of the user and then updates the name
 field of the live_profile record with the name value from the sys_user record.	
 Folder Name:
-  - ./Business Rules/SCTASK_to_RITM 
- 	 - 
+
+  - ./Business Rules/SCTASK_to_RITM
+    - 
 Folder Name:
-  - ./Business Rules/Allow only unique insert 
- 	 - Before Business rule to check for existing entry in a table , incase one would want to make an insert to be unique based on a certain criteria.
+
+  - ./Business Rules/Allow only unique insert
+    - Before Business rule to check for existing entry in a table , incase one would want to make an insert to be unique based on a certain criteria.
 Folder Name:
-  - ./Business Rules/Enforce a 1-1 relationship 
- 	 - # Enforce a 1:1 relationship between two tables
+
+  - ./Business Rules/Enforce a 1-1 relationship
+    - # Enforce a 1:1 relationship between two tables
 
 ServiceNow does not provide a direct means of establishing a one-to-one relationship between two tables. Even so, you can enforce a 1:1 relationship with a remote table using business rules.
 When the local reference field is changed, add the current record reference to the new remote record if applicable and remove the current record reference from the old/previous remote record if applicable.  
@@ -10665,8 +10816,9 @@ Advanced Script:
     
 } )( current, previous );
 Folder Name:
-  - ./Business Rules/Pass server info to client 
- 	 - This BR can be used to pass any server information to the client side using the g_scratchpad variable.
+
+  - ./Business Rules/Pass server info to client
+    - This BR can be used to pass any server information to the client side using the g_scratchpad variable.
 
 BR Type:  Display business rule
 
@@ -10676,8 +10828,9 @@ Usage Scenario: We want to apply some logic based
 
  
 Folder Name:
-  - ./Business Rules/Copy fields from Employee from 
- 	 - ## Copy response from Employee form to Specific cases/tasks/records
+
+  - ./Business Rules/Copy fields from Employee from
+    - ## Copy response from Employee form to Specific cases/tasks/records
 
 > This BR script can be used when auto field mapping feature on Employee forms is not fitting your requirements
 
@@ -10717,8 +10870,9 @@ When a same survey (Employee form) is to be generated for a user who is already 
 
 ```
 Folder Name:
-  - ./Business Rules/Generate event 
- 	 - **Business Rule**
+
+  - ./Business Rules/Generate event
+    - **Business Rule**
 
 Script to *generate new custom event*, which can be used on any conditions, on insert/update/delete of a record. In this example Business Rule is configured to generate custom event when any user get 'admin' role. 
 
@@ -10736,16 +10890,19 @@ Before you can generate custom event from script, you need to add Event Registra
 
 ![Event Log](ScreenShot_2.PNG)
 Folder Name:
-  - ./Business Rules/Enforce Unique Rank 
- 	 - Before Business rule for keeping a rank field unique.
+
+  - ./Business Rules/Enforce Unique Rank
+    - Before Business rule for keeping a rank field unique.
 
 Conditions: current.rank.changes() && !current.rank.nil()
 Folder Name:
-  - ./Business Rules/Async REST Call 
- 	 - 
+
+  - ./Business Rules/Async REST Call
+    - 
 Folder Name:
-  - ./Business Rules/Check domain of record against user session 
- 	 - Type: Business Rule
+
+  - ./Business Rules/Check domain of record against user session
+    - Type: Business Rule
 When: onDisplay
 example Table: sys_script
 
@@ -10767,8 +10924,9 @@ function onLoad() {
 	}
 }
 Folder Name:
-  - ./Business Rules/After-BR to generate approvals for catalog tasks 
- 	 - This code snippet will help you to generate approvals for catalog tasks via scripting. You just need to create an after insert BR and put this script there.
+
+  - ./Business Rules/After-BR to generate approvals for catalog tasks
+    - This code snippet will help you to generate approvals for catalog tasks via scripting. You just need to create an after insert BR and put this script there.
 This script can be used in a workflow run script as well and you can modify the script a little bit and use it for other tables as well. 
 
 Fun fact: When you are playing with Document Id type field. You need to keep a field as dependent for the document ID like we have 'Source table' for 'Approving' field to put the correct table name there and with the help of that you can easily set the document ID field.
@@ -10781,12 +10939,14 @@ For e.g. dependent field name is u_table_name, so your script can be something l
 
 where 'obj' is an object of the record you are referring to.
 Folder Name:
-  - ./Business Rules/ReRank item 
- 	 - Business rule for on after to re-rank a field spaced by 10 in each entry
+
+  - ./Business Rules/ReRank item
+    - Business rule for on after to re-rank a field spaced by 10 in each entry
 it updates itself and any larger numbered rank item to keep them all in sync
 Folder Name:
-  - ./Business Rules/Prevent adding user to group if manager is inactive 
- 	 - 
+
+  - ./Business Rules/Prevent adding user to group if manager is inactive
+    - 
 # Prevent adding user to group
 
 **Use case** : Whenever any user is getting added to any group, if the group manager is inactive then it should prevent the adding of user to the group
@@ -10795,8 +10955,9 @@ Folder Name:
 
 **Solution** : Create a `Before` business rule on `sys_user_grmember` table with `insert` checkbox checked. Follow the script present in [Script.js](https://github.com/ServiceNowDevProgram/code-snippets/blob/main/Business%20Rules/Prevent%20adding%20user%20to%20group%20if%20manager%20is%20inactive/Script.js)
 Folder Name:
-  - ./Business Rules/RoleUpdateOnGroupManagerChange 
- 	 - This business rule will update the group manager role on group manager change on Insert, Update, Delete
+
+  - ./Business Rules/RoleUpdateOnGroupManagerChange
+    - This business rule will update the group manager role on group manager change on Insert, Update, Delete
 Steps:
   1. When new manager is updated from for the current group
   2. Current role of the manager will be updated and removed
@@ -10810,14 +10971,17 @@ Steps:
           current.manager.changes() || current.operation() == "delete"
      - Table: Group [sys_user_group]
 Folder Name:
-  - ./Business Rules/Block Attachments for specific conditions 
- 	 - This code is used to block attachments for a specific record condition (assignment group, state, etc)
+
+  - ./Business Rules/Block Attachments for specific conditions
+    - This code is used to block attachments for a specific record condition (assignment group, state, etc)
 Folder Name:
-  - ./Business Rules/RITM_to_SCTASK 
- 	 - 
+
+  - ./Business Rules/RITM_to_SCTASK
+    - 
 Folder Name:
-  - ./Business Rules/Sync CI operational status with child related CIs 
- 	 - 
+
+  - ./Business Rules/Sync CI operational status with child related CIs
+    - 
 # Sync CI operational status with child related CIs
 
 **Use case** : Whenever any configuration item becomes operational or non-operational, then all the CIs which are related to the current CI as a child in cmdb_rel_ci table will also update their operational status
@@ -10830,40 +10994,50 @@ Folder Name:
 
 Follow the script present in [script.js](https://github.com/ServiceNowDevProgram/code-snippets/blob/patch-1/Business%20Rules/Sync%20CI%20operational%20status%20with%20child%20related%20CIs/script.js)
 Folder Name:
-  - ./Business Rules/Copy Comments from RITM to SCTASK Vice versa 
- 	 - 
+
+  - ./Business Rules/Copy Comments from RITM to SCTASK Vice versa
+    - 
 Folder Name:
-  - ./Business Rules/Create catalog task for each row of MRVS 
- 	 - This code snippet will help you to generate tasks automatically for each row of MRVS present on RITM. This can be achieved by using a Before BR on RITM.
+
+  - ./Business Rules/Create catalog task for each row of MRVS
+    - This code snippet will help you to generate tasks automatically for each row of MRVS present on RITM. This can be achieved by using a Before BR on RITM.
 Specifications for Business rule will be:
 1. When = Before
 2. Insert = true
 3. Advanced = true
 4. Then write the script provided in script.js into the script section of BR.
 Folder Name:
-  - ./GlideRecord/Find No Of Days 
- 	 - This code will let you find the date difference between the provided dates: Helps in calculating No of days, payment processing , etc.
+
+  - ./GlideRecord/Find No Of Days
+    - This code will let you find the date difference between the provided dates: Helps in calculating No of days, payment processing , etc.
 Folder Name:
-  - ./GlideRecord/LEFT Join 
- 	 - 
+
+  - ./GlideRecord/LEFT Join
+    - 
 Folder Name:
-  - ./GlideRecord/LEFT Join 
- 	 - 
+
+  - ./GlideRecord/LEFT Join
+    - 
 Folder Name:
-  - ./GlideRecord/Fetch groups that have no members in them 
- 	 - This is script is useful in listing out the groups that do not have any members. You can use it before setting any group record/s as inactive. 
+
+  - ./GlideRecord/Fetch groups that have no members in them
+    - This is script is useful in listing out the groups that do not have any members. You can use it before setting any group record/s as inactive. 
 Folder Name:
-  - ./GlideRecord/Multi Row Variable Set(MRVS) 
- 	 - This piece of code will let you insert MRVS Records without quering the Question Answers out of the box table!
+
+  - ./GlideRecord/Multi Row Variable Set(MRVS)
+    - This piece of code will let you insert MRVS Records without quering the Question Answers out of the box table!
 Folder Name:
-  - ./GlideRecord/UpdateMultiple 
- 	 - 
+
+  - ./GlideRecord/UpdateMultiple
+    - 
 Folder Name:
-  - ./GlideRecord/Find Date Overlapping 
- 	 - Logic to check if new dates are falling between already created record's dates.
+
+  - ./GlideRecord/Find Date Overlapping
+    - Logic to check if new dates are falling between already created record's dates.
 Folder Name:
-  - ./GlideRecord/Gets the display value according to the specified language 
- 	 - Get the display value according to the specified language.
+
+  - ./GlideRecord/Gets the display value according to the specified language
+    - Get the display value according to the specified language.
 
 (Install Language Plugin)
 
@@ -10886,16 +11060,19 @@ gs.info(outputJA + ' / ' + outputEN);
 user.setPreference("user.language", lang);
 ```
 Folder Name:
-  - ./GlideRecord/Get all user's group based on username 
- 	 - Get all user's group based on username
+
+  - ./GlideRecord/Get all user's group based on username
+    - Get all user's group based on username
 
 Just add replace the **userid** with the correct username in script
 Folder Name:
-  - ./GlideRecord/Get all task records with at least on active child task 
- 	 - 
+
+  - ./GlideRecord/Get all task records with at least on active child task
+    - 
 Folder Name:
-  - ./GlideRecord/getEncodedQuery 
- 	 - 1.In any GlideRecord query retrieve query using getEncodedQuery()
+
+  - ./GlideRecord/getEncodedQuery
+    - 1.In any GlideRecord query retrieve query using getEncodedQuery()
 
 2.Apply this encoded query to create/update records (you can apply this query to other tables if query is appropriate).
 
@@ -10911,17 +11088,21 @@ Before Running the script :
 After Running the script:
 ![image](https://user-images.githubusercontent.com/42912180/195796411-dcb20d99-2bd7-4ef6-88bc-846f46006122.png)
 Folder Name:
-  - ./GlideRecord/GlideRecord with Performance Enhancement Condtions 
- 	 - A sample GlideRecord code with conditions to enhance performance.
+
+  - ./GlideRecord/GlideRecord with Performance Enhancement Condtions
+    - A sample GlideRecord code with conditions to enhance performance.
 Folder Name:
-  - ./GlideRecord/Get Reference Record 
- 	 - 
+
+  - ./GlideRecord/Get Reference Record
+    - 
 Folder Name:
-  - ./GlideRecord/findDuplicate 
- 	 - 
+
+  - ./GlideRecord/findDuplicate
+    - 
 Folder Name:
-  - ./GlideRecord/Get-task-containing-sensitive-data 
- 	 - This script is used to get all task records based on sensitive data entered into this task based records. To make it simple to add the criteria for GDPR or sentive data i 
+
+  - ./GlideRecord/Get-task-containing-sensitive-data
+    - This script is used to get all task records based on sensitive data entered into this task based records. To make it simple to add the criteria for GDPR or sentive data i 
 have created a property and used it in this line : getProperty.addQuery('name', 'nn.criticalDataPhrases');
 
 Example: 
@@ -10934,25 +11115,30 @@ Task sys_ids which contains GDPR data.
 Usage:
 In scripted reports, in script includes,etc.
 Folder Name:
-  - ./GlideRecord/ACL enforcement using GlideRecord 
- 	 - 
+
+  - ./GlideRecord/ACL enforcement using GlideRecord
+    - 
 Folder Name:
-  - ./GlideRecord/Count Records By Column 
- 	 - 
+
+  - ./GlideRecord/Count Records By Column
+    - 
 Folder Name:
-  - ./GlideRecord/Watch_List_functions 
- 	 - This code snippet is to help you remove a specific element/sys_id from a List or an array using javascript. This code can be run via any server side scripting.
+
+  - ./GlideRecord/Watch_List_functions
+    - This code snippet is to help you remove a specific element/sys_id from a List or an array using javascript. This code can be run via any server side scripting.
 For eg:
 1. Background scripting
 2. Fix script
 3. BR
 4. ScriptInclude etc.
 Folder Name:
-  - ./GlideRecord/Set Template 
- 	 - This function is useful in applying template on tables when creating new record using scripts.
+
+  - ./GlideRecord/Set Template
+    - This function is useful in applying template on tables when creating new record using scripts.
 Folder Name:
-  - ./GlideRecord/Get all users whose email is empty 
- 	 - # Get all users without email
+
+  - ./GlideRecord/Get all users whose email is empty
+    - # Get all users without email
 
 Use the script in script.js file to get the list of all users in sys_user table who do not have an email.
 This GlideRecord script can be used in multiple places. For example in background scripts.
@@ -10963,11 +11149,13 @@ This GlideRecord script can be used in multiple places. For example in backgroun
 3. Used getDisplayValue() method to push string values in the array instead of using dot notation.
 4. Used self executing function to wrap the code in a function for reducing variable scoping issues.
 Folder Name:
-  - ./GlideFilter/checkRecord 
- 	 - Ever wondered how business rule works in the background. This example depicts the common scenario where we want to analyse certain records against a certain condition. This is one of the OOB class provided by servicenow.
+
+  - ./GlideFilter/checkRecord
+    - Ever wondered how business rule works in the background. This example depicts the common scenario where we want to analyse certain records against a certain condition. This is one of the OOB class provided by servicenow.
 Folder Name:
-  - ./GlideAjax/GlideAjax Example Template 
- 	 - # GlideAjax Example Template
+
+  - ./GlideAjax/GlideAjax Example Template
+    - # GlideAjax Example Template
 
 When you need a client to contact the server after all OnLoad scripts have concluded.
 
@@ -10978,8 +11166,9 @@ Copy and paste and just change values around.
   * Reducing couple of lines of code.
   * Used g_form.addInfoMessage instead of alert for showing message.
 Folder Name:
-  - ./GlideAjax/GlideAjax Example Template 
- 	 - # GlideAjax Example Template
+
+  - ./GlideAjax/GlideAjax Example Template
+    - # GlideAjax Example Template
 
 When you need a client to contact the server after all OnLoad scripts have concluded.
 
@@ -10990,11 +11179,13 @@ Copy and paste and just change values around.
   * Reducing couple of lines of code.
   * Used g_form.addInfoMessage instead of alert for showing message.
 Folder Name:
-  - ./GlideAjax/Reusable glideajax table query 
- 	 - 
+
+  - ./GlideAjax/Reusable glideajax table query
+    - 
 Folder Name:
-  - ./GlideAjax/Reusable GlideAjax 
- 	 - Reusable GlideAjax Example
+
+  - ./GlideAjax/Reusable GlideAjax
+    - Reusable GlideAjax Example
 When you need a client side script to contact the server and return few values from a table record matching your query. You can use this reusable GlideAjax code.
 
 **An Example**
@@ -11018,8 +11209,9 @@ function onChange(control, oldValue, newValue, isLoading) {
     }
 }
 Folder Name:
-  - ./GlideAjax/Reusable GlideAjax 
- 	 - Reusable GlideAjax Example
+
+  - ./GlideAjax/Reusable GlideAjax
+    - Reusable GlideAjax Example
 When you need a client side script to contact the server and return few values from a table record matching your query. You can use this reusable GlideAjax code.
 
 **An Example**
@@ -11043,42 +11235,50 @@ function onChange(control, oldValue, newValue, isLoading) {
     }
 }
 Folder Name:
-  - ./GlideAjax/ReturnMultipleProperties 
- 	 - ## Use values from returned object in Ajax call
+
+  - ./GlideAjax/ReturnMultipleProperties
+    - ## Use values from returned object in Ajax call
 - With this code snippet, make the ajax call from a client script.
 - Replace `HM_Task_Details` with script include name of your choosing.
 - Replace `sysparm_tableName` & `sysparm_recordID` with variable names from script include function. (can add as many as needed).
 - Replace second argument (next to `sysparm_name`) with name of funtion from script include you would like to call. 
 - In callback function use obj to access the property values of that object as shown in snippet.
 Folder Name:
-  - ./GlideAjax/EfficientGlideRecord (Client-side) 
- 	 - # EfficientGlideRecord
+
+  - ./GlideAjax/EfficientGlideRecord (Client-side)
+    - # EfficientGlideRecord
 See related article for full usage instructions and API documentation:  
 https://go.snc.guru/egr
 Folder Name:
-  - ./GlideAjax/EfficientGlideRecord (Client-side) 
- 	 - # EfficientGlideRecord
+
+  - ./GlideAjax/EfficientGlideRecord (Client-side)
+    - # EfficientGlideRecord
 See related article for full usage instructions and API documentation:  
 https://go.snc.guru/egr
 Folder Name:
-  - ./GlideAjax/EfficientGlideRecord (Client-side) 
- 	 - # EfficientGlideRecord
+
+  - ./GlideAjax/EfficientGlideRecord (Client-side)
+    - # EfficientGlideRecord
 See related article for full usage instructions and API documentation:  
 https://go.snc.guru/egr
 Folder Name:
-  - ./GlideAjax/EfficientGlideRecord (Client-side) 
- 	 - # EfficientGlideRecord
+
+  - ./GlideAjax/EfficientGlideRecord (Client-side)
+    - # EfficientGlideRecord
 See related article for full usage instructions and API documentation:  
 https://go.snc.guru/egr
 Folder Name:
-  - ./GlideAjax/AjaxAsyncOnSubmit 
- 	 - On submit client scripts do not support in making asynchronous calls to server on both platform and portal due to its nature of execution. This had always been a problem and there was a need to make validations work asynchronously on submitting a form/record. The support for getXMLWait() had also been removed which prevents the usage of synchronous GlideAjax call on a service portal. The snippet provides a workaround to execute async calls in both forms and catalog items, thus enabling server side validations during onsubmit.
+
+  - ./GlideAjax/AjaxAsyncOnSubmit
+    - On submit client scripts do not support in making asynchronous calls to server on both platform and portal due to its nature of execution. This had always been a problem and there was a need to make validations work asynchronously on submitting a form/record. The support for getXMLWait() had also been removed which prevents the usage of synchronous GlideAjax call on a service portal. The snippet provides a workaround to execute async calls in both forms and catalog items, thus enabling server side validations during onsubmit.
 Folder Name:
-  - ./GlideAjax/AjaxAsyncOnSubmit 
- 	 - On submit client scripts do not support in making asynchronous calls to server on both platform and portal due to its nature of execution. This had always been a problem and there was a need to make validations work asynchronously on submitting a form/record. The support for getXMLWait() had also been removed which prevents the usage of synchronous GlideAjax call on a service portal. The snippet provides a workaround to execute async calls in both forms and catalog items, thus enabling server side validations during onsubmit.
+
+  - ./GlideAjax/AjaxAsyncOnSubmit
+    - On submit client scripts do not support in making asynchronous calls to server on both platform and portal due to its nature of execution. This had always been a problem and there was a need to make validations work asynchronously on submitting a form/record. The support for getXMLWait() had also been removed which prevents the usage of synchronous GlideAjax call on a service portal. The snippet provides a workaround to execute async calls in both forms and catalog items, thus enabling server side validations during onsubmit.
 Folder Name:
-  - ./UX Client Script Include/Record Operation Utilities 
- 	 - #Record Operations Utilities which can be in imported in any UIB client script (Make sure to make the client script include accessible in all scopes)
+
+  - ./UX Client Script Include/Record Operation Utilities
+    - #Record Operations Utilities which can be in imported in any UIB client script (Make sure to make the client script include accessible in all scopes)
 1. createRecord - Function to execute create record data broker with necessary arguments
 2. updateRecord - Function to execute update record data broker with necessary arguments
 3. deleteRecord - Function to execute delete record data broker with necessary arguments
@@ -11089,25 +11289,30 @@ function handler({api, event, helpers, imports}) {
 }
 */
 Folder Name:
-  - ./RESTMessageV2/youtubeclient 
- 	 - Example of how you can utilize the older style rest message v2 to interact with youtube data client.
+
+  - ./RESTMessageV2/youtubeclient
+    - Example of how you can utilize the older style rest message v2 to interact with youtube data client.
 Has been replaced with the newer youtube spoke, but is fun to have around and reference how it used to be done.
 Folder Name:
-  - ./RESTMessageV2/Google-Chat 
- 	 - How we can use RESTMessageV2 to send notification in Google chat using Google chat webhook.
+
+  - ./RESTMessageV2/Google-Chat
+    - How we can use RESTMessageV2 to send notification in Google chat using Google chat webhook.
 
 Reference link is given in the code on how we can get the Google chat webhook URL.
 Folder Name:
-  - ./RESTMessageV2/AzureDevOps 
- 	 - This rest message is used to create an issue in azure devops from servicenow using basic authentication
+
+  - ./RESTMessageV2/AzureDevOps
+    - This rest message is used to create an issue in azure devops from servicenow using basic authentication
 Folder Name:
-  - ./RESTMessageV2/Web Scraping REST Message 
- 	 - # Web Scraper REST Message
+
+  - ./RESTMessageV2/Web Scraping REST Message
+    - # Web Scraper REST Message
 
 This snippet shows how you would use RESTMessageV2 to scrape HTML from a website using a GET HTTP request.
 Folder Name:
-  - ./Scheduled Jobs/Approval Reminder 
- 	 - ## Use the code snippets to trigger approval reminder notifications. 
+
+  - ./Scheduled Jobs/Approval Reminder
+    - ## Use the code snippets to trigger approval reminder notifications. 
 
 ### 1 Change Approval Reminder.
 change_reminder_scheduled_job.js
@@ -11120,8 +11325,9 @@ requested_item_approval_reminder_requestor.js
 
 *Note: Notifications and Events to be configured sepearately.*
 Folder Name:
-  - ./Scheduled Jobs/Approval Reminder 
- 	 - ## Use the code snippets to trigger approval reminder notifications. 
+
+  - ./Scheduled Jobs/Approval Reminder
+    - ## Use the code snippets to trigger approval reminder notifications. 
 
 ### 1 Change Approval Reminder.
 change_reminder_scheduled_job.js
@@ -11134,8 +11340,9 @@ requested_item_approval_reminder_requestor.js
 
 *Note: Notifications and Events to be configured sepearately.*
 Folder Name:
-  - ./Scheduled Jobs/Approval Reminder 
- 	 - ## Use the code snippets to trigger approval reminder notifications. 
+
+  - ./Scheduled Jobs/Approval Reminder
+    - ## Use the code snippets to trigger approval reminder notifications. 
 
 ### 1 Change Approval Reminder.
 change_reminder_scheduled_job.js
@@ -11148,12 +11355,14 @@ requested_item_approval_reminder_requestor.js
 
 *Note: Notifications and Events to be configured sepearately.*
 Folder Name:
-  - ./Scheduled Jobs/Auto close changes requests updated 30 days prior 
- 	 - This script can be used to auto close records if they have not been updated from past 30 days. For eg. I have taken change requests. This script can be written in a schedule job
+
+  - ./Scheduled Jobs/Auto close changes requests updated 30 days prior
+    - This script can be used to auto close records if they have not been updated from past 30 days. For eg. I have taken change requests. This script can be written in a schedule job
 to run it daily at 23:59:59 time to check if there is any such records present act accordingly.
 Folder Name:
-  - ./Scheduled Jobs/Deactivate INC in 90 days 
- 	 - This code snippet will help to inactivate the table records after 90 days of creation through schedule insert on sys trigger table  .
+
+  - ./Scheduled Jobs/Deactivate INC in 90 days
+    - This code snippet will help to inactivate the table records after 90 days of creation through schedule insert on sys trigger table  .
 Can be used in BR/Script Inculde/Background script.
 ### Formatted for background script, please check the result in sys_ trigger Table or else click on document id it will redirect to  inserted JOb 
 
@@ -11174,16 +11383,19 @@ gr.active = false;
 gr.update();
 }
 Folder Name:
-  - ./Scheduled Jobs/Remove Inactive and locked out users from All Groups and Roles 
- 	 - # Remove Inactive and locked out users from All Groups and Roles
+
+  - ./Scheduled Jobs/Remove Inactive and locked out users from All Groups and Roles
+    - # Remove Inactive and locked out users from All Groups and Roles
 
 It is always a good practise to have a secure and clean working instance. Having users with specific criteria such as the user is inactive and has been locked out should not have any role or belong to any group.
 Folder Name:
-  - ./Scheduled Jobs/ScheduleAtSpecificDaysAndTimes 
- 	 - Script to execute a schedule job on specific days and times. For eg: Schedule to run on all Mondays, Wednesdays and Fridays at 6, 12, 18 and 24 hours. You could place this in the condition script of a schedule job, configure the properties to setup the required number of days and times. The job should be scheduled to run periodically at every one hour and depending on the configured values, it will execute the job at the required days and time.
+
+  - ./Scheduled Jobs/ScheduleAtSpecificDaysAndTimes
+    - Script to execute a schedule job on specific days and times. For eg: Schedule to run on all Mondays, Wednesdays and Fridays at 6, 12, 18 and 24 hours. You could place this in the condition script of a schedule job, configure the properties to setup the required number of days and times. The job should be scheduled to run periodically at every one hour and depending on the configured values, it will execute the job at the required days and time.
 Folder Name:
-  - ./Scheduled Jobs/Daily detection of customer updates made in 'Default' update set 
- 	 - **Scheduled Script Execution**
+
+  - ./Scheduled Jobs/Daily detection of customer updates made in 'Default' update set
+    - **Scheduled Script Execution**
 
 This script allows detecting any customer updates made in 'Default' update set (on different one based on configuration) in this day. You can change the action after detection from logging, to sending e-mail notification or creating event based on your needs.
 
@@ -11196,22 +11408,26 @@ This script allows detecting any customer updates made in 'Default' update set (
 
  ![Log](ScreenShot_2.PNG)
 Folder Name:
-  - ./Scheduled Jobs/Get All Catalog Tasks without Request items 
- 	 - 
+
+  - ./Scheduled Jobs/Get All Catalog Tasks without Request items
+    - 
 Folder Name:
-  - ./Scheduled Jobs/Create Scheduled Imports Graphviz file 
- 	 - 
+
+  - ./Scheduled Jobs/Create Scheduled Imports Graphviz file
+    - 
 Folder Name:
-  - ./Scheduled Jobs/Survey Trigger Scheduled Script 
- 	 - ## Use the code snippets to trigger survey via scheduled script. 
+
+  - ./Scheduled Jobs/Survey Trigger Scheduled Script
+    - ## Use the code snippets to trigger survey via scheduled script. 
 
 ### Survey Trigger Scheduled Job
 survey_trigger_sj.js
 
 *Note:  Please update the query and sys_id as per the comments in the script*
 Folder Name:
-  - ./Scheduled Jobs/Lock out users who have not logged into the system longer than 30 days 
- 	 - **Scheduled Script Execution**
+
+  - ./Scheduled Jobs/Lock out users who have not logged into the system longer than 30 days
+    - **Scheduled Script Execution**
 
 This script allows to *lock out* users who have not logged into the system for *longer than 30 days*. You can customize the additional query parameters and change the current ones for example in order to shorten or enlarge the time period. 
 
@@ -11221,14 +11437,17 @@ This script allows to *lock out* users who have not logged into the system for *
 **Example execution log**
  ![Execution](ScreenShot_2.PNG)
 Folder Name:
-  - ./Scheduled Jobs/Paginated Export 
- 	 - 
+
+  - ./Scheduled Jobs/Paginated Export
+    - 
 Folder Name:
-  - ./Integration/Import Sets/debug 
- 	 - 
+
+  - ./Integration/Import Sets/debug
+    - 
 Folder Name:
-  - ./Integration/AzureAD Integration/Dynamically create reference records 
- 	 - ******* READ ME FOR AZURE USER PROVISIONING TO MAINTAIN REFERENCE FIELDS/TABLES ***** https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0779148
+
+  - ./Integration/AzureAD Integration/Dynamically create reference records
+    - ******* READ ME FOR AZURE USER PROVISIONING TO MAINTAIN REFERENCE FIELDS/TABLES ***** https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0779148
 
 Because the Microsoft provided Azure Enterprise intergation with servicenow only creates records on the sys_user and sys_user_group tables this removes our ability to maintain the fields/tables that are referenced by these records (core tables).
 
@@ -11242,11 +11461,13 @@ if u_location changes query for record on cmn_location with the same name if fou
 
 //relate returned sys_id in OOB reference field current.location = result.sys_id
 Folder Name:
-  - ./Integration/Import Sets Debug 
- 	 - 
+
+  - ./Integration/Import Sets Debug
+    - 
 Folder Name:
-  - ./Integration/ITSM 
- 	 - Purpose: 
+
+  - ./Integration/ITSM
+    - Purpose: 
 
 Allow bulk task_ci record inserts via a custom rest API endpoint. This will allow integration apps to insert task_ci relationships en masse on task records without needing to make an inordinate number of task_ci table API calls. Additionally, we can provide logic and filtering capabilities beyond the table API to make sure the right CI is associated to the task.
 
@@ -11285,13 +11506,15 @@ Post Body Example. Note that this is to illustrate the multiple ways users can i
   ]
 }
 Folder Name:
-  - ./GlideAggregate/Count incidents based on category 
- 	 - Go to background and execute the script then you will get the total count of incidents based on category.
+
+  - ./GlideAggregate/Count incidents based on category
+    - Go to background and execute the script then you will get the total count of incidents based on category.
 
 It will easily help to segregate the data based on categories/priority/ etc anything.
 Folder Name:
-  - ./GlideAggregate/Grouping by three columns 
- 	 - **GlideAggregate**
+
+  - ./GlideAggregate/Grouping by three columns
+    - **GlideAggregate**
 
 Script which allows to group by three columns (you can expand or decrease number of columns to fit your needs). In this example, the script allows counting number of active changes grouped by state, type and priority fields.
 
@@ -11301,21 +11524,24 @@ Special thanks to *SN-AJB* for his post about GlideAggregate: https://developer.
 
 ![Logs](ScreenShot_1.PNG)
 Folder Name:
-  - ./GlideAggregate/Tiered grouping of an integer column 
- 	 - # Tiered grouping of an integer column
+
+  - ./GlideAggregate/Tiered grouping of an integer column
+    - # Tiered grouping of an integer column
 
 If you have a column with points (as an integer), this script breaks them down by percentile tiers.
 Folder Name:
-  - ./GlideAggregate/getCountAfterDate 
- 	 - ## GlideAggregate
+
+  - ./GlideAggregate/getCountAfterDate
+    - ## GlideAggregate
 1. Instantiate GlideAggregate object, include table in parameter.
 2. `addQuery` method will restrict returned data-set based on added queries.
 3. `addAggregate` groups the returned data-set by second argument within parameters & the first argument within the parameters is the calulation ran based on that grouping.
 4. `query` runs glideaggregate.
 5. `getAggregate` collects the data-set grouped by data.
 Folder Name:
-  - ./GlideAggregate/Group Count 
- 	 - # Group Count
+
+  - ./GlideAggregate/Group Count
+    - # Group Count
 Sometimes you need to filter a list by group count (e.g. finding duplicates) unfortunately as of now the UI(16) doesn't provide a way to filter records based on group count. This function should help with that.
 
 ## Example Script
@@ -11353,8 +11579,9 @@ gs.info('Output is ' + JSON.stringify(countOutput, null, 4));
 ]
 ```
 Folder Name:
-  - ./GlideAggregate/Group Count 
- 	 - # Group Count
+
+  - ./GlideAggregate/Group Count
+    - # Group Count
 Sometimes you need to filter a list by group count (e.g. finding duplicates) unfortunately as of now the UI(16) doesn't provide a way to filter records based on group count. This function should help with that.
 
 ## Example Script
@@ -11392,8 +11619,9 @@ gs.info('Output is ' + JSON.stringify(countOutput, null, 4));
 ]
 ```
 Folder Name:
-  - ./GlideAggregate/Using addHaving 
- 	 - **GlideAggregate**
+
+  - ./GlideAggregate/Using addHaving
+    - **GlideAggregate**
 
 Script which shows how to use addHaving() function, which allows adding conditions on aggregate functions. In this example, the script will show which users have more than 35 roles assignments in sys_user_has_role table. You can use it also in different scenarios, modifying the table and other conditions.
 
@@ -11405,11 +11633,13 @@ Function addHaving() can not be used in Scoped Applications!
 
 ![Logs](ScreenShot_1.PNG)
 Folder Name:
-  - ./Processors/Dynamic Sitemap 
- 	 - 
+
+  - ./Processors/Dynamic Sitemap
+    - 
 Folder Name:
-  - ./Attachments/Convert KnowledgePage to PDF 
- 	 - # Convert Knowledge Page HTML to PDF and attach it.
+
+  - ./Attachments/Convert KnowledgePage to PDF
+    - # Convert Knowledge Page HTML to PDF and attach it.
 * Create PDF using GeneralPDF.
 * Try it from a simple HTML conversion.
 * It seems that the conversion fails if the HTML contains image files.
@@ -11439,8 +11669,9 @@ if(grKnow.get('<KnowledgePage sys_id>') && grKnow.getValue('text')){
 }
 ```
 Folder Name:
-  - ./Attachments/Base 64 to Attachment 
- 	 - This could be used to convert base 64 content into an attachment in ServiceNow. This is mainly used for integrating attachments from external systems to read and convert the base 64 content into an attachment.
+
+  - ./Attachments/Base 64 to Attachment
+    - This could be used to convert base 64 content into an attachment in ServiceNow. This is mainly used for integrating attachments from external systems to read and convert the base 64 content into an attachment.
 
 Sample Usage - Attaching and xls file on a incident record.
 
@@ -11448,20 +11679,23 @@ var attachment = convertBase64ToAttachment("0M8R4KGxGuEAAAAAAAAAAAAAAAAAAAAAOwAD
 
 //gs.info("Attachment: " + attachment);
 Folder Name:
-  - ./Attachments/CSVParser 
- 	 - The script parses through a CSV attachment accessed from the instance and reads each data row by row and column by column. You could also specify the required separator and quote character to escape them.
+
+  - ./Attachments/CSVParser
+    - The script parses through a CSV attachment accessed from the instance and reads each data row by row and column by column. You could also specify the required separator and quote character to escape them.
 
 Sample Usage:  
 
 parseCSVFile("sys_id=76fc711f2f0b7050809e51172799b685");
 Folder Name:
-  - ./Attachments/Attachment to Base64 
- 	 - # Base64 file encoder
+
+  - ./Attachments/Attachment to Base64
+    - # Base64 file encoder
 
 Convert attachment to Base64
 Folder Name:
-  - ./Attachments/Calculate attachment hash code 
- 	 - This is example of recalculate the hash code using the glide digest getSHA256HexFromInputStream method.
+
+  - ./Attachments/Calculate attachment hash code
+    - This is example of recalculate the hash code using the glide digest getSHA256HexFromInputStream method.
 
 GlideDigest() -
     This class provides methods for creating a message digest from strings or input streams using MD5, SHA1, or SHA256 hash algorithms.
@@ -11470,11 +11704,13 @@ Docs link: https://developer.servicenow.com/dev.do#!/reference/api/tokyo/server/
 
 getSHA256HexFromInputStream - function takes GlideScriptableInputStream input stream as parameter.
 Folder Name:
-  - ./Attachments/attachmentToXMLParse 
- 	 - 
+
+  - ./Attachments/attachmentToXMLParse
+    - 
 Folder Name:
-  - ./Attachments/ExportRecordsAnyFormat 
- 	 - The snippet can be used to export records from any table and then attach on another record. You could export records in any of the these formats (CSV, XLS, XLSX, PDF, JSON, XML, XSD, SCHEMA, RSS) from any table view based on an encoded query. If required, the attachment can be send out to users through a notification (with check include attachments).
+
+  - ./Attachments/ExportRecordsAnyFormat
+    - The snippet can be used to export records from any table and then attach on another record. You could export records in any of the these formats (CSV, XLS, XLSX, PDF, JSON, XML, XSD, SCHEMA, RSS) from any table view based on an encoded query. If required, the attachment can be send out to users through a notification (with check include attachments).
 
 Sample Usage:
 
@@ -11490,25 +11726,30 @@ gs.print(exportRecords('incident', 'b3f076504750210042bd757f2ede273f', 'active=t
 
 gs.print(exportRecords('incident', 'b3f076504750210042bd757f2ede273f', 'sys_id=b3f076504750210042bd757f2ede273f', '', 'PDF', 'record.pdf'));
 Folder Name:
-  - ./Attachments/Delete RITM Attachment 
- 	 - The Delete RITM attachment business rule will automatically deletes the attachment on RITM, when the attachment is deleted on SCTASK.
+
+  - ./Attachments/Delete RITM Attachment
+    - The Delete RITM attachment business rule will automatically deletes the attachment on RITM, when the attachment is deleted on SCTASK.
 Folder Name:
-  - ./Attachments/Attachment to base64 in scope 
- 	 - Encode attachment to base64 for scoped applications. Uses the GlideSysAttachment API. 
+
+  - ./Attachments/Attachment to base64 in scope
+    - Encode attachment to base64 for scoped applications. Uses the GlideSysAttachment API. 
 Place of use: creating a spoke/integration where you need to send an attachment via REST.
 Folder Name:
-  - ./Attachments/ExportAttachmentsToMidServer 
- 	 - The snippet can be used to export all attachments within any record in ServiceNow to the mid server. You could specify a relative file path within the server's agent folder and it will copy them into it.
+
+  - ./Attachments/ExportAttachmentsToMidServer
+    - The snippet can be used to export all attachments within any record in ServiceNow to the mid server. You could specify a relative file path within the server's agent folder and it will copy them into it.
 
 Sample Usage
 
-exportAttachmentsToMid("66a4daff2f9ff810ba1b52492799b6f1", "\Incident\INC00293930", "Mid Server 01");
+exportAttachmentsToMid("66a4daff2f9ff810ba1b52492799b6f1", "\\Incident\\INC00293930", "Mid Server 01");
 Folder Name:
-  - ./Record Producer/Create Records By Import Set 
- 	 - 
+
+  - ./Record Producer/Create Records By Import Set
+    - 
 Folder Name:
-  - ./Scripted REST Api/Retrieve all variables from RITM 
- 	 - # Retrieve all variables (including multi-row) from any Request Item or Catalog Task - and push JSON for use in a Scripted REST API
+
+  - ./Scripted REST Api/Retrieve all variables from RITM
+    - # Retrieve all variables (including multi-row) from any Request Item or Catalog Task - and push JSON for use in a Scripted REST API
 It's really not that hard to do using existing APIs, but if you want to pull a list of variables and their values, it gets a little messy. 
 If you want values from a Multi-Row Variable Set, it gets even messier.  So, we set about building a Scripted REST API our partners can use. 
 
@@ -11516,8 +11757,9 @@ If you want values from a Multi-Row Variable Set, it gets even messier.  So, we 
  2. [Build a script include (the one referenced in the resource script above)](CHVarUtils_ScriptInclude.js)
  3. [Sample Output return in JSON format](output_example.js)
 Folder Name:
-  - ./Scripted REST Api/Retrieve all variables from RITM 
- 	 - # Retrieve all variables (including multi-row) from any Request Item or Catalog Task - and push JSON for use in a Scripted REST API
+
+  - ./Scripted REST Api/Retrieve all variables from RITM
+    - # Retrieve all variables (including multi-row) from any Request Item or Catalog Task - and push JSON for use in a Scripted REST API
 It's really not that hard to do using existing APIs, but if you want to pull a list of variables and their values, it gets a little messy. 
 If you want values from a Multi-Row Variable Set, it gets even messier.  So, we set about building a Scripted REST API our partners can use. 
 
@@ -11525,8 +11767,9 @@ If you want values from a Multi-Row Variable Set, it gets even messier.  So, we 
  2. [Build a script include (the one referenced in the resource script above)](CHVarUtils_ScriptInclude.js)
  3. [Sample Output return in JSON format](output_example.js)
 Folder Name:
-  - ./Scripted REST Api/Retrieve all variables from RITM 
- 	 - # Retrieve all variables (including multi-row) from any Request Item or Catalog Task - and push JSON for use in a Scripted REST API
+
+  - ./Scripted REST Api/Retrieve all variables from RITM
+    - # Retrieve all variables (including multi-row) from any Request Item or Catalog Task - and push JSON for use in a Scripted REST API
 It's really not that hard to do using existing APIs, but if you want to pull a list of variables and their values, it gets a little messy. 
 If you want values from a Multi-Row Variable Set, it gets even messier.  So, we set about building a Scripted REST API our partners can use. 
 
@@ -11534,8 +11777,9 @@ If you want values from a Multi-Row Variable Set, it gets even messier.  So, we 
  2. [Build a script include (the one referenced in the resource script above)](CHVarUtils_ScriptInclude.js)
  3. [Sample Output return in JSON format](output_example.js)
 Folder Name:
-  - ./Scripted REST Api/Approval APIs 
- 	 - Approval API to Approve / Reject the Approval Record 
+
+  - ./Scripted REST Api/Approval APIs
+    - Approval API to Approve / Reject the Approval Record 
 
 * Approve API
 
@@ -11583,8 +11827,9 @@ Status code : 200 OK
   "result": "Record has been Rejected!"
 }
 Folder Name:
-  - ./Scripted REST Api/Approval APIs 
- 	 - Approval API to Approve / Reject the Approval Record 
+
+  - ./Scripted REST Api/Approval APIs
+    - Approval API to Approve / Reject the Approval Record 
 
 * Approve API
 
@@ -11632,8 +11877,9 @@ Status code : 200 OK
   "result": "Record has been Rejected!"
 }
 Folder Name:
-  - ./Scripted REST Api/Approval APIs 
- 	 - Approval API to Approve / Reject the Approval Record 
+
+  - ./Scripted REST Api/Approval APIs
+    - Approval API to Approve / Reject the Approval Record 
 
 * Approve API
 
@@ -11681,11 +11927,13 @@ Status code : 200 OK
   "result": "Record has been Rejected!"
 }
 Folder Name:
-  - ./Scripted REST Api/Promise API Call 
- 	 - Allows you to make async/await promise API Calls using Request
+
+  - ./Scripted REST Api/Promise API Call
+    - Allows you to make async/await promise API Calls using Request
 Folder Name:
-  - ./Service Portal Widgets/Clickable SVG Image 
- 	 - # Can clickable svg image
+
+  - ./Service Portal Widgets/Clickable SVG Image
+    - # Can clickable svg image
 ## main used echarts.js
 
 
@@ -11798,8 +12046,9 @@ add echarts.js to your widget dependencies.
 
 # Now you can use it.
 Folder Name:
-  - ./Service Portal Widgets/Clickable SVG Image 
- 	 - # Can clickable svg image
+
+  - ./Service Portal Widgets/Clickable SVG Image
+    - # Can clickable svg image
 ## main used echarts.js
 
 
@@ -11912,21 +12161,26 @@ add echarts.js to your widget dependencies.
 
 # Now you can use it.
 Folder Name:
-  - ./Service Portal Widgets/ApplyCSSDynamically 
- 	 - The widget demonstrates how CSS can be dynamically applied on the HTML attributes via client controller. Inorder to demonstrate, a color picker dropdown has been placed in the HTML. Upon selecting a color option, the corresponding CSS is applied on an HTML text to color it with the same.
+
+  - ./Service Portal Widgets/ApplyCSSDynamically
+    - The widget demonstrates how CSS can be dynamically applied on the HTML attributes via client controller. Inorder to demonstrate, a color picker dropdown has been placed in the HTML. Upon selecting a color option, the corresponding CSS is applied on an HTML text to color it with the same.
 Folder Name:
-  - ./Service Portal Widgets/ApplyCSSDynamically 
- 	 - The widget demonstrates how CSS can be dynamically applied on the HTML attributes via client controller. Inorder to demonstrate, a color picker dropdown has been placed in the HTML. Upon selecting a color option, the corresponding CSS is applied on an HTML text to color it with the same.
+
+  - ./Service Portal Widgets/ApplyCSSDynamically
+    - The widget demonstrates how CSS can be dynamically applied on the HTML attributes via client controller. Inorder to demonstrate, a color picker dropdown has been placed in the HTML. Upon selecting a color option, the corresponding CSS is applied on an HTML text to color it with the same.
 Folder Name:
-  - ./Service Portal Widgets/Client side pagination 
- 	 - This code can be used to add client side pagination to the widget. 
+
+  - ./Service Portal Widgets/Client side pagination
+    - This code can be used to add client side pagination to the widget. 
 if there are a lot of records on a customized widget and you prefer using client side pagination instead of server side pagination, use this method me
 Folder Name:
-  - ./Service Portal Widgets/Portal widgets Performance Test 
- 	 - 
+
+  - ./Service Portal Widgets/Portal widgets Performance Test
+    - 
 Folder Name:
-  - ./Service Portal Widgets/Create diagram using GoJS library 
- 	 - # Creating productionProcess using gojs
+
+  - ./Service Portal Widgets/Create diagram using GoJS library
+    - # Creating productionProcess using gojs
 ## Introduction
 In this snippet you will create a custom process using a custom page and populating data using GoJS native library
 
@@ -11977,9 +12231,7 @@ In this snippet you will create a custom process using a custom page and populat
     if (part instanceof go.Link) {
       msg = "";
     } else if (part instanceof go.Node) {
-      msg = part.data.text + ":
-
-" + part.data.description;
+      msg = part.data.text + ":\n\n" + part.data.description;
     }
     return msg;
   }
@@ -12104,8 +12356,7 @@ In this snippet you will create a custom process using a custom page and populat
         iconWidth: 30,
         iconHeight: 60,
         portHeight: 20,
-        text: 'Gas
-Companies',
+        text: 'Gas\nCompanies',
         description: 'Provides natural gas liquids (NGLs).',
         caption: 'Gas Drilling Well',
         imgsrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/BarnettShaleDrilling-9323.jpg/256px-BarnettShaleDrilling-9323.jpg'
@@ -12117,8 +12368,7 @@ Companies',
         iconWidth: 40,
         iconHeight: 60,
         portHeight: 20,
-        text: 'Oil
-Companies',
+        text: 'Oil\nCompanies',
         description: 'Provides associated petroleum gas (APG). This type of gas used to be released as waste from oil drilling, but is now commonly captured for processing.',
         caption: 'Offshore oil well',
         imgsrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Oil_platform_P-51_%28Brazil%29.jpg/512px-Oil_platform_P-51_%28Brazil%29.jpg'
@@ -12213,8 +12463,7 @@ Companies',
         iconWidth: 30,
         iconHeight: 30,
         portHeight: 15,
-        text: 'LPG, Naphtha,
-MTBE',
+        text: 'LPG, Naphtha,\nMTBE',
         description: 'Propane, butane, and other general purpose fuels and byproducts.',
         caption: 'Liquid Petroleum Gas Truck',
         imgsrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/LPG_Truck.jpg/256px-LPG_Truck.jpg'
@@ -12368,8 +12617,9 @@ https://github.com/NorthwoodsSoftware/GoJS/blob/master/samples/productionProcess
 https://gojs.net/latest/intro/toolTips.html
 http://g-mops.net/epica_gojs/api/symbols/Diagram.html
 Folder Name:
-  - ./Service Portal Widgets/Record process flow 
- 	 - # Creating Process flow in service portal
+
+  - ./Service Portal Widgets/Record process flow
+    - # Creating Process flow in service portal
 ## Introduction
 In this snippet you will create a custom process flow with a custom page and populated with standard widgets.
 
@@ -12550,8 +12800,9 @@ getProcessFlows: function(data,table,newRecord, grRecord){
 - In Page designer, Place `Process Flow` widget inside a container > row > Column at top location.
 - View paget from following link `http://instance-name.service-now.com/sp?id=process_flow`. 
 Folder Name:
-  - ./Service Portal Widgets/Record process flow 
- 	 - # Creating Process flow in service portal
+
+  - ./Service Portal Widgets/Record process flow
+    - # Creating Process flow in service portal
 ## Introduction
 In this snippet you will create a custom process flow with a custom page and populated with standard widgets.
 
@@ -12732,8 +12983,9 @@ getProcessFlows: function(data,table,newRecord, grRecord){
 - In Page designer, Place `Process Flow` widget inside a container > row > Column at top location.
 - View paget from following link `http://instance-name.service-now.com/sp?id=process_flow`. 
 Folder Name:
-  - ./Service Portal Widgets/Record process flow 
- 	 - # Creating Process flow in service portal
+
+  - ./Service Portal Widgets/Record process flow
+    - # Creating Process flow in service portal
 ## Introduction
 In this snippet you will create a custom process flow with a custom page and populated with standard widgets.
 
@@ -12914,59 +13166,72 @@ getProcessFlows: function(data,table,newRecord, grRecord){
 - In Page designer, Place `Process Flow` widget inside a container > row > Column at top location.
 - View paget from following link `http://instance-name.service-now.com/sp?id=process_flow`. 
 Folder Name:
-  - ./Service Portal Widgets/Change Notification Preferences 
- 	 - ## Notification Preference by Category widget
+
+  - ./Service Portal Widgets/Change Notification Preferences
+    - ## Notification Preference by Category widget
 
 Portal Widget that shows user notification preferences for a certain category (changed within the options). User can switch his notification on or off. The notification description gets displayed under the notification name.
 Folder Name:
-  - ./Service Portal Widgets/Change Notification Preferences 
- 	 - ## Notification Preference by Category widget
+
+  - ./Service Portal Widgets/Change Notification Preferences
+    - ## Notification Preference by Category widget
 
 Portal Widget that shows user notification preferences for a certain category (changed within the options). User can switch his notification on or off. The notification description gets displayed under the notification name.
 Folder Name:
-  - ./Service Portal Widgets/Change Notification Preferences 
- 	 - ## Notification Preference by Category widget
+
+  - ./Service Portal Widgets/Change Notification Preferences
+    - ## Notification Preference by Category widget
 
 Portal Widget that shows user notification preferences for a certain category (changed within the options). User can switch his notification on or off. The notification description gets displayed under the notification name.
 Folder Name:
-  - ./Service Portal Widgets/Guest Login Modal 
- 	 - 
+
+  - ./Service Portal Widgets/Guest Login Modal
+    - 
 Folder Name:
-  - ./Service Portal Widgets/Guest Login Modal 
- 	 - 
+
+  - ./Service Portal Widgets/Guest Login Modal
+    - 
 Folder Name:
-  - ./Service Portal Widgets/Export table in portal 
- 	 - This widget can be used to download/export a table based on the given query and list view from a button click on the widget
+
+  - ./Service Portal Widgets/Export table in portal
+    - This widget can be used to download/export a table based on the given query and list view from a button click on the widget
 Folder Name:
-  - ./Service Portal Widgets/Custom Greetings in portal homepage 
- 	 - This code snippet will help you to provide customize greetings to end user when they login to the portal. And the time will be reflected as browser's time zone. By default javascript uses browser's time zone and which is further converted into hours as per the method I used in my clint script code. Below steps needs to be performed to achive this.
+
+  - ./Service Portal Widgets/Custom Greetings in portal homepage
+    - This code snippet will help you to provide customize greetings to end user when they login to the portal. And the time will be reflected as browser's time zone. By default javascript uses browser's time zone and which is further converted into hours as per the method I used in my clint script code. Below steps needs to be performed to achive this.
 1. Clone Homepage-search widget of portal.
 2. Update the client script of the cloned widget as per the code prvided in homepage-search-clint.js.
 3. Update the HTML as per homepage-search.html.
 4. Replace the Homepage-search widget with Custom Homepage-search widget from portal home page by going to Page in designer.
 Folder Name:
-  - ./Service Portal Widgets/Redirect to different portals based on browser 
- 	 - ## Widget to Redirect to different portals based on browser
+
+  - ./Service Portal Widgets/Redirect to different portals based on browser
+    - ## Widget to Redirect to different portals based on browser
 
 This widget can be used to redirect users to different portals based on the browsers being used. Simply drop this widget anywhere into the homepage of the portal where you want a redirection to occur(for example */sp*) and you're done. Currently it's having conditions for Internet explorer and Chrome but we can more as and for required. 
 Folder Name:
-  - ./Service Portal Widgets/Check if user has specific role inside the widget 
- 	 - # Check if user has a role within the widget code
+
+  - ./Service Portal Widgets/Check if user has specific role inside the widget
+    - # Check if user has a role within the widget code
 
 Use this code to check inside widget client code to see if user has a role or not. Can be used in scenarios where you want to hide to show part of the widget UI.
 Folder Name:
-  - ./Service Portal Widgets/ImportXml 
- 	 - This widget can be used to import XML files into Servicenow instance.
+
+  - ./Service Portal Widgets/ImportXml
+    - This widget can be used to import XML files into Servicenow instance.
 This is done via portal into an existing table
 Folder Name:
-  - ./Service Portal Widgets/g_form on SP 
- 	 - 
+
+  - ./Service Portal Widgets/g_form on SP
+    - 
 Folder Name:
-  - ./Service Portal Widgets/g_form on SP 
- 	 - 
+
+  - ./Service Portal Widgets/g_form on SP
+    - 
 Folder Name:
-  - ./Service Portal Widgets/Floater Feedback Widget 
- 	 - ## Floater Feedback Widget
+
+  - ./Service Portal Widgets/Floater Feedback Widget
+    - ## Floater Feedback Widget
 
 The attached widget can be used to have a floating link widget on the portal homepage when clicks opens a specific catalog item or a record producer. 
 This can be used to gather feedback using a catalog item or create incidents from the portal.
@@ -12978,14 +13243,17 @@ Simply add this widget to the portal homepage anywhere and you can find this pre
 
 *Note: You need to update the sys_id of your catalog item. Refer HTML in the .js widget file.*
 Folder Name:
-  - ./Service Portal Widgets/RecordPickerForListReference 
- 	 - The widget is an example record picker that can be used as reference or list field. The field is referring to user table and upon change, the new values are passed to the server side for processing any business logic.
+
+  - ./Service Portal Widgets/RecordPickerForListReference
+    - The widget is an example record picker that can be used as reference or list field. The field is referring to user table and upon change, the new values are passed to the server side for processing any business logic.
 Folder Name:
-  - ./Service Portal Widgets/RecordPickerForListReference 
- 	 - The widget is an example record picker that can be used as reference or list field. The field is referring to user table and upon change, the new values are passed to the server side for processing any business logic.
+
+  - ./Service Portal Widgets/RecordPickerForListReference
+    - The widget is an example record picker that can be used as reference or list field. The field is referring to user table and upon change, the new values are passed to the server side for processing any business logic.
 Folder Name:
-  - ./Service Portal Widgets/iFrame 
- 	 - # iFrame Widget
+
+  - ./Service Portal Widgets/iFrame
+    - # iFrame Widget
 A flexible and reusable widget to display content in an iFrame.
 
 ## Configurable Instance Options
@@ -13028,8 +13296,9 @@ Displaying an external site in an iFrame is subject to Cross Origin Resource Sha
 
 You may test the iFrame widget using [Wikipedia](https://en.wikipedia.org/) which does allow embedding.
 Folder Name:
-  - ./Service Portal Widgets/iFrame 
- 	 - # iFrame Widget
+
+  - ./Service Portal Widgets/iFrame
+    - # iFrame Widget
 A flexible and reusable widget to display content in an iFrame.
 
 ## Configurable Instance Options
@@ -13072,13 +13341,15 @@ Displaying an external site in an iFrame is subject to Cross Origin Resource Sha
 
 You may test the iFrame widget using [Wikipedia](https://en.wikipedia.org/) which does allow embedding.
 Folder Name:
-  - ./Service Portal Widgets/Incident Sound Alerts 
- 	 - ## Incident Sound Alerts Widget
+
+  - ./Service Portal Widgets/Incident Sound Alerts
+    - ## Incident Sound Alerts Widget
 
 This widget can be used to get sound alerts whenever a incident is created can be a major incident/high priority incident or a incident assigned to a particular group. We can place this widget on a portal page(which is open on a monitoring screen or system) and whenever the conditions are it will generate a sound alert.  Note: Currently the widget is configured to geneate alerts for Major incidents accepted. 
 Folder Name:
-  - ./Service Portal Widgets/Spiderman Animation 
- 	 - To use this widget, follow the below steps:
+
+  - ./Service Portal Widgets/Spiderman Animation
+    - To use this widget, follow the below steps:
 
 1. Create a new widget and copy the html, style and client script in the widget.
 2. Upload the 2 images- Green goblin image and Spiderman Image, in the image table. Also, upload the audio in audio table.Use the same name given in the tables in the widget
@@ -13096,22 +13367,25 @@ Here is Page Content structure
 		    Column1
 			    Instance: (Spiderman)
 Folder Name:
-  - ./Service Portal Widgets/Upload Files 
- 	 - # Service Portal Widget - "Add attachments" form
+
+  - ./Service Portal Widgets/Upload Files
+    - # Service Portal Widget - "Add attachments" form
 
 This widget is using the 'Attachment API - POST /now/attachment/file' to upload multiple files on form submit.
 
 The result will appear in the console or check directly the record.
 Folder Name:
-  - ./Service Portal Widgets/Upload Files 
- 	 - # Service Portal Widget - "Add attachments" form
+
+  - ./Service Portal Widgets/Upload Files
+    - # Service Portal Widget - "Add attachments" form
 
 This widget is using the 'Attachment API - POST /now/attachment/file' to upload multiple files on form submit.
 
 The result will appear in the console or check directly the record.
 Folder Name:
-  - ./Service Portal Widgets/Card Image Link 
- 	 - # Card Image Link Widget
+
+  - ./Service Portal Widgets/Card Image Link
+    - # Card Image Link Widget
 
 Provides an easy to use and nice looking card widget to add to Service Portal pages
 
@@ -13121,8 +13395,9 @@ Provides an easy to use and nice looking card widget to add to Service Portal pa
 # End Result
 ![Image of Card result](doc/card_result.png)
 Folder Name:
-  - ./Service Portal Widgets/Card Image Link 
- 	 - # Card Image Link Widget
+
+  - ./Service Portal Widgets/Card Image Link
+    - # Card Image Link Widget
 
 Provides an easy to use and nice looking card widget to add to Service Portal pages
 
@@ -13132,8 +13407,9 @@ Provides an easy to use and nice looking card widget to add to Service Portal pa
 # End Result
 ![Image of Card result](doc/card_result.png)
 Folder Name:
-  - ./Service Portal Widgets/Set Variables By Url 
- 	 - ## Use case
+
+  - ./Service Portal Widgets/Set Variables By Url
+    - ## Use case
 Sometimes you want to share a link to a catalog item on the portal and you want to pre-set some variables.  Like when you make documentation and you want to pre-categorize a ticket with information but you dont show all that.
 
 So you build your link `https://{{instance}}/sp?id=sc_cat_item&sys_id={{itemSysID}}&description=I'cant%20access%20ServiceNow`
@@ -13147,8 +13423,9 @@ Which would set the description variable to "I can't access ServiceNow"
 3.  Click the "Open in Designer" link at the bottom
 4.  Add your widget anywhere as it has no html it will not render any elements.
 Folder Name:
-  - ./Service Portal Widgets/Create diagram using Highcharts library 
- 	 - # Creating spider web using Highcharts
+
+  - ./Service Portal Widgets/Create diagram using Highcharts library
+    - # Creating spider web using Highcharts
 ## Introduction
 In this snippet you will create a custom spider web using a custom page and populating data using Highcharts native library
 
@@ -13293,13 +13570,15 @@ https://github.com/NorthwoodsSoftware/GoJS/blob/master/samples/productionProcess
 https://gojs.net/latest/intro/toolTips.html
 http://g-mops.net/epica_gojs/api/symbols/Diagram.html
 Folder Name:
-  - ./Service Portal Widgets/Konami Code Easter Egg 
- 	 - # Konami Code Easter Egg
+
+  - ./Service Portal Widgets/Konami Code Easter Egg
+    - # Konami Code Easter Egg
 
 Put this code in the client controller of a widget to listen for the Konami Code. By default it just opens a modal notifying the user that the konami code as activated. Modify to do whatever fun things you want.
 Folder Name:
-  - ./Service Portal Widgets/Batman Animation 
- 	 - In order to use the widget, follow the below steps:
+
+  - ./Service Portal Widgets/Batman Animation
+    - In order to use the widget, follow the below steps:
 
 1.Create a new widget and copy the html, style and client script in the widget.
 
@@ -13321,18 +13600,21 @@ Here is Page Content structure
 
 ![image](https://user-images.githubusercontent.com/28950517/135977861-16358193-2df6-460a-ba6c-094c5ba3955d.png)
 Folder Name:
-  - ./Service Portal Widgets/Open in Platform 
- 	 - Widget will create a button that will only be visable to users with the itil role that will take them to the same record in platform. will work with the form and standard ticket pages (or anywhere with the table and sysId in the url.
+
+  - ./Service Portal Widgets/Open in Platform
+    - Widget will create a button that will only be visable to users with the itil role that will take them to the same record in platform. will work with the form and standard ticket pages (or anywhere with the table and sysId in the url.
 
 see also [on Share](https://developer.servicenow.com/connect.do#!/share/contents/6592535_open_in_platform_widget?t=PRODUCT_DETAILS)
 Folder Name:
-  - ./Service Portal/sp-modal 
- 	 - This script is used to generate a popup on the Service Portal page, you can update the html based on your need.
+
+  - ./Service Portal/sp-modal
+    - This script is used to generate a popup on the Service Portal page, you can update the html based on your need.
 
 If a callback is needed, use the .then() part of the spModal and add any functions/statements to it as required.
 Folder Name:
-  - ./Service Portal/sn-watchlist 
- 	 - # sn-watchlist
+
+  - ./Service Portal/sn-watchlist
+    - # sn-watchlist
 
 `sn-watchlist` is a custom directive that you can use to create a watchlist like field within your widgets.
 
@@ -13390,8 +13672,9 @@ api.controller = function () {
 };
 ```
 Folder Name:
-  - ./Service Portal/spGlideAjax 
- 	 - # spGlideAjax
+
+  - ./Service Portal/spGlideAjax
+    - # spGlideAjax
 
 This is a demo of promise like service which allows to make a GlideAjax call directly from the controller function.
 The service has a single method called `getAnswer` which returns a promise, which is then resolved directly to the answer attribute from the XML response.
@@ -13433,8 +13716,9 @@ api.controller = function (spGlideAjax) {
 };
 ```
 Folder Name:
-  - ./Service Portal/dark-mode-switcher 
- 	 - # Dark mode switcher ☀️/🌑
+
+  - ./Service Portal/dark-mode-switcher
+    - # Dark mode switcher ☀️/🌑
 
 This is a simple demonstration of achieving a dark mode switcher for Employee Center portal. The switcher itself allows user to quickly toggle between multiple color modes:
 
@@ -13473,8 +13757,9 @@ The following angular providers need to be created and attached to the `Employee
 [EC Dark Mode](dark_mode.scss) - put this into your theme as a CSS Include
 
 Folder Name:
-  - ./Service Portal/dark-mode-switcher 
- 	 - # Dark mode switcher ☀️/🌑
+
+  - ./Service Portal/dark-mode-switcher
+    - # Dark mode switcher ☀️/🌑
 
 This is a simple demonstration of achieving a dark mode switcher for Employee Center portal. The switcher itself allows user to quickly toggle between multiple color modes:
 
@@ -13513,8 +13798,9 @@ The following angular providers need to be created and attached to the `Employee
 [EC Dark Mode](dark_mode.scss) - put this into your theme as a CSS Include
 
 Folder Name:
-  - ./Transform Map Scripts/Conditional Coalesce 
- 	 - **Conditional Coalesce on Trasnform Maps**
+
+  - ./Transform Map Scripts/Conditional Coalesce
+    - **Conditional Coalesce on Trasnform Maps**
 
 When you have more than one field you want to coalesce based on some conditions, you can create a field mapping where source is a script and target field is SYS_ID.
 You can put your conditional logic in the source script to do a conditional coalesce. Return the sys_id of the matched record for the transform to update it. Return -1 when there is not a match and you want to create a new record.
@@ -13523,11 +13809,13 @@ You can put your conditional logic in the source script to do a conditional coal
 
 ![Configuration](conditional_coalesce.png)
 Folder Name:
-  - ./Transform Map Scripts/Verify headers of a CSV attached file 
- 	 - 
+
+  - ./Transform Map Scripts/Verify headers of a CSV attached file
+    - 
 Folder Name:
-  - ./Transform Map Scripts/Choice Field Validator 
- 	 - # **Choice Field Validator**
+
+  - ./Transform Map Scripts/Choice Field Validator
+    - # **Choice Field Validator**
 
 Function that returns the value of a choice by its display value. Initially created to be used in field map scripts.
 Used to return the choice even if the instance is in different language.
@@ -13550,8 +13838,9 @@ Used to return the choice even if the instance is in different language.
 
 In these previous cases we used the validator because some users use Portuguese language and all options in the excel are in English. With the functions we don't need to worry about the different languagues.
 Folder Name:
-  - ./Server Side/Create Tiny Url with API's 
- 	 - we can turn any servicenow url to tiny url with the code attached.
+
+  - ./Server Side/Create Tiny Url with API's
+    - we can turn any servicenow url to tiny url with the code attached.
 
 it just need a user authentication details, any user who dont even have any roles also fine, the user just need to able to login to instance.
 
@@ -13563,14 +13852,17 @@ https://devxxxx.service-now.com/incident_list.do?sysparm_query=caller_id%3D681cc
 To this:
 https://devxxxx.service-now.com/incident_list.do?sysparm_tiny=cb4c40e12fd61d10c083d0ccf699b62a
 Folder Name:
-  - ./Server Side/Restart a workflow via any server side script 
- 	 - Use this to attach a new workflow to your old records.
+
+  - ./Server Side/Restart a workflow via any server side script
+    - Use this to attach a new workflow to your old records.
 Folder Name:
-  - ./Server Side/DiscoveryDeviceHistory 
- 	 - 
+
+  - ./Server Side/DiscoveryDeviceHistory
+    - 
 Folder Name:
-  - ./Server Side/ExecuteWorkOnMidServer 
- 	 - The snippet can be used to dynamically execute any work on the mid server. You could run any commands on a server, powershell scripts, LDAP queries and other functions depending on the output probes which are supported by ServiceNow. You need to be aware of the ECC queue output and input structure used by ServiceNow to issue these commands. To get these formats, you could execute the same functionality and monitor the ECC queue for its structure. 
+
+  - ./Server Side/ExecuteWorkOnMidServer
+    - The snippet can be used to dynamically execute any work on the mid server. You could run any commands on a server, powershell scripts, LDAP queries and other functions depending on the output probes which are supported by ServiceNow. You need to be aware of the ECC queue output and input structure used by ServiceNow to issue these commands. To get these formats, you could execute the same functionality and monitor the ECC queue for its structure. 
 
 Sample Usage.
 
@@ -13590,18 +13882,21 @@ var xmlResponse = fetchResponseFromMid(outputId);
 //gs.print(xmlResponse);
 ```
 Folder Name:
-  - ./Server Side/getUserGroupMembers 
- 	 - Script to get members of groups which our users also belongs to.
+
+  - ./Server Side/getUserGroupMembers
+    - Script to get members of groups which our users also belongs to.
 
 example: added Abel to 2 HR groups and then printing the names of members who belong to those groups.
 
 ![image](https://user-images.githubusercontent.com/46869542/193464977-53b613db-650b-452c-ac72-fbee5196605f.png)
 Folder Name:
-  - ./Server Side/Update Variable Choices 
- 	 - Programatically update add a new choice for a service catalog variable and reorder all choices alphabetically. Can be helpful as part of a workflow where a fulfiller chooses logic to "update the list" variable, such as a small product or category list that may require ongoing updates as a result of fulfilling the request. Often unlisted choices are handled with an "Other" option and a text field to include the unlisted option. This script will take the value from the "Other" variable and add it to the choice list in the workflow.
+
+  - ./Server Side/Update Variable Choices
+    - Programatically update add a new choice for a service catalog variable and reorder all choices alphabetically. Can be helpful as part of a workflow where a fulfiller chooses logic to "update the list" variable, such as a small product or category list that may require ongoing updates as a result of fulfilling the request. Often unlisted choices are handled with an "Other" option and a text field to include the unlisted option. This script will take the value from the "Other" variable and add it to the choice list in the workflow.
 Folder Name:
-  - ./Server Side/CreateUpdateCIThroughIRE 
- 	 - ServiceNow CMDB should be updated through the Identification and Reconciliation Engine. There are several legacy ways of populating CMDB and the most commonly used ways are via transform maps or through any external integration scripts. Whenver data is added to the CMDB, it should go through the IRE as it helps you maintain the quality of your CI data by avoiding duplicates and ensuring that only authorized source can updated the data in your CMDB. The code snippet allows you to update CMDB through IRE thereby reducing the maintanance effort required on your CMDB. You could call it from a transform map script, integration scripts or via any other scripted methods used to integrate.
+
+  - ./Server Side/CreateUpdateCIThroughIRE
+    - ServiceNow CMDB should be updated through the Identification and Reconciliation Engine. There are several legacy ways of populating CMDB and the most commonly used ways are via transform maps or through any external integration scripts. Whenver data is added to the CMDB, it should go through the IRE as it helps you maintain the quality of your CI data by avoiding duplicates and ensuring that only authorized source can updated the data in your CMDB. The code snippet allows you to update CMDB through IRE thereby reducing the maintanance effort required on your CMDB. You could call it from a transform map script, integration scripts or via any other scripted methods used to integrate.
 
 Sample Usage
 ````
@@ -13639,8 +13934,9 @@ var relations = [{
 createOrUpdateCIThroughIRE(items, relations, "ServiceNow");
 ````````
 Folder Name:
-  - ./Server Side/Get all variables of catalog item 
- 	 - sometimes we need to get all varibles related to Catalog item / record producer, but as some varibles are placed in variable set its not that easy to get all.
+
+  - ./Server Side/Get all variables of catalog item
+    - sometimes we need to get all varibles related to Catalog item / record producer, but as some varibles are placed in variable set its not that easy to get all.
 
 for this we can use addJoinQuery of GlideRecord. so we can get all varibles related to Catalog item / record producer with attached script.
 
@@ -13648,22 +13944,26 @@ example output:
 
 ![image](https://user-images.githubusercontent.com/46869542/193516504-901c2456-8fb4-46b2-ac64-b236976f258b.png)
 Folder Name:
-  - ./Server Side/Get all Catalog items associated to variable set 
- 	 - Use this script to get List of Catalog Items associated to the Variable set.
+
+  - ./Server Side/Get all Catalog items associated to variable set
+    - Use this script to get List of Catalog Items associated to the Variable set.
 Folder Name:
-  - ./Server Side/User Criteria 
- 	 - Use this script to determine if a user passes an array of user criterias
+
+  - ./Server Side/User Criteria
+    - Use this script to determine if a user passes an array of user criterias
 
 
 userID - String of a sys_user sys_id
 
 userCriteria - Array of user_criteria sys_ids to check again
 Folder Name:
-  - ./Server Side/Restart Flow on RITM 
- 	 - Restart a flow designer flow on a Requested Item.  I use this in a UI Action, but it could also be modified and used in a background script if needed.
+
+  - ./Server Side/Restart Flow on RITM
+    - Restart a flow designer flow on a Requested Item.  I use this in a UI Action, but it could also be modified and used in a background script if needed.
 Folder Name:
-  - ./Server Side/CheckTableExtension 
- 	 - The snippet validates whether a child table is extended from a parent table. You could provide both the table names as input and it would respond back with a boolean output.
+
+  - ./Server Side/CheckTableExtension
+    - The snippet validates whether a child table is extended from a parent table. You could provide both the table names as input and it would respond back with a boolean output.
 
 Sample Usage
 
@@ -13671,11 +13971,13 @@ gs.info(isTableExtended("cmdb_ci", "cmdb_ci_win_server"));  //true
 
 gs.info(isTableExtended("cmdb_ci", "cmdb_ci_hardwares"));   //false
 Folder Name:
-  - ./Server Side/Decrypt Password2 Field 
- 	 - decrypterPassword2.js will dycrpt a password2 field
+
+  - ./Server Side/Decrypt Password2 Field
+    - decrypterPassword2.js will dycrpt a password2 field
 Folder Name:
-  - ./Server Side/Create Admin Users 
- 	 - # Purpose
+
+  - ./Server Side/Create Admin Users
+    - # Purpose
 After first login to a freshly provisioned ServiceNow instance it is recommended creating personalized admin accounts. The following script will do the job for you. Just pass the most important properties to the method and a new user is being created with some preconfigured values such as roles and preferences.
 # Usage
 ```javascript
@@ -13691,8 +13993,10 @@ if (strUserSysID != null) {
 }
 ```
 Folder Name:
-  - ./Server Side/Random Password generator 
- 	 - This script is used to generate a random password, you can update the length parameter to adjust the length of password.
+
+  - ./Server Side/Random Password generator
+    - This script is used to generate a random password, you can update the length parameter to adjust the length of password.
 Folder Name:
-  - ./Server Side/Phone Number formating(US Region) 
- 	 - Use this script to format Phone Number in standard format 3-3-4 example if phone is  1234567891  then output will be 123-456-7891
+
+  - ./Server Side/Phone Number formating(US Region)
+    - Use this script to format Phone Number in standard format 3-3-4 example if phone is  1234567891  then output will be 123-456-7891
