@@ -35,7 +35,8 @@ jobs:
 
             # Append to the final document
             echo "Folder Name:" >> final_document.md
-            echo "  - $folder - $markdown_content" >> final_document.md
+            echo -e "\n"
+            echo -e "  - $folder \n \t - $markdown_content" >> final_document.md
           ' \;
 
       - name: Commit and push changes
