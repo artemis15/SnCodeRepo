@@ -30,7 +30,7 @@ jobs:
           find . -type f -name "*.js" -exec bash -c '
             # Extract folder name and markdown file content
             folder="$(dirname "{}")"
-            markdown_file="$folder/instructions.md"
+            markdown_file="$folder/readme.md"
             markdown_content=$(cat "$markdown_file")
 
             # Append to the final document
